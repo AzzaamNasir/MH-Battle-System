@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=2 format=3 uid="uid://uo7tjov1ewe0"]
+
+[ext_resource type="Script" path="res://MoveData.gd" id="1_78hkd"]
+
+[resource]
+script = ExtResource("1_78hkd")
+name = ""
+element = 0
+energy = 0
+cooldown = 0
+effects = Array[Resource("res://MoveEffects.gd")]([])
