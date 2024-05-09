@@ -8,12 +8,9 @@ func _get_property_list():
 	
 	if type == MOVETYPE.Damages or type == MOVETYPE.Heals:
 		properties.append({
-		"name" = "dmgMin",
-		"type" = TYPE_INT,
-		})
-		properties.append({
-		"name" = "dmgMax",
-		"type" = TYPE_INT,
+		"name" = "dmg",
+		"type" = TYPE_VECTOR2,
+		"hint" = PROPERTY_HINT_ARRAY_TYPE
 		})
 		
 	if type == MOVETYPE.Buffs or type == MOVETYPE.Debuffs:
@@ -28,15 +25,19 @@ func _get_property_list():
 		"type" = TYPE_INT,
 		})
 		
+	if doOvertime:
+		properties.append({
+		"name" = "turnDuration",
+		"type" = TYPE_INT
+		})
+	
 	return properties
 
 
 ##accuracy of the attack(in percentage)
 @export var accuracy : int = 100
-##Make it negative if its a healing move
-var dmgMin : int = 0
-##Make it negative if its a healing move
-var dmgMax : int = 0
+##Put minimum damage in x, max in y. If dmg is const put same value in both. Make it negative if its a healiing move. For timed damage, put per chance damage not the total
+var dmg : Vector2 = Vector2(0,0)
 ##What does the move do?
 @export var type : MOVETYPE = MOVETYPE.Damages:
 	set(value):
@@ -48,18 +49,29 @@ var dmgMax : int = 0
 @export_enum("Player","Random","All") var targetSelector : int= 0    
 ##Does it target enemies or allies. 0=Enemy,1=Ally,2=Self
 @export_enum("Enemy","Ally","Self") var target : int = 0
-##How much does it buff(In percentage) Use negative if its a debuff
+##How much does it buff(In percentage) Use negative if its a debuff. Leave at zero for effects like frozen
 var buffPercent = 0
 ##What does it buff?
 var buffAttribute : ATTRIBUTES
+##Does it do anything over time?
+@export var doOvertime : bool:
+	set(value):
+		doOvertime = value
+		notify_property_list_changed()
+#How many turns will it last?
+var turnDuration : int = 0
 
+@export var override_properties : bool
 
 enum ATTRIBUTES{
 	Attack,
 	Health,
 	Speed,
 	Energy,
-	Healing
+	Healing,
+	Frozen,
+	Stunned,
+	Exhausted
 }
 
 enum MOVETYPE{

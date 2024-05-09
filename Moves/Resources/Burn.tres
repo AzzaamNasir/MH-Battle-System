@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=6 format=3 uid="uid://c5kie1ssct2sc"]
+
+[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_b68as"]
+[ext_resource type="Texture2D" uid="uid://opels4tw61hg" path="res://Moves/Sprites/717_Utilities.SpriteHandler_moveIcon_burn.png" id="2_a2uru"]
+[ext_resource type="Script" path="res://Moves/MoveData.gd" id="2_bbvy1"]
+
+[sub_resource type="Resource" id="Resource_qplys"]
+script = ExtResource("1_b68as")
+accuracy = 100
+type = 0
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = false
+override_properties = true
+dmg = Vector2(20, 20)
+
+[sub_resource type="Resource" id="Resource_da7b7"]
+script = ExtResource("1_b68as")
+accuracy = 100
+type = 0
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = true
+override_properties = false
+dmg = Vector2(5, 5)
+turnDuration = 3
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("2_bbvy1")
+name = "Burn"
+sprite = ExtResource("2_a2uru")
+element = 0
+energy = 25
+cooldown = 0
+effects = Array[ExtResource("1_b68as")]([SubResource("Resource_qplys"), SubResource("Resource_da7b7")])

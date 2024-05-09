@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=7 format=3 uid="uid://uryw5hhbt7ta"]
+
+[ext_resource type="Resource" uid="uid://uo7tjov1ewe0" path="res://Moves/Resources/Claw.tres" id="1_5y64h"]
+[ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_j4t54"]
+[ext_resource type="Resource" uid="uid://gmyhc0xfo2gd" path="res://Moves/Resources/Roar.tres" id="2_eeur0"]
+[ext_resource type="Resource" uid="uid://c5kie1ssct2sc" path="res://Moves/Resources/Burn.tres" id="3_0gt03"]
+[ext_resource type="PackedScene" uid="uid://dcf3n0lefmmyl" path="res://Minions/Scenes/Tigertan.tscn" id="4_2hii8"]
+[ext_resource type="Texture2D" uid="uid://ckbqb1oj8yd2q" path="res://Minions/Sprites/Tigertan.png" id="5_ba4bo"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_j4t54")
+name = "Tigertan"
+sprite = ExtResource("5_ba4bo")
+scene = ExtResource("4_2hii8")
+health = 60
+energy = 65
+atk = 60
+healing = 45
+speed = 70
+type1 = 1
+type2 = 0
+MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([ExtResource("1_5y64h"), ExtResource("2_eeur0"), ExtResource("3_0gt03")])

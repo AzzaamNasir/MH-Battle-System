@@ -8,11 +8,40 @@
 
 config_version=5
 
+[addons]
+
+resources_spreadsheet_view/array_color_tint=100.0
+resources_spreadsheet_view/color_rows=true
+resources_spreadsheet_view/array_min_width=128.0
+resources_spreadsheet_view/resource_preview_size=32.0
+resources_spreadsheet_view/clip_headers=false
+resources_spreadsheet_view/dupe_arrays=true
+resources_spreadsheet_view/context_menu_on_leftclick=false
+
 [application]
 
 config/name="Min Hero"
+run/main_scene="res://Arena.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_resource_groups/plugin.cfg", "res://addons/resources_spreadsheet_view/plugin.cfg")
+
+[file_customization]
+
+folder_colors={
+"res://addons/": "gray"
+}
 
 [rendering]
 

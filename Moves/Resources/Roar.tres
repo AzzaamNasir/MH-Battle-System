@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://gmyhc0xfo2gd"]
+
+[ext_resource type="Script" path="res://Moves/MoveData.gd" id="1_dm31l"]
+[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_paqpc"]
+[ext_resource type="Texture2D" uid="uid://ppwqbfgit64p" path="res://Moves/Sprites/1469_Utilities.SpriteHandler_moveIcon_roar.png" id="3_hax7i"]
+
+[sub_resource type="Resource" id="Resource_p1g1f"]
+script = ExtResource("1_paqpc")
+accuracy = 100
+type = 3
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = false
+override_properties = true
+buffAttribute = 0
+buffPercent = -67
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_dm31l")
+name = "Roar"
+sprite = ExtResource("3_hax7i")
+element = 0
+energy = 30
+cooldown = 0
+effects = Array[ExtResource("1_paqpc")]([SubResource("Resource_p1g1f")])

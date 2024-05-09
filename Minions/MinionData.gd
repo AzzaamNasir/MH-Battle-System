@@ -5,6 +5,7 @@ class_name MinionData
 
 @export var name : String
 @export var sprite : Texture2D
+@export var scene : PackedScene
 
 @export var health : int
 @export var energy : int

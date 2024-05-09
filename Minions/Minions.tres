@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://1md1sfgrxy4t"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_8brmp"]
+
+[resource]
+script = ExtResource("1_8brmp")
+base_folder = "res://Minions/Resources"
+includes = Array[String](["*.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://Minions/Resources/Tigertan.tres"])

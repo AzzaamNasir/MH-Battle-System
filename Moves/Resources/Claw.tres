@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://uo7tjov1ewe0"]
+
+[ext_resource type="Script" path="res://Moves/MoveData.gd" id="1_78hkd"]
+[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_bmlxk"]
+[ext_resource type="Texture2D" uid="uid://ee48w41jke27" path="res://Moves/Sprites/135_Utilities.SpriteHandler_moveIcon_claw.png" id="3_kc12q"]
+
+[sub_resource type="Resource" id="Resource_rnhaa"]
+script = ExtResource("1_bmlxk")
+accuracy = 100
+type = 0
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = false
+override_properties = true
+dmg = Vector2(0, 0)
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_78hkd")
+name = "Claw"
+sprite = ExtResource("3_kc12q")
+element = 0
+energy = 20
+cooldown = 0
+effects = Array[ExtResource("1_bmlxk")]([SubResource("Resource_rnhaa")])

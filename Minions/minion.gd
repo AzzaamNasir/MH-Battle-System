@@ -1,12 +1,9 @@
-extends Sprite2D
+extends Node2D
 
-@export var Minion : MinionData
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	self.texture = Minion.sprite
-	pass # Replace with function body.
+@export var minionData : MinionData
+@export var SelectMenu : Control
 
+func _ready() -> void:
+	load(minionData.resource_path)
+	$Sprite.texture = minionData.sprite
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

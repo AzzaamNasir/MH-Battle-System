@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://cnmaekp2pbtcd"]
+
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_uwb4w"]
+
+[resource]
+script = ExtResource("1_uwb4w")
+base_folder = "res://Moves/Resources"
+includes = Array[String](["*.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://Moves/Resources/Burn.tres", "res://Moves/Resources/Claw.tres", "res://Moves/Resources/FireRam.tres", "res://Moves/Resources/Roar.tres"])
