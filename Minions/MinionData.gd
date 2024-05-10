@@ -5,6 +5,7 @@ class_name MinionData
 
 @export var name : String
 @export var sprite : Texture2D
+##Drag the .tscn file of the minion here
 @export_file("*.tscn") var scene : String
 
 @export var health : int
@@ -35,4 +36,5 @@ enum MinionType {
 	Titan
 }
 
+##Instert the .tres files of the moves htis minion has here
 @export var MinionMoves : Array[MoveData]

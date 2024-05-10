@@ -36,8 +36,6 @@ func _get_property_list():
 
 ##accuracy of the attack(in percentage)
 @export var accuracy : int = 100
-##Put minimum damage in x, max in y. If dmg is const put same value in both. Make it negative if its a healiing move. For timed damage, put per chance damage not the total
-var dmg : Vector2 = Vector2(0,0)
 ##What does the move do?
 @export var type : MOVETYPE = MOVETYPE.Damages:
 	set(value):
@@ -60,6 +58,7 @@ var buffAttribute : ATTRIBUTES
 		notify_property_list_changed()
 #How many turns will it last?
 var turnDuration : int = 0
+
 
 @export var override_properties : bool
 

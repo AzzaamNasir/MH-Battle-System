@@ -106,7 +106,6 @@ layout_mode = 2
 size_flags_horizontal = 2
 
 [node name="ReferenceRect" type="ReferenceRect" parent="."]
-visible = false
 layout_mode = 0
 offset_left = 64.0
 offset_top = -160.0

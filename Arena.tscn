@@ -1,14 +1,38 @@
-[gd_scene load_steps=4 format=3 uid="uid://dm5i3etlvw3s3"]
+[gd_scene load_steps=6 format=3 uid="uid://dm5i3etlvw3s3"]
 
 [ext_resource type="Script" path="res://FightController.gd" id="1_3fvvi"]
 [ext_resource type="PackedScene" uid="uid://drejxjrb6er7u" path="res://UI/MinionSelector.tscn" id="2_yg1mp"]
+[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="3_ks6dk"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_nfboh"]
+
+[sub_resource type="Resource" id="Resource_l3wp8"]
+resource_local_to_scene = true
+script = ExtResource("3_ks6dk")
+base_folder = "res://Minions/Resources"
+includes = Array[String](["*.tres"])
+excludes = Array[String]([])
+paths = Array[String](["res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])
 
 [node name="Arena" type="Node2D"]
 script = ExtResource("1_3fvvi")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="UI_Extras" type="CanvasLayer" parent="."]
+layer = 8
+visible = false
+
+[node name="Screen_Tint" type="ColorRect" parent="UI_Extras"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(1, 1, 1, 0.34902)
+
+[node name="Camera" type="Camera2D" parent="."]
 
 [node name="L_Minions" type="Node" parent="."]
 
@@ -45,12 +69,12 @@ position = Vector2(480, -128)
 position = Vector2(312, 0)
 
 [node name="Divider" type="Sprite2D" parent="."]
-z_index = -2
 position = Vector2(-4.76837e-07, 4.00002)
 scale = Vector2(16, 728)
 texture = SubResource("CanvasTexture_nfboh")
 
 [node name="MinionSelector" parent="." instance=ExtResource("2_yg1mp")]
-layer = 2
+layer = 10
+minions = SubResource("Resource_l3wp8")
 
 [node name="ComponentManager" type="Node" parent="."]
