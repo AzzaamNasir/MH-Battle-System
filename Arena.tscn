@@ -78,3 +78,5 @@ layer = 10
 minions = SubResource("Resource_l3wp8")
 
 [node name="ComponentManager" type="Node" parent="."]
+
+[node name="Communicator" type="Node" parent="."]

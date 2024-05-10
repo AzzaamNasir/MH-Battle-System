@@ -12,3 +12,20 @@ SelectMenu = NodePath("SelectMenu")
 [node name="Sprite" type="Sprite2D" parent="."]
 
 [node name="SelectMenu" parent="." instance=ExtResource("7_1twlf")]
+
+[node name="Control" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -56.0
+offset_right = 56.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ClickDetector" type="Button" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 2

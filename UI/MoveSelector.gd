@@ -21,21 +21,20 @@ func _ready():
 	minMoveList = owner.minionData.MinionMoves
 	for i in len(minMoveList):
 		setProperties.bind(get("button"+str(i+1)),minMoveList[i]).call()
-	self.connect("moveUsed",_on_move_used)
 
 #region Setting Up The Buttons
 	if button1.has_meta("Move"):
-		button1.connect("pressed",buttonPressed.bind(button1.get_meta("Move")))
+		button1.pressed.connect(buttonPressed.bind(button1.get_meta("Move")))
 	if button2.has_meta("Move"):
-		button2.connect("pressed",buttonPressed.bind(button2.get_meta("Move")))
+		button2.pressed.connect(buttonPressed.bind(button2.get_meta("Move")))
 	if button3.has_meta("Move"):
-		button3.connect("pressed",buttonPressed.bind(button3.get_meta("Move")))
+		button3.pressed.connect(buttonPressed.bind(button3.get_meta("Move")))
 	if button4.has_meta("Move"):
-		button4.connect("pressed",buttonPressed.bind(button4.get_meta("Move")))
+		button4.pressed.connect(buttonPressed.bind(button4.get_meta("Move")))
 	if button5.has_meta("Move"):
-		button5.connect("pressed",buttonPressed.bind(button5.get_meta("Move")))
+		button5.pressed.connect(buttonPressed.bind(button5.get_meta("Move")))
 	if button6.has_meta("Move"):
-		button6.connect("pressed",buttonPressed.bind(button6.get_meta("Move")))
+		button6.pressed.connect(buttonPressed.bind(button6.get_meta("Move")))
 #endregion
 
 func _set_button_properties(button : TextureButton,move : MoveData):
@@ -44,17 +43,8 @@ func _set_button_properties(button : TextureButton,move : MoveData):
 
 #This will relay the signal from this to the minion
 func _on_move_used(move):
+	hide()
 	emit_signal("moveUsed",move)
-
-func _on_select_time(moveEff : Array[MoveEffects]):
-	var target
-	var target_no
-	var select_type
-	for effect:MoveEffects in moveEff:
-		if effect.override_properties:
-			target_no = effect.targetNo
-			target = effect.target
-			select_type = effect.targetSelector
 
 #Just used for relaying signal to The MoveSelector Scene from the button
 func _pressed(move : MoveData):

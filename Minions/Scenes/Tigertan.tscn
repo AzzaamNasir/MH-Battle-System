@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dcf3n0lefmmyl"]
+[gd_scene load_steps=5 format=3 uid="uid://dcf3n0lefmmyl"]
 
 [ext_resource type="Script" path="res://Minions/Minion.gd" id="1_sx2o3"]
 [ext_resource type="Resource" uid="uid://c7uxwebsxbcsp" path="res://Minions/Resources/Tigertan.tres" id="2_7y1rd"]
 [ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="3_uq0cv"]
+[ext_resource type="Texture2D" uid="uid://ch2ibbwbr268t" path="res://Minions/Sprites/Frostag.png" id="3_ws28m"]
 
 [node name="Tigertan" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
 script = ExtResource("1_sx2o3")
@@ -10,5 +11,23 @@ minionData = ExtResource("2_7y1rd")
 SelectMenu = NodePath("SelectMenu")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("3_ws28m")
 
 [node name="SelectMenu" parent="." instance=ExtResource("3_uq0cv")]
+
+[node name="Control" type="PanelContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -56.0
+offset_right = 56.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ClickDetector" type="Button" parent="Control"]
+unique_name_in_owner = true
+layout_mode = 2
