@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ls7mw7qg0b28"]
+
+[ext_resource type="Script" path="res://Minions/Minion.gd" id="1_6fqhp"]
+[ext_resource type="Resource" uid="uid://cmx4gjcnv8ylt" path="res://Minions/Resources/Tazorback.tres" id="2_fjhuf"]
+[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="7_1twlf"]
+
+[node name="Tazorback" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
+script = ExtResource("1_6fqhp")
+minionData = ExtResource("2_fjhuf")
+SelectMenu = NodePath("SelectMenu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="SelectMenu" parent="." instance=ExtResource("7_1twlf")]

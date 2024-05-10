@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_uwb4w"]
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource("1_uwb4w")
 base_folder = "res://Moves/Resources"
 includes = Array[String](["*.tres"])

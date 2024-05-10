@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3 uid="uid://cmx4gjcnv8ylt"]
+
+[ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_c01o1"]
+[ext_resource type="Texture2D" uid="uid://bma6a74q7ab4b" path="res://Minions/Sprites/Tazorback.png" id="2_mmcrv"]
+
+[resource]
+resource_local_to_scene = true
+script = ExtResource("1_c01o1")
+name = "Tazorback"
+sprite = ExtResource("2_mmcrv")
+scene = "res://Minions/Scenes/Tazorback.tscn"
+health = 0
+energy = 0
+atk = 0
+healing = 0
+speed = 100
+type1 = 0
+type2 = 0
+MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([])

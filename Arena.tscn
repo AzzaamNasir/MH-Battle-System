@@ -52,3 +52,5 @@ texture = SubResource("CanvasTexture_nfboh")
 
 [node name="MinionSelector" parent="." instance=ExtResource("2_yg1mp")]
 layer = 2
+
+[node name="ComponentManager" type="Node" parent="."]

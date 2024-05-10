@@ -12,22 +12,27 @@ var minMoveList : Array[MoveData]
 signal selectTime(target,no)
 
 var moveUsed : Callable = Callable(self,"_on_move_used")
-
 var setTexture : Callable = Callable(self,"_set_button_texture")
 
+
 func _ready():
-	await  owner.ready
+	await owner.ready
 	minMoveList = get_parent().minionData.MinionMoves
 	for i in len(minMoveList):
 		setTexture.bind(get("button"+str(i+1)),minMoveList[i]).call()
-	
 	self.connect("selectTime",_on_select_time)
-	button1.connect("pressed",moveUsed.bind(button1.get_meta("Move")))
-	button2.connect("pressed",moveUsed.bind(button2.get_meta("Move")))
-	button3.connect("pressed",moveUsed.bind(button3.get_meta("Move")))
-	button4.connect("pressed",moveUsed.bind(button4.get_meta("Move")))
-	button5.connect("pressed",moveUsed.bind(button5.get_meta("Move")))
-	button6.connect("pressed",moveUsed.bind(button6.get_meta("Move")))
+	if button1.has_meta("Move"):
+		button1.connect("pressed",moveUsed.bind(button1.get_meta("Move")))
+	if button2.has_meta("Move"):
+		button2.connect("pressed",moveUsed.bind(button2.get_meta("Move")))
+	if button3.has_meta("Move"):
+		button3.connect("pressed",moveUsed.bind(button3.get_meta("Move")))
+	if button4.has_meta("Move"):
+		button4.connect("pressed",moveUsed.bind(button4.get_meta("Move")))
+	if button5.has_meta("Move"):
+		button5.connect("pressed",moveUsed.bind(button5.get_meta("Move")))
+	if button6.has_meta("Move"):
+		button6.connect("pressed",moveUsed.bind(button6.get_meta("Move")))
 
 func _set_button_texture(button : TextureButton,move : MoveData):
 	button.set_meta("Move",load(move.resource_path))

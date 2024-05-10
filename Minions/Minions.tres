@@ -3,8 +3,9 @@
 [ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_8brmp"]
 
 [resource]
+resource_local_to_scene = true
 script = ExtResource("1_8brmp")
 base_folder = "res://Minions/Resources"
 includes = Array[String](["*.tres"])
 excludes = Array[String]([])
-paths = Array[String](["res://Minions/Resources/Tigertan.tres"])
+paths = Array[String](["res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])

@@ -1,3 +1,14 @@
-[gd_scene format=3 uid="uid://dcf3n0lefmmyl"]
+[gd_scene load_steps=4 format=3 uid="uid://dcf3n0lefmmyl"]
 
-[node name="Tigertan" type="Node2D"]
+[ext_resource type="Script" path="res://Minions/Minion.gd" id="1_sx2o3"]
+[ext_resource type="Resource" uid="uid://c7uxwebsxbcsp" path="res://Minions/Resources/Tigertan.tres" id="2_7y1rd"]
+[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="3_uq0cv"]
+
+[node name="Tigertan" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
+script = ExtResource("1_sx2o3")
+minionData = ExtResource("2_7y1rd")
+SelectMenu = NodePath("SelectMenu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+
+[node name="SelectMenu" parent="." instance=ExtResource("3_uq0cv")]

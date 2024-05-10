@@ -14,6 +14,7 @@ var minionArr : Array[MinionData]
 func _ready():
 	minions.load_all_into(minionArr)
 	play.connect("pressed",_on_play_pressed)
+	
 	for minion in minionArr:
 		Minions1.add_item(minion.name,minion.sprite)
 		Minions2.add_item(minion.name,minion.sprite)
