@@ -5,6 +5,7 @@ extends Node2D
 
 signal select_attempt(minion)
 signal SelectionTime(minion ,move : MoveData)
+
 @onready var sprite: Sprite2D = $Sprite
 @onready var click_detector: Button = %ClickDetector
 
@@ -21,6 +22,11 @@ func _on_click(button : Button):
 		emit_signal("select_attempt",self)
 
 func _calc_move_stats(move : MoveData):
-	click_detector.get_parent().show()
 	print_debug("yep")
-	emit_signal("SelectionTime",self,move)#We need to calculate and relay the final dmg to the fight controller
+	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
+
+func _get_affected(dmg : int):
+	minionData.health -= dmg
+	print(minionData.health)
+	if minionData.health == 0:
+		queue_free()

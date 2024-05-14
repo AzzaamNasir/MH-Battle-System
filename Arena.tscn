@@ -17,21 +17,6 @@ paths = Array[String](["res://Minions/Resources/Tazorback.tres", "res://Minions/
 [node name="Arena" type="Node2D"]
 script = ExtResource("1_3fvvi")
 
-[node name="UI_Extras" type="CanvasLayer" parent="."]
-layer = 8
-visible = false
-
-[node name="Screen_Tint" type="ColorRect" parent="UI_Extras"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-mouse_filter = 2
-color = Color(1, 1, 1, 0.34902)
-
 [node name="Camera" type="Camera2D" parent="."]
 
 [node name="L_Minions" type="Node" parent="."]

@@ -13,7 +13,7 @@ targetSelector = 0
 target = 0
 doOvertime = false
 override_properties = true
-dmg = null
+dmg = Vector2(10, 10)
 
 [resource]
 resource_local_to_scene = true

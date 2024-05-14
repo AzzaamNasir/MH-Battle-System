@@ -43,8 +43,8 @@ func _set_button_properties(button : TextureButton,move : MoveData):
 
 #This will relay the signal from this to the minion
 func _on_move_used(move):
-	hide()
 	emit_signal("moveUsed",move)
+	hide()
 
 #Just used for relaying signal to The MoveSelector Scene from the button
 func _pressed(move : MoveData):

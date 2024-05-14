@@ -10,7 +10,6 @@ func _get_property_list():
 		properties.append({
 		"name" = "dmg",
 		"type" = TYPE_VECTOR2,
-		"hint" = PROPERTY_HINT_ARRAY_TYPE
 		})
 		
 	if type == MOVETYPE.Buffs or type == MOVETYPE.Debuffs:
@@ -58,7 +57,7 @@ var buffAttribute : ATTRIBUTES
 		notify_property_list_changed()
 #How many turns will it last?
 var turnDuration : int = 0
-
+var dmg : Vector2 = Vector2(0,0)
 
 @export var override_properties : bool
 

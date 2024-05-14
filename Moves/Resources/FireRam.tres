@@ -1,31 +1,20 @@
-[gd_resource type="Resource" script_class="MoveData" load_steps=6 format=3 uid="uid://cuj5bigx8n5to"]
+[gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://cuj5bigx8n5to"]
 
 [ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_6jk7v"]
 [ext_resource type="Script" path="res://Moves/MoveData.gd" id="2_dynr0"]
 [ext_resource type="Texture2D" uid="uid://c4qttc8osbclw" path="res://Moves/Sprites/1295_Utilities.SpriteHandler_moveIcon_fireRam.png" id="3_me5dw"]
 
 [sub_resource type="Resource" id="Resource_iaerj"]
+resource_local_to_scene = true
 script = ExtResource("1_6jk7v")
 accuracy = 100
 type = 0
-targetNo = 2
-targetSelector = 1
+targetNo = 3
+targetSelector = 0
 target = 0
 doOvertime = false
 override_properties = true
-dmg = null
-
-[sub_resource type="Resource" id="Resource_65jab"]
-script = ExtResource("1_6jk7v")
-accuracy = 100
-type = 0
-targetNo = 1
-targetSelector = 0
-target = 0
-doOvertime = true
-override_properties = false
-dmg = null
-turnDuration = 3
+dmg = Vector2(0, 0)
 
 [resource]
 resource_local_to_scene = true
@@ -35,4 +24,4 @@ sprite = ExtResource("3_me5dw")
 element = 6
 energy = 20
 cooldown = 0
-effects = Array[ExtResource("1_6jk7v")]([SubResource("Resource_iaerj"), SubResource("Resource_65jab")])
+effects = Array[ExtResource("1_6jk7v")]([SubResource("Resource_iaerj")])

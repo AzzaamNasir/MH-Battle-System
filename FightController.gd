@@ -16,9 +16,9 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 		min.get_node("Sprite").flip_h = true #Set correct orientation
 		get_node("L_Minions/L" + str(k)).add_child(min) #INsert the loaded minion to the scene
 		k+=1
-		min.minionData = min.minionData.duplicate() #Duplicate the minion data so it can be edited individually
+		min.minionData = min.minionData.duplicate() #For unique editing
 		min.set_meta("Team",1)
-		turnOrder.append(min.minionData) #Store the UNIQUE reference to an array which we will use to determin the turn order
+		turnOrder.append(min.minionData) #Store the UNIQUE reference to an array
 		min.SelectionTime.connect(selection)
 		min.select_attempt.connect(_attempt)
 		await min #Wait for the minion to load
@@ -55,5 +55,5 @@ func _select(minion : Node2D, move : MoveData):
 			SelectionManager.activateSelectMode(minion,effect)
 
 func _attempt(minion : Node2D):
-	SelectionManager.attempting = 1
 	SelectionManager.attemptor = minion
+	SelectionManager.attempting = 1
