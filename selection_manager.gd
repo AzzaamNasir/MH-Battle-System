@@ -1,5 +1,7 @@
 extends Node
 
+signal selectActivated(minion,targets,targeter)
+
 var targeter
 var selectMode : bool = false
 var target : int
@@ -9,7 +11,6 @@ var targets_to_get : int:
 	set(new_val):
 		targets_to_get = new_val
 		if new_val == 0:
-			print("Damage time")
 			_hit_targets()
 var moveEffect : MoveEffects
 var attempting
@@ -36,11 +37,14 @@ func activateSelectMode(minion, effect : MoveEffects):
 	targetNo = effect.targetNo
 	selectMode = true
 	targets_to_get = targetNo
+	emit_signal("selectActivated",minion,target,targeter.get_meta("Team"))
 
 func _process(delta: float) -> void:
 	if attempting:
-		print_debug("Recieved: " + targeter.name +" from team "+str(targeter.get_meta("Team")) \
-		+ "attempting to hit " + attemptor.name + "from team "+ str(attemptor.get_meta("Team")))
+		#For clarity
+		print_debug(targeter.name +" from team "+str(targeter.get_meta("Team")) \
+		+ " is attempting to hit " + attemptor.name + " from team "+ str(attemptor.get_meta("Team")))
+		
 		if attemptor.get_meta("Team") != targeter.get_meta("Team"):
 			hitlist.append(attemptor)
 			targets_to_get -= 1
@@ -50,5 +54,6 @@ func _hit_targets():
 	targeter.get("SelectMenu").show()
 	for minion in hitlist:
 		var dmg = randi_range(moveEffect.dmg.x,moveEffect.dmg.y)
-		print(dmg)
+		print("Damege: " + str(dmg))
 		minion._get_affected(dmg)
+	hitlist.clear()

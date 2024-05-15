@@ -16,6 +16,7 @@ texture = ExtResource("3_ws28m")
 [node name="SelectMenu" parent="." instance=ExtResource("3_uq0cv")]
 
 [node name="Control" type="PanelContainer" parent="."]
+self_modulate = Color(1, 1, 1, 0)
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -27,7 +28,10 @@ offset_right = 56.0
 offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
 [node name="ClickDetector" type="Button" parent="Control"]
 unique_name_in_owner = true
+visible = false
 layout_mode = 2

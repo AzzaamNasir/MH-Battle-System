@@ -1,4 +1,4 @@
-extends Node2D
+class_name Minion extends Node2D
 
 @export var minionData : MinionData
 @export var SelectMenu : Control
@@ -20,13 +20,13 @@ func _ready() -> void:
 func _on_click(button : Button):
 	if SelectionManager.selectMode:
 		emit_signal("select_attempt",self)
+		button.hide()
 
 func _calc_move_stats(move : MoveData):
-	print_debug("yep")
 	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
 
 func _get_affected(dmg : int):
 	minionData.health -= dmg
-	print(minionData.health)
+	print_debug(minionData.health)
 	if minionData.health == 0:
 		queue_free()

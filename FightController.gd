@@ -2,9 +2,11 @@ extends Node2D
 
 var turnOrder : Array[MinionData]
 var selection : Callable = Callable(self,"_select")
+var minionList : Array[Node2D]
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$MinionSelector.connect("play_pressed",_start)
+	SelectionManager.selectActivated.connect(applyFilter)
 
 #Will be executed when play is pressed
 func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
@@ -19,6 +21,7 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 		min.minionData = min.minionData.duplicate() #For unique editing
 		min.set_meta("Team",1)
 		turnOrder.append(min.minionData) #Store the UNIQUE reference to an array
+		minionList.append(min)
 		min.SelectionTime.connect(selection)
 		min.select_attempt.connect(_attempt)
 		await min #Wait for the minion to load
@@ -31,6 +34,7 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 		k+=1
 		min.minionData = min.minionData.duplicate()
 		turnOrder.append(min.minionData)
+		minionList.append(min)
 		min.set_meta("Team",2)
 		min.SelectionTime.connect(selection)
 		min.select_attempt.connect(_attempt)
@@ -51,9 +55,20 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 func _select(minion : Node2D, move : MoveData):
 	for effect : MoveEffects in  move.effects:
 		if effect.override_properties:
-			print("Ok we are in")
 			SelectionManager.activateSelectMode(minion,effect)
 
 func _attempt(minion : Node2D):
 	SelectionManager.attemptor = minion
 	SelectionManager.attempting = 1
+
+func applyFilter(minion : Minion,target,targeterTeam):
+	var targetType : int
+	for subject in minionList.duplicate():
+		match targetType:
+			0:
+				if subject.get_meta("Team") != targeterTeam: subject.click_detector.show()
+			1:
+				if subject.get_meta("Team") == targeterTeam: subject.click_detector.show()
+			_:
+				print("Not implemented yet")
+

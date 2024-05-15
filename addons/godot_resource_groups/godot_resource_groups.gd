@@ -28,6 +28,3 @@ func _rebuild_resource_groups():
 		
 		ResourceSaver.save(group)
 		get_editor_interface().get_resource_filesystem().update_file(group.resource_path)
-
-
-	print("Updated ", groups.size(), " resource groups.")
