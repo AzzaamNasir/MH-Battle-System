@@ -10,11 +10,11 @@ script = ExtResource("1_6jk7v")
 accuracy = 100
 type = 0
 targetNo = 3
-targetSelector = 0
+targetSelector = 1
 target = 0
 doOvertime = false
 override_properties = true
-dmg = Vector2(0, 0)
+dmg = Vector2(10, 15)
 
 [resource]
 resource_local_to_scene = true

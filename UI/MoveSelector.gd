@@ -1,3 +1,4 @@
+class_name MoveMenu
 extends Control
 
 var minMoveList : Array[MoveData]
@@ -8,6 +9,8 @@ var minMoveList : Array[MoveData]
 @onready var button4 : TextureButton = %Move4
 @onready var button5 : TextureButton = %Move5
 @onready var button6 : TextureButton = %Move6
+@onready var energy_bar: TextureProgressBar = %Bar
+@onready var energy_label: Label = %Label
 #endregion
 
 signal moveUsed(move : MoveData)
@@ -18,6 +21,9 @@ var setProperties : Callable = Callable(self,"_set_button_properties")
 
 func _ready():
 	await owner.ready
+	energy_bar.max_value = owner.minionData.energy
+	energy_bar.value = energy_bar.max_value
+	energy_label.text = str(energy_bar.value) + "/" + str(energy_bar.max_value) 
 	minMoveList = owner.minionData.MinionMoves
 	for i in len(minMoveList):
 		setProperties.bind(get("button"+str(i+1)),minMoveList[i]).call()
@@ -43,8 +49,8 @@ func _set_button_properties(button : TextureButton,move : MoveData):
 
 #This will relay the signal from this to the minion
 func _on_move_used(move):
-	emit_signal("moveUsed",move)
 	hide()
+	emit_signal("moveUsed",move)
 
 #Just used for relaying signal to The MoveSelector Scene from the button
 func _pressed(move : MoveData):

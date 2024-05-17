@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dcf3n0lefmmyl"]
+[gd_scene load_steps=6 format=3 uid="uid://dcf3n0lefmmyl"]
 
 [ext_resource type="Script" path="res://Minions/Minion.gd" id="1_sx2o3"]
 [ext_resource type="Resource" uid="uid://c7uxwebsxbcsp" path="res://Minions/Resources/Tigertan.tres" id="2_7y1rd"]
 [ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="3_uq0cv"]
 [ext_resource type="Texture2D" uid="uid://ch2ibbwbr268t" path="res://Minions/Sprites/Frostag.png" id="3_ws28m"]
+[ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://UI/MinionStats.tscn" id="5_x484w"]
 
 [node name="Tigertan" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
 script = ExtResource("1_sx2o3")
@@ -14,6 +15,7 @@ SelectMenu = NodePath("SelectMenu")
 texture = ExtResource("3_ws28m")
 
 [node name="SelectMenu" parent="." instance=ExtResource("3_uq0cv")]
+visible = false
 
 [node name="Control" type="PanelContainer" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -35,3 +37,5 @@ size_flags_vertical = 3
 unique_name_in_owner = true
 visible = false
 layout_mode = 2
+
+[node name="MinionStats" parent="." instance=ExtResource("5_x484w")]

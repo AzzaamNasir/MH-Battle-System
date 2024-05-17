@@ -13,7 +13,7 @@ targetSelector = 0
 target = 0
 doOvertime = false
 override_properties = true
-dmg = Vector2(0, 0)
+dmg = Vector2(5, 5)
 
 [sub_resource type="Resource" id="Resource_da7b7"]
 script = ExtResource("1_b68as")

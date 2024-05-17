@@ -1,9 +1,7 @@
-[gd_resource type="Resource" script_class="MinionData" load_steps=6 format=3 uid="uid://cmx4gjcnv8ylt"]
+[gd_resource type="Resource" script_class="MinionData" load_steps=4 format=3 uid="uid://cmx4gjcnv8ylt"]
 
-[ext_resource type="Resource" uid="uid://uo7tjov1ewe0" path="res://Moves/Resources/Claw.tres" id="1_8rtg5"]
 [ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_c01o1"]
 [ext_resource type="Texture2D" uid="uid://bma6a74q7ab4b" path="res://Minions/Sprites/Tazorback.png" id="2_mmcrv"]
-[ext_resource type="Resource" uid="uid://c5kie1ssct2sc" path="res://Moves/Resources/Burn.tres" id="2_xgjkc"]
 [ext_resource type="Resource" uid="uid://cuj5bigx8n5to" path="res://Moves/Resources/FireRam.tres" id="3_gda72"]
 
 [resource]
@@ -13,10 +11,10 @@ name = "Tazorback"
 sprite = ExtResource("2_mmcrv")
 scene = "res://Minions/Scenes/Tazorback.tscn"
 health = 40
-energy = 0
-atk = 0
-healing = 0
+energy = 80
+atk = 50
+healing = 20
 speed = 100
 type1 = 7
 type2 = 8
-MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([ExtResource("1_8rtg5"), ExtResource("2_xgjkc"), ExtResource("3_gda72")])
+MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([ExtResource("3_gda72")])

@@ -43,9 +43,9 @@ func _get_property_list():
 ##no of enemies/allies it targets
 @export var targetNo : int = 1 
 ##Are the targets are selected by player or at random. 0=Player 1=Random 2=All
-@export_enum("Player","Random","All") var targetSelector : int= 0    
+@export_enum("Player","Random","Self","All") var targetSelector : int= 0    
 ##Does it target enemies or allies. 0=Enemy,1=Ally,2=Self
-@export_enum("Enemy","Ally","Self") var target : int = 0
+@export_enum("Enemy","Ally") var target : int = 0
 ##How much does it buff(In percentage) Use negative if its a debuff. Leave at zero for effects like frozen
 var buffPercent = 0
 ##What does it buff?
