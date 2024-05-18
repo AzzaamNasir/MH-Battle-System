@@ -1,4 +1,5 @@
-class_name Minion extends Node2D
+extends Node2D
+class_name Minion 
 
 @export var minionData : MinionData
 @export var SelectMenu : MoveMenu
