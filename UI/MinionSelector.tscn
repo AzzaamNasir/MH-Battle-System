@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://drejxjrb6er7u"]
 
 [ext_resource type="Script" path="res://UI/MinionSelector.gd" id="1_t346f"]
-[ext_resource type="Resource" uid="uid://1md1sfgrxy4t" path="res://Minions/Minions.tres" id="2_0lioa"]
+[ext_resource type="Resource" uid="uid://1md1sfgrxy4t" path="res://Minions/Minions.tres" id="2_dbu5a"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_uwo11"]
 
 [node name="MinionSelector" type="CanvasLayer"]
 layer = -1
 script = ExtResource("1_t346f")
-minions = ExtResource("2_0lioa")
+minions = ExtResource("2_dbu5a")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchors_preset = 15
