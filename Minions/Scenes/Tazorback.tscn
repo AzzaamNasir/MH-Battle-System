@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ls7mw7qg0b28"]
 
-[ext_resource type="Script" path="res://Minions/MinionBehaviour.gd" id="1_6fqhp"]
+[ext_resource type="Script" path="res://Minions/Minion.gd" id="1_6fqhp"]
 [ext_resource type="Resource" uid="uid://cmx4gjcnv8ylt" path="res://Minions/Resources/Tazorback.tres" id="2_snpaj"]
 [ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://UI/MinionStats.tscn" id="4_c6yp5"]
 [ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="7_1twlf"]
