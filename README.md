@@ -1,7 +1,7 @@
 ## How do I open this? And run it?
 First, download the zip file from here.
 You will need to download Godot 4.2 or above. Then open Godot and click import, and then select the import option and select the zip file you have downloaded.
-After the project opens in Godot, Just click the play button on the top right(Or press F5). The game will tell you what to do from there.
+After the project opens in Godot for the first time, close it and open it again. Then click the play button on the top right(Or press F5). The game will tell you what to do from there.
 
 ## Why does this exist?
 My primary goal in creating this was to provide a way to ***test out new minion/move ideas as well as balance out existing minions*** before we get them into the final game.
