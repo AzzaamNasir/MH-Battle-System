@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="MoveData" load_steps=6 format=3 uid="uid://dcrg10pgsjoak"]
+
+[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_4meh3"]
+[ext_resource type="Script" path="res://Moves/MoveData.gd" id="1_imvsn"]
+[ext_resource type="Texture2D" uid="uid://c1unqyvogqtwm" path="res://Moves/Sprites/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png" id="3_nhtbd"]
+
+[sub_resource type="Resource" id="Resource_govcu"]
+script = ExtResource("1_4meh3")
+accuracy = 100
+type = 0
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = false
+override_properties = true
+dmg = Vector2(5, 5)
+
+[sub_resource type="Resource" id="Resource_v4tkm"]
+script = ExtResource("1_4meh3")
+accuracy = 100
+type = 0
+targetNo = 1
+targetSelector = 0
+target = 0
+doOvertime = true
+override_properties = false
+dmg = Vector2(5, 5)
+turnDuration = 3
+
+[resource]
+script = ExtResource("1_imvsn")
+name = "Poison Tooth"
+sprite = ExtResource("3_nhtbd")
+element = 2
+energy = 20
+cooldown = 0
+effects = Array[ExtResource("1_4meh3")]([SubResource("Resource_govcu"), SubResource("Resource_v4tkm")])

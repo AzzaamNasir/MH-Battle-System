@@ -1,18 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dm5i3etlvw3s3"]
+[gd_scene load_steps=4 format=3 uid="uid://dm5i3etlvw3s3"]
 
 [ext_resource type="Script" path="res://FightController.gd" id="1_3fvvi"]
 [ext_resource type="PackedScene" uid="uid://drejxjrb6er7u" path="res://UI/MinionSelector.tscn" id="2_yg1mp"]
-[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="3_ks6dk"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_nfboh"]
-
-[sub_resource type="Resource" id="Resource_l3wp8"]
-resource_local_to_scene = true
-script = ExtResource("3_ks6dk")
-base_folder = "res://Minions/Resources"
-includes = Array[String](["*.tres"])
-excludes = Array[String]([])
-paths = Array[String](["res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])
 
 [node name="Arena" type="Node2D"]
 script = ExtResource("1_3fvvi")
@@ -60,7 +51,6 @@ texture = SubResource("CanvasTexture_nfboh")
 
 [node name="MinionSelector" parent="." instance=ExtResource("2_yg1mp")]
 layer = 10
-minions = SubResource("Resource_l3wp8")
 
 [node name="ComponentManager" type="Node" parent="."]
 

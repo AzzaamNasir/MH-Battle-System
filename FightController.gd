@@ -93,7 +93,7 @@ func game_start():
 	turnOrder[turn].SelectMenu.show()
 
 func _on_death(minion):
-	turn -= 1
+	if turnOrder.find(minion) != len(turnOrder)-1: turn -= 1 
 	turnOrder.erase(minion)
 	team_1.erase(minion)
 	team_2.erase(minion)

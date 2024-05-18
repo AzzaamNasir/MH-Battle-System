@@ -1,11 +1,9 @@
 [gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://1md1sfgrxy4t"]
 
-[ext_resource type="Script" path="res://addons/godot_resource_groups/resource_group.gd" id="1_8brmp"]
+[ext_resource type="Script" path="res://resource_group.gd" id="1_lm8ty"]
 
 [resource]
-resource_local_to_scene = true
-script = ExtResource("1_8brmp")
-base_folder = "res://Minions/Resources"
-includes = Array[String](["*.tres"])
-excludes = Array[String]([])
-paths = Array[String](["res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])
+script = ExtResource("1_lm8ty")
+run = false
+searchPath = "res://Minions/Resources"
+pathList = Array[String](["res://Minions/Resources/Sapent.tres", "res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])

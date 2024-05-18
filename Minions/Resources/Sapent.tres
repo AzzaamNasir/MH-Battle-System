@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=4 format=3 uid="uid://be0wr41ui2l8y"]
+
+[ext_resource type="Resource" uid="uid://dcrg10pgsjoak" path="res://Moves/Resources/PosionTooth.tres" id="1_dpji8"]
+[ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_pxdop"]
+[ext_resource type="Texture2D" uid="uid://cfumny247wd0j" path="res://Minions/Sprites/Sapent.png" id="2_mxur3"]
+
+[resource]
+script = ExtResource("1_pxdop")
+name = "Sapent"
+sprite = ExtResource("2_mxur3")
+scene = "res://Minions/Scenes/Sapent.tscn"
+health = 50
+energy = 42
+atk = 58
+healing = 40
+speed = 80
+type1 = 3
+type2 = 0
+MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([ExtResource("1_dpji8")])
