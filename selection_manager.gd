@@ -59,7 +59,6 @@ func _process(delta: float) -> void:
 func _hit_targets():
 	for minion in hitlist:
 		var dmg = randi_range(moveEffect.dmg.x,moveEffect.dmg.y)
-		print_debug(dmg)
 		minion._get_affected(dmg)
 	emit_signal("move_complete")
 
@@ -67,7 +66,7 @@ func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion]
 	if team1.find(minion) != -1:
 		match teamToSelect:
 			0:#Enemy team
-				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: 
+				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3:
 					hitlist.append_array(team2)
 				else:
 					var i = 0
@@ -83,7 +82,7 @@ func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion]
 				_hit_targets()
 			1:#Own team
 				if len(team1) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team1)
-				
+
 				else:
 					var i = 0
 					var temp : Array[int] = []
@@ -101,16 +100,16 @@ func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion]
 		match teamToSelect:
 			0:
 				if len(team1) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team1)
-				
+
 				else:
 					for i in range(0,targets_to_get):
 						var idx = randi_range(0,len(team1)-1)
 						hitlist.append(team1[idx])
 				_hit_targets()
-			
+
 			1:
 				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team2)
-				
+
 				else:
 					var i = 0
 					var temp : Array[int] = []

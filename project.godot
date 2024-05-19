@@ -23,7 +23,7 @@ resources_spreadsheet_view/context_menu_on_leftclick=false
 config/name="Min-Hero"
 run/main_scene="res://Arena.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/show_image=false
 
 [autoload]
 

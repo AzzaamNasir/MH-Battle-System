@@ -1,5 +1,5 @@
 extends Node2D
-class_name Minion 
+class_name Minion
 
 @export var minionData : MinionData
 @export var SelectMenu : MoveMenu
@@ -23,9 +23,11 @@ var energy : int:
 	set(value):
 		energy = clamp(energy,0,minionData.energy)
 
+var effectList : Array[MoveEffects]
+
 func _ready() -> void:
 	health = minionData.health
-	atk= minionData.atk	
+	atk= minionData.atk
 	speed= minionData.speed
 	healing= minionData.healing
 	energy= minionData.energy
@@ -44,7 +46,7 @@ func _on_click(button : Button):
 		button.hide()
 
 func _calc_move_stats(move : MoveData):
-	energy -= move.energy 
+	energy -= move.energy
 	SelectMenu.energy_label.text = str(energy) + "/" + str(minionData.energy)
 	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
 
@@ -54,6 +56,14 @@ func _get_affected(val : int):
 		emit_signal("minion_died",self)
 		queue_free()
 	emit_signal("affected","damage",val)
-	
+
+func _add_effect(move : MoveEffects):
+	effectList.append(move)
+	effectList.append(move.turnDuration)
+
 func move_processed():
 	click_detector.hide()
+
+func _apply_effects():
+	pass
+

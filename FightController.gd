@@ -1,6 +1,8 @@
 extends Node2D
 
 signal move_processed
+signal cycle_complete
+
 var team_1 : Array[Minion]
 var team_2 : Array[Minion]
 var turnOrder : Array[Minion]
@@ -17,9 +19,9 @@ func _ready():
 #Will be executed when play is pressed
 func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 	var k = 1
-	
+
 	for minion in team1:
-		var min : Node2D = load(minion.scene).instantiate() #Load all selected minions
+		var min : Minion = load(minion.scene).instantiate() #Load all selected minions
 		min.add_to_group("Team 1")
 		min.get_node("Sprite").flip_h = true #Set correct orientation
 		get_node("L_Minions/L" + str(k)).add_child(min) #INsert the loaded minion to the scene
@@ -32,8 +34,9 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 		min.minion_died.connect(_on_death)
 		min.SelectionTime.connect(selection)
 		min.select_attempt.connect(_attempt)
+		cycle_complete.connect(min._apply_effects)
 		await min #Wait for the minion to load
-		
+
 	k=1
 	for minion in team2:
 		var min : Node2D = load(minion.scene).instantiate()
@@ -48,8 +51,9 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 		min.minion_died.connect(_on_death)
 		min.SelectionTime.connect(selection)
 		min.select_attempt.connect(_attempt)
+		cycle_complete.connect(min._apply_effects)
 		await min
-	
+
 	#Now we determine the turn order using bubble sort
 	for i in len(turnOrder)-1:
 		for j in len(turnOrder)-1-i:
@@ -57,7 +61,7 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 				var temp = turnOrder[j]
 				turnOrder[j] = turnOrder[j+1]
 				turnOrder[j+1] = temp
-	
+
 	turnOrder.reverse()#This will mak turn order go from highest speed to lowest speed
 	game_start()
 
@@ -71,10 +75,10 @@ func applyFilter(minion : Minion,target,targeterTeam):
 	for subject in minionList.duplicate():
 		match target:
 			0:
-				if subject.get_meta("Team") != targeterTeam: 
+				if subject.get_meta("Team") != targeterTeam:
 					subject.click_detector.show()
 			1:
-				if subject.get_meta("Team") == targeterTeam: 
+				if subject.get_meta("Team") == targeterTeam:
 					subject.click_detector.show()
 
 
@@ -84,7 +88,6 @@ func _select(minion : Node2D, move : MoveData):
 			last_effect = true
 			_on_button_pressed()
 			break
-		print_debug(effect.override_properties)
 		if move.effects.find(effect) == len(move.effects)-1:
 			last_effect = true
 		if effect.override_properties == true:
@@ -104,11 +107,15 @@ func _on_button_pressed() -> void:
 
 func game_start():
 	if len(minionList) == 0: return
-	turn = 0 if turn >= len(turnOrder)-1 else turn+1
+	if turn >= len(turnOrder)-1:
+		emit_signal("cycle_complete")
+		turn = 0
+	else: turn = turn+1
 	turnOrder[turn].SelectMenu.show()
 
 func _on_death(minion):
-	if turnOrder.find(minion) != len(turnOrder)-1 or turnOrder.find(minion) != 0: turn -= 1 
+	if turnOrder.find(minion) != len(turnOrder)-1 or turnOrder.find(minion) != 0: turn -= 1
+	SelectionManager.hitlist.erase(minion)
 	turnOrder.erase(minion)
 	team_1.erase(minion)
 	team_2.erase(minion)
