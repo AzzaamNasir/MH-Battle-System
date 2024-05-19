@@ -13,11 +13,15 @@ signal affected(stat : String,amount : int)
 @onready var click_detector: Button = %ClickDetector
 var moveUsed : Callable = Callable(self, "_calc_move_stats")
 
-var health : int
+var health : float:
+	set(value):
+		health = clamp(value,0,minionData.health)
 var atk : int
 var speed : int
 var healing : int
-var energy : int
+var energy : int:
+	set(value):
+		energy = clamp(energy,0,minionData.energy)
 
 func _ready() -> void:
 	health = minionData.health
@@ -45,12 +49,12 @@ func _calc_move_stats(move : MoveData):
 	
 	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
 
-func _get_affected(dmg : int):
-	health -= dmg
+func _get_affected(val : int):
+	health -= val
 	if health <= 0:
 		emit_signal("minion_died",self)
 		queue_free()
-	emit_signal("affected","damage",dmg)
+	emit_signal("affected","damage",val)
 	
 func move_processed():
 	click_detector.hide()

@@ -72,14 +72,13 @@ func _attempt(minion : Node2D):
 func applyFilter(minion : Minion,target,targeterTeam):
 	var targetType : int
 	for subject in minionList.duplicate():
-		match targetType:
+		match target:
 			0:
 				if subject.get_meta("Team") != targeterTeam: 
 					subject.click_detector.show()
 			1:
-				if subject.get_meta("Team") == targeterTeam: subject.click_detector.show()
-			_:
-				print("Not implemented yet")
+				if subject.get_meta("Team") == targeterTeam: 
+					subject.click_detector.show()
 
 #Turn order stores the characters in the order in which they play
 #game_start just allows the next character in turnOrder to play

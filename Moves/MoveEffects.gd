@@ -6,13 +6,13 @@ class_name MoveEffects
 func _get_property_list():
 	var properties = []
 	
-	if type == MOVETYPE.Damages or type == MOVETYPE.Heals:
+	if type == MOVETYPE.DamagesOrHeals:
 		properties.append({
 		"name" = "dmg",
 		"type" = TYPE_VECTOR2,
 		})
 		
-	if type == MOVETYPE.Buffs or type == MOVETYPE.Debuffs:
+	if type == MOVETYPE.BuffsOrDebuffs:
 		properties.append({
 		"name" = "buffAttribute",
 		"type" = TYPE_INT,
@@ -36,7 +36,7 @@ func _get_property_list():
 ##accuracy of the attack(in percentage)
 @export var accuracy : int = 100
 ##What does the move do?
-@export var type : MOVETYPE = MOVETYPE.Damages:
+@export var type : MOVETYPE = MOVETYPE.DamagesOrHeals:
 	set(value):
 		type = value
 		notify_property_list_changed()
@@ -73,8 +73,6 @@ enum ATTRIBUTES{
 }
 
 enum MOVETYPE{
-	Damages,
-	Heals,
-	Buffs,
-	Debuffs
+	DamagesOrHeals,
+	BuffsOrDebuffs
 }

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="3_7r58q"]
 [ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://UI/MinionStats.tscn" id="4_ujywg"]
 
-[node name="Tazorback" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
+[node name="Tigertan" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
 script = ExtResource("1_r3djs")
 minionData = ExtResource("2_8px2g")
 SelectMenu = NodePath("SelectMenu")

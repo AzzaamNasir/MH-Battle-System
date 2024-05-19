@@ -16,16 +16,16 @@ script = ExtResource("1_3fvvi")
 position = Vector2(-136, -128)
 
 [node name="L2" type="Node2D" parent="L_Minions"]
-position = Vector2(-512, -128)
+position = Vector2(-336, 0)
 
 [node name="L3" type="Node2D" parent="L_Minions"]
-position = Vector2(-512, 96)
-
-[node name="L4" type="Node2D" parent="L_Minions"]
 position = Vector2(-136, 104)
 
+[node name="L4" type="Node2D" parent="L_Minions"]
+position = Vector2(-512, -128)
+
 [node name="L5" type="Node2D" parent="L_Minions"]
-position = Vector2(-336, 0)
+position = Vector2(-512, 96)
 
 [node name="R_Minions" type="Node" parent="."]
 
@@ -33,16 +33,16 @@ position = Vector2(-336, 0)
 position = Vector2(120, -128)
 
 [node name="R2" type="Node2D" parent="R_Minions"]
-position = Vector2(128, 104)
+position = Vector2(313, 0)
 
 [node name="R3" type="Node2D" parent="R_Minions"]
-position = Vector2(480, 104)
+position = Vector2(128, 104)
 
 [node name="R4" type="Node2D" parent="R_Minions"]
 position = Vector2(480, -128)
 
 [node name="R5" type="Node2D" parent="R_Minions"]
-position = Vector2(312, 0)
+position = Vector2(480, 104)
 
 [node name="Divider" type="Sprite2D" parent="."]
 position = Vector2(-4.76837e-07, 4.00002)

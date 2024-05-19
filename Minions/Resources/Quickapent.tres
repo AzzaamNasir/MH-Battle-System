@@ -2,13 +2,13 @@
 
 [ext_resource type="Resource" uid="uid://dcrg10pgsjoak" path="res://Moves/Resources/PosionTooth.tres" id="1_dpji8"]
 [ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_pxdop"]
-[ext_resource type="Texture2D" uid="uid://cfumny247wd0j" path="res://Minions/Sprites/Sapent.png" id="2_mxur3"]
+[ext_resource type="Texture2D" uid="uid://di4vmxotrlykq" path="res://Minions/Sprites/Quickapent.png" id="3_11rlf"]
 
 [resource]
 script = ExtResource("1_pxdop")
-name = "Sapent"
-sprite = ExtResource("2_mxur3")
-scene = "res://Minions/Scenes/Sapent.tscn"
+name = "Quickapent"
+sprite = ExtResource("3_11rlf")
+scene = "res://Minions/Scenes/Quickapent.tscn"
 health = 50
 energy = 42
 atk = 58

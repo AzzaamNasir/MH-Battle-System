@@ -39,10 +39,14 @@ func activateSelectMode(minion, effect : MoveEffects,team1 : Array[Minion],team2
 	selectMode = true
 	targets_to_get = targetNo
 	match effect.targetSelector:
-		1:
-			if effect.target == 0:
-				_select_hitlist(minion,team1,team2)
-		_:
+		1:#Random
+			_select_hitlist(minion,team1,team2,effect.target)
+		2:#Self
+			hitlist.append(minion)
+			_hit_targets()
+		3:#All
+			_select_hitlist(minion,team1,team2,effect.target)
+		0:#Player selects
 			emit_signal("selectActivated",minion,target,targeter.get_meta("Team"))
 
 func _process(delta: float) -> void:
@@ -50,35 +54,76 @@ func _process(delta: float) -> void:
 		#For clarity
 		print_debug(targeter.name +" from team "+str(targeter.get_meta("Team")) \
 		+ " is attempting to hit " + attemptor.name + " from team "+ str(attemptor.get_meta("Team")))
-		
-		if attemptor.get_meta("Team") != targeter.get_meta("Team"):
-			hitlist.append(attemptor)
-			targets_to_get -= 1
-			attempting = false
+		hitlist.append(attemptor)
+		targets_to_get -= 1
+		attempting = false
 
 func _hit_targets():
-	print(hitlist)
 	for minion in hitlist:
 		var dmg = randi_range(moveEffect.dmg.x,moveEffect.dmg.y)
-		print(dmg)
+		print_debug(dmg)
 		minion._get_affected(dmg)
 	hitlist.clear()
 	emit_signal("move_complete")
 
-func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion]):
+func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion],teamToSelect : int):
 	if team1.find(minion) != -1:
-		if len(team2) <= targets_to_get:
-			hitlist.append_array(team2)
-		else:
-			for i in range(0,targets_to_get):
-				var idx = randi_range(0,len(team2))
-				if hitlist.find(team2[idx]) != -1 : hitlist.append(team2[idx])
-		_hit_targets()
+		match teamToSelect:
+			0:#Enemy team
+				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team2)
+				
+				else:
+					var i = 0
+					var temp : Array[int] = []
+					while i < targets_to_get:
+						randomize()
+						var idx = randi_range(0,len(team2)-1)
+						if temp.find(idx) == -1:
+							hitlist.append(team2[idx])
+							temp.append(idx)
+							i += 1
+						else: continue
+				_hit_targets()
+			1:#Own team
+				if len(team1) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team1)
+				
+				else:
+					var i = 0
+					var temp : Array[int] = []
+					while i < targets_to_get:
+						randomize()
+						var idx = randi_range(0,len(team1)-1)
+						if temp.find(idx) == -1:
+							hitlist.append(team1[idx])
+							temp.append(idx)
+							i += 1
+						else: continue
+				_hit_targets()
+
 	if team2.find(minion) != -1:
-		if len(team1) <= targets_to_get:
-			hitlist.append_array(team1)
-		else:
-			for i in range(0,targets_to_get):
-				var idx = randi_range(0,len(team1)-1)
-				hitlist.append(team1[idx])
-		_hit_targets()
+		match teamToSelect:
+			0:
+				if len(team1) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team1)
+				
+				else:
+					for i in range(0,targets_to_get):
+						var idx = randi_range(0,len(team1)-1)
+						hitlist.append(team1[idx])
+				_hit_targets()
+			
+			1:
+				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team2)
+				
+				else:
+					var i = 0
+					var temp : Array[int] = []
+					while i < targets_to_get:
+						randomize()
+						var idx = randi_range(0,len(team2)-1)
+						if temp.find(idx) == -1:
+							hitlist.append(team2[idx])
+							temp.append(idx)
+							i += 1
+						else: continue
+				_hit_targets()
+

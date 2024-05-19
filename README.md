@@ -1,3 +1,7 @@
+### Things added this past week(Since 18th May):
+- Now all types of selections are valid and work perfectly(i.e. Self and All can be selected as targets for the effects)
+- Healing attacks work, just put the value in dmg in negative
+
 ## How do I open this? And run it?
 First, download the zip file from here.
 You will need to download Godot 4.2 or above. Then open Godot and click import, and then select the import option and select the zip file you have downloaded.
@@ -17,9 +21,7 @@ I am yet to implement the following features:
 
 These next things are implemented, but might not work as intended in the projects current stage:
 
-1. Healing attacks
-2. Multiple effect attacks
-3. Moves which act on allies/ Attacks which require manual multi-target selection(Will probably work fine, but can have some bugs)
+1. Multiple effect attacks
 
 These next things might be implemented if I have time:
 1. Battle modifiers(Like shield bubbles)
@@ -48,13 +50,13 @@ Step 4: Double Click on the new .tres file that was created. It should open up i
 Step 5: Now it's time to add what the move does. This might sound a bit complicated. The way i'm handling these moves is by having each move consist of multiple Moveeffects. So for example, burn is made of 2 MoveEffects. 1. Damage the enemy for 20
 damage. 2. Damage the enemy for 5 points per turn for 3 turns. Let's see how to create it
   - Click on Add Element -> empty -> New MoveEffect. I'll now explain what each property is
-      - Accuracy,Target no, Type, Target are pretty self explanatory
-      - Target Selector: Who will choose which minions are targeted? Are they chosen by the player, at random, or is it the minion attacking, or is it all the minions of the enemy or ally team?
-      - Dmg: The x and y are basically Min-Max. Like batch bolt deals from 1-45 damage. So x is 1, y is 45. For healing, put negative values
-      - Do Overtime: Will this effect last over time? Only use this in the particular effect, not for the move e.g. in the Burn example, only the 2nd effect will have Do Overtime checked
-      - Buff attribute: What attribute will be buffed? (Only shown if Type is buffed/debuffed) Put in negative for debuff
-      - BUff percent: Self explanatory
-      - Override properties: Basically means whether this effect should have its own targets. for example, in Burn, you want both the immediate and overtime damage to happen to the same target. So you will have Override checked in the first effect since you have to select enemies, but unchecked in the 2nd because you want to act on the same enemies as before
+	  - Accuracy,Target no, Type, Target are pretty self explanatory
+	  - Target Selector: Who will choose which minions are targeted? Are they chosen by the player, at random, or is it the minion attacking, or is it all the minions of the enemy or ally team?
+	  - Dmg: The x and y are basically Min-Max. Like batch bolt deals from 1-45 damage. So x is 1, y is 45. For healing, put negative values
+	  - Do Overtime: Will this effect last over time? Only use this in the particular effect, not for the move e.g. in the Burn example, only the 2nd effect will have Do Overtime checked
+	  - Buff attribute: What attribute will be buffed? (Only shown if Type is buffed/debuffed) Put in negative for debuff
+	  - BUff percent: Self explanatory
+	  - Override properties: Basically means whether this effect should have its own targets. for example, in Burn, you want both the immediate and overtime damage to happen to the same target. So you will have Override checked in the first effect since you have to select enemies, but unchecked in the 2nd because you want to act on the same enemies as before
   - Fill the properties respectively. Repeat this for all the effects you need
 
 **Congrats! Your move has been created. You can now use it in any minion**

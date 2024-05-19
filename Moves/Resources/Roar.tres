@@ -13,8 +13,6 @@ targetSelector = 0
 target = 0
 doOvertime = false
 override_properties = true
-buffAttribute = 0
-buffPercent = -67
 
 [resource]
 resource_local_to_scene = true
