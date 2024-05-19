@@ -1,6 +1,8 @@
 ### Things added this past week(Since 18th May):
 - Now all types of selections are valid and work perfectly(i.e. Self and All can be selected as targets for the effects)
 - Healing attacks work, just put the value in dmg in negative
+- Game no longer crashes if minion dies before using it's last MoveEffect
+- Override properties now works properly
 
 ## How do I open this? And run it?
 First, download the zip file from here.

@@ -13,19 +13,18 @@ targetSelector = 0
 target = 0
 doOvertime = false
 override_properties = true
-dmg = Vector2(5, 5)
+dmg = Vector2(10, 10)
 
-[sub_resource type="Resource" id="Resource_v4tkm"]
+[sub_resource type="Resource" id="Resource_5ee08"]
 script = ExtResource("1_4meh3")
 accuracy = 100
 type = 0
 targetNo = 1
 targetSelector = 0
 target = 0
-doOvertime = true
+doOvertime = false
 override_properties = false
-dmg = Vector2(5, 5)
-turnDuration = 3
+dmg = Vector2(20, 20)
 
 [resource]
 script = ExtResource("1_imvsn")
@@ -34,4 +33,4 @@ sprite = ExtResource("3_nhtbd")
 element = 2
 energy = 20
 cooldown = 0
-effects = Array[ExtResource("1_4meh3")]([SubResource("Resource_govcu"), SubResource("Resource_v4tkm")])
+effects = Array[ExtResource("1_4meh3")]([SubResource("Resource_govcu"), SubResource("Resource_5ee08")])

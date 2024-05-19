@@ -7,6 +7,7 @@ var turnOrder : Array[Minion]
 var selection : Callable = Callable(self,"_select")
 var minionList : Array[Node2D]
 var turn : int = -1
+var last_effect : bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$MinionSelector.connect("play_pressed",_start)
@@ -60,10 +61,6 @@ func _start(team1 : Array[MinionData],team2 : Array[MinionData]):
 	turnOrder.reverse()#This will mak turn order go from highest speed to lowest speed
 	game_start()
 
-func _select(minion : Node2D, move : MoveData):
-	for effect : MoveEffects in  move.effects:
-		if effect.override_properties:
-			SelectionManager.activateSelectMode(minion,effect,team_1,team_2)
 
 func _attempt(minion : Node2D):
 	SelectionManager.attemptor = minion
@@ -80,19 +77,38 @@ func applyFilter(minion : Minion,target,targeterTeam):
 				if subject.get_meta("Team") == targeterTeam: 
 					subject.click_detector.show()
 
-#Turn order stores the characters in the order in which they play
-#game_start just allows the next character in turnOrder to play
-#_on_death executes whenever a character dies 
+
+func _select(minion : Node2D, move : MoveData):
+	for effect : MoveEffects in  move.effects:
+		if !minion:
+			last_effect = true
+			_on_button_pressed()
+			break
+		print_debug(effect.override_properties)
+		if move.effects.find(effect) == len(move.effects)-1:
+			last_effect = true
+		if effect.override_properties == true:
+			SelectionManager.activateSelectMode(minion,effect,team_1,team_2)
+		else:
+			SelectionManager.moveEffect = effect
+			SelectionManager._hit_targets()
+		await move_processed
+
 func _on_button_pressed() -> void:
+	if last_effect == true:
+		last_effect = false
+		game_start()
+	await get_tree().create_timer(pow(10,-1000000000000000000)).timeout#Don't mind this line, it's a VERY weird fix
 	emit_signal("move_processed")
-	game_start()
+
 
 func game_start():
+	if len(minionList) == 0: return
 	turn = 0 if turn >= len(turnOrder)-1 else turn+1
 	turnOrder[turn].SelectMenu.show()
 
 func _on_death(minion):
-	if turnOrder.find(minion) != len(turnOrder)-1: turn -= 1 
+	if turnOrder.find(minion) != len(turnOrder)-1 or turnOrder.find(minion) != 0: turn -= 1 
 	turnOrder.erase(minion)
 	team_1.erase(minion)
 	team_2.erase(minion)

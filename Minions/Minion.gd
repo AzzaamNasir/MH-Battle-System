@@ -46,7 +46,6 @@ func _on_click(button : Button):
 func _calc_move_stats(move : MoveData):
 	energy -= move.energy 
 	SelectMenu.energy_label.text = str(energy) + "/" + str(minionData.energy)
-	
 	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
 
 func _get_affected(val : int):

@@ -47,11 +47,11 @@ func _get_property_list():
 ##Does it target enemies or allies. 0=Enemy,1=Ally,2=Self
 @export_enum("Enemy","Ally") var target : int = 0
 ##How much does it buff(In percentage) Use negative if its a debuff. Leave at zero for effects like frozen
-var buffPercent = 0
+var buffPercent := 0
 ##What does it buff?
 var buffAttribute : ATTRIBUTES
 ##Does it do anything over time?
-@export var doOvertime : bool:
+@export var doOvertime : bool = false:
 	set(value):
 		doOvertime = value
 		notify_property_list_changed()
@@ -59,7 +59,7 @@ var buffAttribute : ATTRIBUTES
 var turnDuration : int = 0
 var dmg : Vector2 = Vector2(0,0)
 
-@export var override_properties : bool
+@export var override_properties : bool = false
 
 enum ATTRIBUTES{
 	Attack,

@@ -11,10 +11,6 @@ class_name ResourceGroup extends Resource
 @export_dir var searchPath : String = ""
 @export var pathList : Array[String]
 
-func _init() -> void:
-	if Engine.is_editor_hint():
-		EditorInterface.get_resource_filesystem().connect("filesystem_changed",scan)
-
 func load_all_into() -> Array[MinionData]:
 	var list : Array[MinionData]
 	for path in pathList:

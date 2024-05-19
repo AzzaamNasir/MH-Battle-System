@@ -31,6 +31,7 @@ enum targetType{
 }
 
 func activateSelectMode(minion, effect : MoveEffects,team1 : Array[Minion],team2 : Array[Minion]):
+	hitlist.clear()
 	moveEffect = effect
 	targeter = minion
 	target = effect.target
@@ -51,9 +52,6 @@ func activateSelectMode(minion, effect : MoveEffects,team1 : Array[Minion],team2
 
 func _process(delta: float) -> void:
 	if attempting:
-		#For clarity
-		print_debug(targeter.name +" from team "+str(targeter.get_meta("Team")) \
-		+ " is attempting to hit " + attemptor.name + " from team "+ str(attemptor.get_meta("Team")))
 		hitlist.append(attemptor)
 		targets_to_get -= 1
 		attempting = false
@@ -63,15 +61,14 @@ func _hit_targets():
 		var dmg = randi_range(moveEffect.dmg.x,moveEffect.dmg.y)
 		print_debug(dmg)
 		minion._get_affected(dmg)
-	hitlist.clear()
 	emit_signal("move_complete")
 
 func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion],teamToSelect : int):
 	if team1.find(minion) != -1:
 		match teamToSelect:
 			0:#Enemy team
-				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: hitlist.append_array(team2)
-				
+				if len(team2) <= targets_to_get or moveEffect.targetSelector == 3: 
+					hitlist.append_array(team2)
 				else:
 					var i = 0
 					var temp : Array[int] = []
