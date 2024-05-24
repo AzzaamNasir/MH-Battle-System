@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb2h42skrxd2n"
-path="res://.godot/imported/Kel'ba.png-ad71eb58f8fbfd090806c0407d9ee05b.ctex"
+path="res://.godot/imported/Kel'ba.png-3bfb9187e143915ce11a517803fbe29f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Kel'ba.png"
-dest_files=["res://.godot/imported/Kel'ba.png-ad71eb58f8fbfd090806c0407d9ee05b.ctex"]
+source_file="res://minions/sprites/Kel'ba.png"
+dest_files=["res://.godot/imported/Kel'ba.png-3bfb9187e143915ce11a517803fbe29f.ctex"]
 
 [params]
 

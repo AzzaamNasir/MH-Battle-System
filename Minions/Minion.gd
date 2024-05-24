@@ -1,69 +1,98 @@
 extends Node2D
 class_name Minion
+## The main minion class, which contains and manages all the stats of the minions
 
-@export var minionData : MinionData
-@export var SelectMenu : MoveMenu
+signal minion_died(minion : Minion)
+signal minion_selected(minion : Minion)
+signal minion_move_selected(minion : Minion, move : MoveData)
+signal minion_affected
+signal minion_stat_effected()
 
-signal minion_died(minion)
-signal select_attempt(minion)
-signal SelectionTime(minion ,move : MoveData)
-signal affected(stat : String,amount : int)
+@export var minion_data : MinionData
 
-@onready var sprite: Sprite2D = $Sprite
-@onready var click_detector: Button = %ClickDetector
-var moveUsed : Callable = Callable(self, "_calc_move_stats")
-
-var health : float:
-	set(value):
-		health = clamp(value,0,minionData.health)
+var health : int:
+	set(value): # Whenever health is set, limit it to the range 0 and max health
+		health = clampi(value,0,minion_data.health)
+var energy : int: 
+	set(value): # Whenever energy is set, limit it to the range 0 and max energy
+		energy = clampi(value,0,minion_data.energy)
 var atk : int
 var speed : int
 var healing : int
-var energy : int:
-	set(value):
-		energy = clamp(energy,0,minionData.energy)
 
-var effectList : Array[MoveEffects]
+## List of all the effects(Status and overtime damage) the minion currently has
+var effect_list : Array[TimedEffect]
+
+@onready var move_menu : MoveMenu = %MoveMenu
+@onready var minion_stats: MinionStats = %MinionStats
+@onready var sprite: Sprite2D = $Sprite
+@onready var click_detector: Button = %ClickDetector
+
 
 func _ready() -> void:
-	health = minionData.health
-	atk= minionData.atk
-	speed= minionData.speed
-	healing= minionData.healing
-	energy= minionData.energy
-	get_parent().get_parent().get_parent().move_processed.connect(move_processed)
-	click_detector.pressed.connect(Callable(self,"_on_click").bind(click_detector))
-	click_detector.size = sprite.get_rect().size
-	$Sprite.texture = minionData.sprite
-	SelectMenu.moveUsed.connect(moveUsed)
-	SelectMenu.energy_bar.max_value = minionData.energy
-	SelectMenu.energy_bar.value = minionData.energy
-	SelectMenu.energy_label.text = str(minionData.energy) + "/" + str(minionData.energy)
+	#region Initializing Stats
+	# Initializing minion stats
+	%Sprite.texture = minion_data.sprite
+	health = minion_data.health
+	atk = minion_data.atk
+	speed = minion_data.speed
+	healing = minion_data.healing
+	energy = minion_data.energy
+	#endregion
 
-func _on_click(button : Button):
-	if SelectionManager.selectMode:
-		emit_signal("select_attempt",self)
-		button.hide()
+	click_detector.pressed.connect(Callable(self,"_on_minion_selected").bind(click_detector))
 
-func _calc_move_stats(move : MoveData):
-	energy -= move.energy
-	SelectMenu.energy_label.text = str(energy) + "/" + str(minionData.energy)
-	emit_signal("SelectionTime",self,move)#relay final dmg to FightController
 
-func _get_affected(val : int):
-	health -= val
+func take_damage(damage : int):
+	print_debug(damage)
+	self.health -= damage
+	emit_signal("minion_affected")
 	if health <= 0:
 		emit_signal("minion_died",self)
 		queue_free()
-	emit_signal("affected","damage",val)
 
-func _add_effect(move : MoveEffects):
-	effectList.append(move)
-	effectList.append(move.turnDuration)
+func _on_minion_selected(button : Button):
+	emit_signal("minion_selected",self)
+	button.hide()
 
-func move_processed():
+func move_selected(move : MoveData):
+	if move.energy >= energy:
+		print_rich("[color=red][b]YOU DON'T HAVE ENOUGH ENERGY FOR THIS MOVE![/b][/color]")
+		move_menu.show()
+	else:
+		energy = energy - move.energy
+		move_menu.energy_label.text = str(energy) + "/" + str(minion_data.energy)
+		emit_signal("minion_move_selected",self,move)#relay final dmg to FightController
+
+
+func _add_overtime_effect(move : MoveEffects):
+	effect_list.append(move)
+	effect_list.append(move.turnDuration)
+
+func move_completed():
 	click_detector.hide()
 
-func _apply_effects():
-	pass
+func _apply_overtime_effects():
+	for effect in effect_list:
+		match effect.effect:
+			0: # DamagesOrHeals
+				health -= effect.value
+			1: # Buffs/Debuffs
+				pass # Buff/Debuff data goes here
+
+func show_click_detector():
+	click_detector.show()
+
+class TimedEffect:
+	var minion : Minion
+	var effect :  int # DamagesOrHeals = 0, BuffsOrDebuffs = 1
+	var duration : int
+	var value : int
+	
+	func _init(minion : Minion, effect : int, duration : int, value : int) -> void:
+		self.minion = minion
+		self.effect = effect
+		self.duration = duration
+		self.value = value
+		self.minion.effect_list.append(self)
 

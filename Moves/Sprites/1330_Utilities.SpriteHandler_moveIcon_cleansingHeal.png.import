@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj3r8ohlode3l"
-path="res://.godot/imported/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png-6da06b8083d2635853f867028e874cb5.ctex"
+path="res://.godot/imported/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png-346648217ce0e600ca7722e61d2efd49.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png"
-dest_files=["res://.godot/imported/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png-6da06b8083d2635853f867028e874cb5.ctex"]
+source_file="res://moves/sprites/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png"
+dest_files=["res://.godot/imported/1330_Utilities.SpriteHandler_moveIcon_cleansingHeal.png-346648217ce0e600ca7722e61d2efd49.ctex"]
 
 [params]
 

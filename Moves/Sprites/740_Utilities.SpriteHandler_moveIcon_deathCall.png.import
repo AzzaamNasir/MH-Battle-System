@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oahb0txdtso7"
-path="res://.godot/imported/740_Utilities.SpriteHandler_moveIcon_deathCall.png-c44ac98e8ca0c5644db874e6c3c3fef7.ctex"
+path="res://.godot/imported/740_Utilities.SpriteHandler_moveIcon_deathCall.png-4580bb2a4b56c2e1bbb5f294e3b2e85b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/740_Utilities.SpriteHandler_moveIcon_deathCall.png"
-dest_files=["res://.godot/imported/740_Utilities.SpriteHandler_moveIcon_deathCall.png-c44ac98e8ca0c5644db874e6c3c3fef7.ctex"]
+source_file="res://moves/sprites/740_Utilities.SpriteHandler_moveIcon_deathCall.png"
+dest_files=["res://.godot/imported/740_Utilities.SpriteHandler_moveIcon_deathCall.png-4580bb2a4b56c2e1bbb5f294e3b2e85b.ctex"]
 
 [params]
 

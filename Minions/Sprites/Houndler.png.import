@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf5pgd16sjbi2"
-path="res://.godot/imported/Houndler.png-c8e2ad34e887311abf86f4a4b10f3b2d.ctex"
+path="res://.godot/imported/Houndler.png-2b33268703901b71c77c4bcb8d3c4b14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Houndler.png"
-dest_files=["res://.godot/imported/Houndler.png-c8e2ad34e887311abf86f4a4b10f3b2d.ctex"]
+source_file="res://minions/sprites/Houndler.png"
+dest_files=["res://.godot/imported/Houndler.png-2b33268703901b71c77c4bcb8d3c4b14.ctex"]
 
 [params]
 

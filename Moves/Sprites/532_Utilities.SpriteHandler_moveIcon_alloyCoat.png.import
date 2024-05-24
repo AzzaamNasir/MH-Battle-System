@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c38qyuhk2e12l"
-path="res://.godot/imported/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png-ddb4a2bf28335f38ac3a008a70eca619.ctex"
+path="res://.godot/imported/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png-5ad327438c76faf196c126fbb255c5f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png"
-dest_files=["res://.godot/imported/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png-ddb4a2bf28335f38ac3a008a70eca619.ctex"]
+source_file="res://moves/sprites/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png"
+dest_files=["res://.godot/imported/532_Utilities.SpriteHandler_moveIcon_alloyCoat.png-5ad327438c76faf196c126fbb255c5f4.ctex"]
 
 [params]
 

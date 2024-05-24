@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hqh1met2fp1c"
-path="res://.godot/imported/741_Utilities.SpriteHandler_moveIcon_razorVine.png-7ba8517a434b47406a0eedbca8cb83ff.ctex"
+path="res://.godot/imported/741_Utilities.SpriteHandler_moveIcon_razorVine.png-3f6472a55512dda280ff7812c1a31910.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/741_Utilities.SpriteHandler_moveIcon_razorVine.png"
-dest_files=["res://.godot/imported/741_Utilities.SpriteHandler_moveIcon_razorVine.png-7ba8517a434b47406a0eedbca8cb83ff.ctex"]
+source_file="res://moves/sprites/741_Utilities.SpriteHandler_moveIcon_razorVine.png"
+dest_files=["res://.godot/imported/741_Utilities.SpriteHandler_moveIcon_razorVine.png-3f6472a55512dda280ff7812c1a31910.ctex"]
 
 [params]
 

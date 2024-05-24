@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bik60ly22q08o"
-path="res://.godot/imported/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png-5027fa7b8dcd0534dfc80784a0c65393.ctex"
+path="res://.godot/imported/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png-20622cd621a314fb3ab195fa2f84bd46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png"
-dest_files=["res://.godot/imported/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png-5027fa7b8dcd0534dfc80784a0c65393.ctex"]
+source_file="res://moves/sprites/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png"
+dest_files=["res://.godot/imported/1560_Utilities.SpriteHandler_moveIcon_mirrorSkin.png-20622cd621a314fb3ab195fa2f84bd46.ctex"]
 
 [params]
 

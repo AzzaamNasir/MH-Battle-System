@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://p2ju7qlen4jk"
-path="res://.godot/imported/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png-35aea0afdc11c2a6be3197b05a293a1b.ctex"
+path="res://.godot/imported/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png-8dcb5c804cef5dd00e0e4d2e024fd227.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png"
-dest_files=["res://.godot/imported/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png-35aea0afdc11c2a6be3197b05a293a1b.ctex"]
+source_file="res://moves/sprites/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png"
+dest_files=["res://.godot/imported/417_Utilities.SpriteHandler_moveIcon_earthBarrier.png-8dcb5c804cef5dd00e0e4d2e024fd227.ctex"]
 
 [params]
 

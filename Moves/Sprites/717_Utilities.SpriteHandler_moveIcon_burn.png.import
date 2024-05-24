@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://opels4tw61hg"
-path="res://.godot/imported/717_Utilities.SpriteHandler_moveIcon_burn.png-313f3b5dba45b9e87bdaa357f8f97342.ctex"
+path="res://.godot/imported/717_Utilities.SpriteHandler_moveIcon_burn.png-d7500fa47496fdb7c084918b637a4e07.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/717_Utilities.SpriteHandler_moveIcon_burn.png"
-dest_files=["res://.godot/imported/717_Utilities.SpriteHandler_moveIcon_burn.png-313f3b5dba45b9e87bdaa357f8f97342.ctex"]
+source_file="res://moves/sprites/717_Utilities.SpriteHandler_moveIcon_burn.png"
+dest_files=["res://.godot/imported/717_Utilities.SpriteHandler_moveIcon_burn.png-d7500fa47496fdb7c084918b637a4e07.ctex"]
 
 [params]
 

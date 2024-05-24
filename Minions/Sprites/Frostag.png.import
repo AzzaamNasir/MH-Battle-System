@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ch2ibbwbr268t"
-path="res://.godot/imported/Frostag.png-3c340d03771732609e0c01bc617a93a6.ctex"
+path="res://.godot/imported/Frostag.png-be24f1c431c3856a7b74c1c73717d4a5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Frostag.png"
-dest_files=["res://.godot/imported/Frostag.png-3c340d03771732609e0c01bc617a93a6.ctex"]
+source_file="res://minions/sprites/Frostag.png"
+dest_files=["res://.godot/imported/Frostag.png-be24f1c431c3856a7b74c1c73717d4a5.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhdny5i77gxv3"
-path="res://.godot/imported/1613_Utilities.SpriteHandler_moveIcon_brilliance.png-08950c94e679b980f8e700a7dfc6f464.ctex"
+path="res://.godot/imported/1613_Utilities.SpriteHandler_moveIcon_brilliance.png-a16aa01a2668d594e11f2b9bc7ed8d39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1613_Utilities.SpriteHandler_moveIcon_brilliance.png"
-dest_files=["res://.godot/imported/1613_Utilities.SpriteHandler_moveIcon_brilliance.png-08950c94e679b980f8e700a7dfc6f464.ctex"]
+source_file="res://moves/sprites/1613_Utilities.SpriteHandler_moveIcon_brilliance.png"
+dest_files=["res://.godot/imported/1613_Utilities.SpriteHandler_moveIcon_brilliance.png-a16aa01a2668d594e11f2b9bc7ed8d39.ctex"]
 
 [params]
 

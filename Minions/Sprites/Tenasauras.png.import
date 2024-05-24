@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clfk3coqpq27v"
-path="res://.godot/imported/Tenasauras.png-d09c2ef48b143f21f44c0d9da12c4df2.ctex"
+path="res://.godot/imported/Tenasauras.png-dfe87f491c788e77ef9409cda59c8e6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Tenasauras.png"
-dest_files=["res://.godot/imported/Tenasauras.png-d09c2ef48b143f21f44c0d9da12c4df2.ctex"]
+source_file="res://minions/sprites/Tenasauras.png"
+dest_files=["res://.godot/imported/Tenasauras.png-dfe87f491c788e77ef9409cda59c8e6d.ctex"]
 
 [params]
 

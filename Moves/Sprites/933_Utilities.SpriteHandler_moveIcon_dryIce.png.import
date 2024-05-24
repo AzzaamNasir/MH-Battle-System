@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cib5hj7ktps1s"
-path="res://.godot/imported/933_Utilities.SpriteHandler_moveIcon_dryIce.png-801cc7bb658c7e103a7bde8ea7efe551.ctex"
+path="res://.godot/imported/933_Utilities.SpriteHandler_moveIcon_dryIce.png-b213c1d689a24611af8227b547b4a37d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/933_Utilities.SpriteHandler_moveIcon_dryIce.png"
-dest_files=["res://.godot/imported/933_Utilities.SpriteHandler_moveIcon_dryIce.png-801cc7bb658c7e103a7bde8ea7efe551.ctex"]
+source_file="res://moves/sprites/933_Utilities.SpriteHandler_moveIcon_dryIce.png"
+dest_files=["res://.godot/imported/933_Utilities.SpriteHandler_moveIcon_dryIce.png-b213c1d689a24611af8227b547b4a37d.ctex"]
 
 [params]
 

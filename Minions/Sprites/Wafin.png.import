@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cnfefwib0a7bs"
-path="res://.godot/imported/Wafin.png-258310e9778da5a7829ad25d54e7a6c0.ctex"
+path="res://.godot/imported/Wafin.png-be93b4698772a1d47c0fac42d48cb0b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Wafin.png"
-dest_files=["res://.godot/imported/Wafin.png-258310e9778da5a7829ad25d54e7a6c0.ctex"]
+source_file="res://minions/sprites/Wafin.png"
+dest_files=["res://.godot/imported/Wafin.png-be93b4698772a1d47c0fac42d48cb0b7.ctex"]
 
 [params]
 

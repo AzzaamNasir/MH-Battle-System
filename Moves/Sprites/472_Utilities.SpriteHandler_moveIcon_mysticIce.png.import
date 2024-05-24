@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beuinkt6mnabn"
-path="res://.godot/imported/472_Utilities.SpriteHandler_moveIcon_mysticIce.png-e31308d5c1ecfbf2a91724f2c8888dd3.ctex"
+path="res://.godot/imported/472_Utilities.SpriteHandler_moveIcon_mysticIce.png-f56219b0b673e8d9172fe9b53ddb42c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/472_Utilities.SpriteHandler_moveIcon_mysticIce.png"
-dest_files=["res://.godot/imported/472_Utilities.SpriteHandler_moveIcon_mysticIce.png-e31308d5c1ecfbf2a91724f2c8888dd3.ctex"]
+source_file="res://moves/sprites/472_Utilities.SpriteHandler_moveIcon_mysticIce.png"
+dest_files=["res://.godot/imported/472_Utilities.SpriteHandler_moveIcon_mysticIce.png-f56219b0b673e8d9172fe9b53ddb42c5.ctex"]
 
 [params]
 

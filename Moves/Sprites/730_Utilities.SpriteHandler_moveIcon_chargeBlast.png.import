@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bs3q3m7rcuc75"
-path="res://.godot/imported/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png-cc3e2daa6cbd93a7299433be2d3449f8.ctex"
+path="res://.godot/imported/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png-6f693cf824b6d9b3c3ac857628614ceb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png"
-dest_files=["res://.godot/imported/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png-cc3e2daa6cbd93a7299433be2d3449f8.ctex"]
+source_file="res://moves/sprites/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png"
+dest_files=["res://.godot/imported/730_Utilities.SpriteHandler_moveIcon_chargeBlast.png-6f693cf824b6d9b3c3ac857628614ceb.ctex"]
 
 [params]
 

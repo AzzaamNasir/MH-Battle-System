@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b3it1g1f61uhu"
-path="res://.godot/imported/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png-9c5592efbeab1f78aa99716ed2e74803.ctex"
+path="res://.godot/imported/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png-0f9c4692d7cb0ba1bd3fb28da3635cd6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png"
-dest_files=["res://.godot/imported/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png-9c5592efbeab1f78aa99716ed2e74803.ctex"]
+source_file="res://moves/sprites/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png"
+dest_files=["res://.godot/imported/1162_Utilities.SpriteHandler_moveIcon_intenseFlame.png-0f9c4692d7cb0ba1bd3fb28da3635cd6.ctex"]
 
 [params]
 

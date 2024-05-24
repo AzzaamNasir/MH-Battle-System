@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n0nt8gc0lpjf"
-path="res://.godot/imported/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png-2908a4d70cecd803ad87307f27e80727.ctex"
+path="res://.godot/imported/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png-e0ce4151a2ad6bc682bffa352394d594.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png"
-dest_files=["res://.godot/imported/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png-2908a4d70cecd803ad87307f27e80727.ctex"]
+source_file="res://moves/sprites/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png"
+dest_files=["res://.godot/imported/903_Utilities.SpriteHandler_moveIcon_agileInspiration.png-e0ce4151a2ad6bc682bffa352394d594.ctex"]
 
 [params]
 

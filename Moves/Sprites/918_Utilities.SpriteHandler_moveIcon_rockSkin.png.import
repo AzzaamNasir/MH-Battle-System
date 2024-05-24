@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvkc7nv7qbyhp"
-path="res://.godot/imported/918_Utilities.SpriteHandler_moveIcon_rockSkin.png-42e2eeb4303074a25b8f82fed1017679.ctex"
+path="res://.godot/imported/918_Utilities.SpriteHandler_moveIcon_rockSkin.png-493478fccfbbdcd89569bca224d9a933.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/918_Utilities.SpriteHandler_moveIcon_rockSkin.png"
-dest_files=["res://.godot/imported/918_Utilities.SpriteHandler_moveIcon_rockSkin.png-42e2eeb4303074a25b8f82fed1017679.ctex"]
+source_file="res://moves/sprites/918_Utilities.SpriteHandler_moveIcon_rockSkin.png"
+dest_files=["res://.godot/imported/918_Utilities.SpriteHandler_moveIcon_rockSkin.png-493478fccfbbdcd89569bca224d9a933.ctex"]
 
 [params]
 

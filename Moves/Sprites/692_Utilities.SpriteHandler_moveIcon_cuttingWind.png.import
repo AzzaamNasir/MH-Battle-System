@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caknnl0elbhtj"
-path="res://.godot/imported/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png-e808c2e0ed5cd9f9c7ef77007177cc4d.ctex"
+path="res://.godot/imported/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png-892eec8bf07d3d8b3152fb0b86082276.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png"
-dest_files=["res://.godot/imported/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png-e808c2e0ed5cd9f9c7ef77007177cc4d.ctex"]
+source_file="res://moves/sprites/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png"
+dest_files=["res://.godot/imported/692_Utilities.SpriteHandler_moveIcon_cuttingWind.png-892eec8bf07d3d8b3152fb0b86082276.ctex"]
 
 [params]
 

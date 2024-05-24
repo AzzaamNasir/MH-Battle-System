@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://gmyhc0xfo2gd"]
 
-[ext_resource type="Script" path="res://Moves/MoveData.gd" id="1_dm31l"]
-[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_paqpc"]
-[ext_resource type="Texture2D" uid="uid://ppwqbfgit64p" path="res://Moves/Sprites/1469_Utilities.SpriteHandler_moveIcon_roar.png" id="3_hax7i"]
+[ext_resource type="Script" path="res://moves/move_data.gd" id="1_dm31l"]
+[ext_resource type="Script" path="res://moves/move_effects/move_effects.gd" id="1_paqpc"]
+[ext_resource type="Texture2D" uid="uid://ppwqbfgit64p" path="res://moves/sprites/1469_Utilities.SpriteHandler_moveIcon_roar.png" id="3_hax7i"]
 
 [sub_resource type="Resource" id="Resource_p1g1f"]
 script = ExtResource("1_paqpc")

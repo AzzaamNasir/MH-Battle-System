@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2lawblq6i860"
-path="res://.godot/imported/Tremole.png-8d4f73b857f65222973ab248d5d7a9d2.ctex"
+path="res://.godot/imported/Tremole.png-c51e1b39ad191043169c80c7d9be0550.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Tremole.png"
-dest_files=["res://.godot/imported/Tremole.png-8d4f73b857f65222973ab248d5d7a9d2.ctex"]
+source_file="res://minions/sprites/Tremole.png"
+dest_files=["res://.godot/imported/Tremole.png-c51e1b39ad191043169c80c7d9be0550.ctex"]
 
 [params]
 

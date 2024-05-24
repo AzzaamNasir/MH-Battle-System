@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddefb6c0crkch"
-path="res://.godot/imported/Smouldor.png-70b20d62e6de427c3fb7f6fefd6fd531.ctex"
+path="res://.godot/imported/Smouldor.png-c70a77e80640b39953cf4946ac434122.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Smouldor.png"
-dest_files=["res://.godot/imported/Smouldor.png-70b20d62e6de427c3fb7f6fefd6fd531.ctex"]
+source_file="res://minions/sprites/Smouldor.png"
+dest_files=["res://.godot/imported/Smouldor.png-c70a77e80640b39953cf4946ac434122.ctex"]
 
 [params]
 

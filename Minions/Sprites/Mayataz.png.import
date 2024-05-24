@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5il22sn7nohi"
-path="res://.godot/imported/Mayataz.png-4000527177c65da2e47eb47ec590c44e.ctex"
+path="res://.godot/imported/Mayataz.png-7d3a34f999241e167c7f2517d5e9d1e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Mayataz.png"
-dest_files=["res://.godot/imported/Mayataz.png-4000527177c65da2e47eb47ec590c44e.ctex"]
+source_file="res://minions/sprites/Mayataz.png"
+dest_files=["res://.godot/imported/Mayataz.png-7d3a34f999241e167c7f2517d5e9d1e0.ctex"]
 
 [params]
 

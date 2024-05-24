@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7a8fckf12u0i"
-path="res://.godot/imported/Titoro.png-b217ed31025c0c5357886beab0df83f2.ctex"
+path="res://.godot/imported/Titoro.png-680927d502596e620ed9bbdb8a53817d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Titoro.png"
-dest_files=["res://.godot/imported/Titoro.png-b217ed31025c0c5357886beab0df83f2.ctex"]
+source_file="res://minions/sprites/Titoro.png"
+dest_files=["res://.godot/imported/Titoro.png-680927d502596e620ed9bbdb8a53817d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://r3y7kdtg10vc"
-path="res://.godot/imported/978_Utilities.SpriteHandler_moveIcon_swiftMend.png-2e7c8552f655f49d90e58df7a8cf3366.ctex"
+path="res://.godot/imported/978_Utilities.SpriteHandler_moveIcon_swiftMend.png-369f75dc5342a0c21e7eefaf252c80cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/978_Utilities.SpriteHandler_moveIcon_swiftMend.png"
-dest_files=["res://.godot/imported/978_Utilities.SpriteHandler_moveIcon_swiftMend.png-2e7c8552f655f49d90e58df7a8cf3366.ctex"]
+source_file="res://moves/sprites/978_Utilities.SpriteHandler_moveIcon_swiftMend.png"
+dest_files=["res://.godot/imported/978_Utilities.SpriteHandler_moveIcon_swiftMend.png-369f75dc5342a0c21e7eefaf252c80cc.ctex"]
 
 [params]
 

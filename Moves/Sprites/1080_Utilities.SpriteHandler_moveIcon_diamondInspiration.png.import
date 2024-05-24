@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cl1aybqbpbpo3"
-path="res://.godot/imported/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png-d7baea3ca97ffbfeebfecb72984c392a.ctex"
+path="res://.godot/imported/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png-3931f3fa5640da7163a9ab57cef94c71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png"
-dest_files=["res://.godot/imported/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png-d7baea3ca97ffbfeebfecb72984c392a.ctex"]
+source_file="res://moves/sprites/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png"
+dest_files=["res://.godot/imported/1080_Utilities.SpriteHandler_moveIcon_diamondInspiration.png-3931f3fa5640da7163a9ab57cef94c71.ctex"]
 
 [params]
 

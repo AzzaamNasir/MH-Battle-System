@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tt5i0wcr47wk"
-path="res://.godot/imported/Toregg.png-3e17e63ea0076abee8e977b0212be431.ctex"
+path="res://.godot/imported/Toregg.png-4cfcf0966db8f751bfb60fe0456c3016.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Toregg.png"
-dest_files=["res://.godot/imported/Toregg.png-3e17e63ea0076abee8e977b0212be431.ctex"]
+source_file="res://minions/sprites/Toregg.png"
+dest_files=["res://.godot/imported/Toregg.png-4cfcf0966db8f751bfb60fe0456c3016.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bka7k1f4up337"
-path="res://.godot/imported/367_Utilities.SpriteHandler_moveIcon_oreDrill.png-48089365c2ad68f959d5d26bbce1e19a.ctex"
+path="res://.godot/imported/367_Utilities.SpriteHandler_moveIcon_oreDrill.png-0cf771179c3c51ec18c77e52e8262dff.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/367_Utilities.SpriteHandler_moveIcon_oreDrill.png"
-dest_files=["res://.godot/imported/367_Utilities.SpriteHandler_moveIcon_oreDrill.png-48089365c2ad68f959d5d26bbce1e19a.ctex"]
+source_file="res://moves/sprites/367_Utilities.SpriteHandler_moveIcon_oreDrill.png"
+dest_files=["res://.godot/imported/367_Utilities.SpriteHandler_moveIcon_oreDrill.png-0cf771179c3c51ec18c77e52e8262dff.ctex"]
 
 [params]
 

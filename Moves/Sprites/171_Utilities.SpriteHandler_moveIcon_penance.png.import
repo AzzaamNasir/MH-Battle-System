@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1smmc35iunos"
-path="res://.godot/imported/171_Utilities.SpriteHandler_moveIcon_penance.png-364ad36537a8931523f40c2cfd125736.ctex"
+path="res://.godot/imported/171_Utilities.SpriteHandler_moveIcon_penance.png-7960b40b539ceb2abf107b69c60fd0bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/171_Utilities.SpriteHandler_moveIcon_penance.png"
-dest_files=["res://.godot/imported/171_Utilities.SpriteHandler_moveIcon_penance.png-364ad36537a8931523f40c2cfd125736.ctex"]
+source_file="res://moves/sprites/171_Utilities.SpriteHandler_moveIcon_penance.png"
+dest_files=["res://.godot/imported/171_Utilities.SpriteHandler_moveIcon_penance.png-7960b40b539ceb2abf107b69c60fd0bd.ctex"]
 
 [params]
 

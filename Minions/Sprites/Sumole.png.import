@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://boxa85giuesf"
-path="res://.godot/imported/Sumole.png-038f13643ef01ad99104a2c83ce28263.ctex"
+path="res://.godot/imported/Sumole.png-97cc12cf421e299e280a499052ea5ebb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Sumole.png"
-dest_files=["res://.godot/imported/Sumole.png-038f13643ef01ad99104a2c83ce28263.ctex"]
+source_file="res://minions/sprites/Sumole.png"
+dest_files=["res://.godot/imported/Sumole.png-97cc12cf421e299e280a499052ea5ebb.ctex"]
 
 [params]
 

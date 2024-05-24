@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5fv08unv5sxj"
-path="res://.godot/imported/Saintifi.png-95a16f4c853232a9f273ffa6bc8d234d.ctex"
+path="res://.godot/imported/Saintifi.png-f79427767c3c8547bc08e5074eda802e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Saintifi.png"
-dest_files=["res://.godot/imported/Saintifi.png-95a16f4c853232a9f273ffa6bc8d234d.ctex"]
+source_file="res://minions/sprites/Saintifi.png"
+dest_files=["res://.godot/imported/Saintifi.png-f79427767c3c8547bc08e5074eda802e.ctex"]
 
 [params]
 

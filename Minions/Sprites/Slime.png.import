@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://byn1kubqqtm1x"
-path="res://.godot/imported/Slime.png-f0dcdba0a27dfedeb4f27e9a2631bf61.ctex"
+path="res://.godot/imported/Slime.png-4e5803d46ece16a5acaa02c8f89da91c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Slime.png"
-dest_files=["res://.godot/imported/Slime.png-f0dcdba0a27dfedeb4f27e9a2631bf61.ctex"]
+source_file="res://minions/sprites/Slime.png"
+dest_files=["res://.godot/imported/Slime.png-4e5803d46ece16a5acaa02c8f89da91c.ctex"]
 
 [params]
 

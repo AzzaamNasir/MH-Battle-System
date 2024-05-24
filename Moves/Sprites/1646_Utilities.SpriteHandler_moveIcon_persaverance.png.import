@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drbheefhhljqs"
-path="res://.godot/imported/1646_Utilities.SpriteHandler_moveIcon_persaverance.png-75fa2c4088a780468f5c4cdf24552509.ctex"
+path="res://.godot/imported/1646_Utilities.SpriteHandler_moveIcon_persaverance.png-ecd81b04dc3429e9ac65c55d7af2966d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1646_Utilities.SpriteHandler_moveIcon_persaverance.png"
-dest_files=["res://.godot/imported/1646_Utilities.SpriteHandler_moveIcon_persaverance.png-75fa2c4088a780468f5c4cdf24552509.ctex"]
+source_file="res://moves/sprites/1646_Utilities.SpriteHandler_moveIcon_persaverance.png"
+dest_files=["res://.godot/imported/1646_Utilities.SpriteHandler_moveIcon_persaverance.png-ecd81b04dc3429e9ac65c55d7af2966d.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqpyqqjnm750e"
-path="res://.godot/imported/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png-cb2f8425cac88b1ec3cd68ed65102313.ctex"
+path="res://.godot/imported/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png-6b527d7d5f7dba970a7aa460cdb39e85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png"
-dest_files=["res://.godot/imported/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png-cb2f8425cac88b1ec3cd68ed65102313.ctex"]
+source_file="res://moves/sprites/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png"
+dest_files=["res://.godot/imported/278_Utilities.SpriteHandler_moveIcon_poisonIvy.png-6b527d7d5f7dba970a7aa460cdb39e85.ctex"]
 
 [params]
 

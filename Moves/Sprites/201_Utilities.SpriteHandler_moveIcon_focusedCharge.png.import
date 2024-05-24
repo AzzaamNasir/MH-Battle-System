@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c55okcgflccoq"
-path="res://.godot/imported/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png-1000c290e6c8b80fee7ad8d72c046d80.ctex"
+path="res://.godot/imported/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png-871019e461e4254b00093a37f7e93efc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png"
-dest_files=["res://.godot/imported/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png-1000c290e6c8b80fee7ad8d72c046d80.ctex"]
+source_file="res://moves/sprites/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png"
+dest_files=["res://.godot/imported/201_Utilities.SpriteHandler_moveIcon_focusedCharge.png-871019e461e4254b00093a37f7e93efc.ctex"]
 
 [params]
 

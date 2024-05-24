@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcywrdifta24f"
-path="res://.godot/imported/Krobone.png-7d1c8920ba0a3c0bd9a7d9bd60077488.ctex"
+path="res://.godot/imported/Krobone.png-5958492c5214f7366d960af54db6db21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Krobone.png"
-dest_files=["res://.godot/imported/Krobone.png-7d1c8920ba0a3c0bd9a7d9bd60077488.ctex"]
+source_file="res://minions/sprites/Krobone.png"
+dest_files=["res://.godot/imported/Krobone.png-5958492c5214f7366d960af54db6db21.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg07ebn8linw"
-path="res://.godot/imported/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png-9db1828912ad905d4f1c2bd09614b622.ctex"
+path="res://.godot/imported/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png-162d66c0d0330f469ea18b4827558ac8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png"
-dest_files=["res://.godot/imported/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png-9db1828912ad905d4f1c2bd09614b622.ctex"]
+source_file="res://moves/sprites/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png"
+dest_files=["res://.godot/imported/445_Utilities.SpriteHandler_moveIcon_deathlyEnergy.png-162d66c0d0330f469ea18b4827558ac8.ctex"]
 
 [params]
 

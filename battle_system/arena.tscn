@@ -1,12 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://dm5i3etlvw3s3"]
 
-[ext_resource type="Script" path="res://FightController.gd" id="1_3fvvi"]
-[ext_resource type="PackedScene" uid="uid://drejxjrb6er7u" path="res://UI/MinionSelector.tscn" id="2_yg1mp"]
+[ext_resource type="Script" path="res://battle_system/fight_controller.gd" id="1_jp82d"]
+[ext_resource type="PackedScene" uid="uid://drejxjrb6er7u" path="res://ui/minion_selector.tscn" id="2_cei8l"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_nfboh"]
 
 [node name="Arena" type="Node2D"]
-script = ExtResource("1_3fvvi")
+script = ExtResource("1_jp82d")
 metadata/_edit_vertical_guides_ = [-58.0, 204.0]
 
 [node name="Camera" type="Camera2D" parent="."]
@@ -50,7 +50,7 @@ position = Vector2(-4.76837e-07, 4.00002)
 scale = Vector2(16, 728)
 texture = SubResource("CanvasTexture_nfboh")
 
-[node name="MinionSelector" parent="." instance=ExtResource("2_yg1mp")]
+[node name="MinionSelector" parent="." instance=ExtResource("2_cei8l")]
 layer = 10
 
 [node name="ComponentManager" type="Node" parent="."]
@@ -64,4 +64,5 @@ offset_right = -538.0
 offset_bottom = 351.0
 text = "Emergency"
 
+[connection signal="start_game" from="MinionSelector" to="." method="start"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

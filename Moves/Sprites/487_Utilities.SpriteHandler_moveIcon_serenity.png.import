@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://biv8xays0ojy"
-path="res://.godot/imported/487_Utilities.SpriteHandler_moveIcon_serenity.png-3b83393c4d71ae33f7b867e10adcfd5b.ctex"
+path="res://.godot/imported/487_Utilities.SpriteHandler_moveIcon_serenity.png-3cd09b1dc84d58155aaa659f702c3b8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/487_Utilities.SpriteHandler_moveIcon_serenity.png"
-dest_files=["res://.godot/imported/487_Utilities.SpriteHandler_moveIcon_serenity.png-3b83393c4d71ae33f7b867e10adcfd5b.ctex"]
+source_file="res://moves/sprites/487_Utilities.SpriteHandler_moveIcon_serenity.png"
+dest_files=["res://.godot/imported/487_Utilities.SpriteHandler_moveIcon_serenity.png-3cd09b1dc84d58155aaa659f702c3b8c.ctex"]
 
 [params]
 

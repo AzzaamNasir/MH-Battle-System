@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://cec8c5m8yc1y6"]
 
-[ext_resource type="Script" path="res://UI/MoveSelector.gd" id="1_lqj37"]
-[ext_resource type="Texture2D" uid="uid://brpa26y7dj0cb" path="res://UI/Sprites/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png" id="4_bcc5m"]
+[ext_resource type="Script" path="res://ui/move_selector.gd" id="1_lqj37"]
+[ext_resource type="Texture2D" uid="uid://brpa26y7dj0cb" path="res://ui/sprites/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png" id="4_bcc5m"]
 
-[node name="SelectMenu" type="Control"]
+[node name="MoveMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_lqj37")

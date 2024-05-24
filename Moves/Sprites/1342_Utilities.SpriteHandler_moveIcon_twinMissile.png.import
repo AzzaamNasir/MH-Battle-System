@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr615q3qpbwuv"
-path="res://.godot/imported/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png-b28649081f83130476a3154b84c66fd8.ctex"
+path="res://.godot/imported/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png-2e2d70f12db10b989ac6cd3046935b0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png"
-dest_files=["res://.godot/imported/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png-b28649081f83130476a3154b84c66fd8.ctex"]
+source_file="res://moves/sprites/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png"
+dest_files=["res://.godot/imported/1342_Utilities.SpriteHandler_moveIcon_twinMissile.png-2e2d70f12db10b989ac6cd3046935b0d.ctex"]
 
 [params]
 

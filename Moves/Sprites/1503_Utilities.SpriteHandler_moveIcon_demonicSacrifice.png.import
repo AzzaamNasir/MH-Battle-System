@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qkexr8cmhlr8"
-path="res://.godot/imported/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png-ea7ed46cf1748cb70c58be96d5362baf.ctex"
+path="res://.godot/imported/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png-fd726f014323af722a6e74687d2ffc7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png"
-dest_files=["res://.godot/imported/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png-ea7ed46cf1748cb70c58be96d5362baf.ctex"]
+source_file="res://moves/sprites/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png"
+dest_files=["res://.godot/imported/1503_Utilities.SpriteHandler_moveIcon_demonicSacrifice.png-fd726f014323af722a6e74687d2ffc7e.ctex"]
 
 [params]
 

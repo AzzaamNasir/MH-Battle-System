@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdhj5u7vt7r62"
-path="res://.godot/imported/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png-6cfc0196a4a0bddc46964d132cc90e1c.ctex"
+path="res://.godot/imported/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png-04a8f40f2bd9554a48c29cec905b365f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png"
-dest_files=["res://.godot/imported/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png-6cfc0196a4a0bddc46964d132cc90e1c.ctex"]
+source_file="res://moves/sprites/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png"
+dest_files=["res://.godot/imported/1490_Utilities.SpriteHandler_moveIcon_bloodPress.png-04a8f40f2bd9554a48c29cec905b365f.ctex"]
 
 [params]
 

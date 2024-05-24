@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o810g1r7u8pm"
-path="res://.godot/imported/989_Utilities.SpriteHandler_moveIcon_volley.png-a37f386b5e1343c3650647fb12946c2c.ctex"
+path="res://.godot/imported/989_Utilities.SpriteHandler_moveIcon_volley.png-5e695707a2aa362e6e3f15dbe3e7f61a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/989_Utilities.SpriteHandler_moveIcon_volley.png"
-dest_files=["res://.godot/imported/989_Utilities.SpriteHandler_moveIcon_volley.png-a37f386b5e1343c3650647fb12946c2c.ctex"]
+source_file="res://moves/sprites/989_Utilities.SpriteHandler_moveIcon_volley.png"
+dest_files=["res://.godot/imported/989_Utilities.SpriteHandler_moveIcon_volley.png-5e695707a2aa362e6e3f15dbe3e7f61a.ctex"]
 
 [params]
 

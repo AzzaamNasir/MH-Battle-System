@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://06myvh65mojr"
-path="res://.godot/imported/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png-72e5dfc566ca3ee59aac450b31e82237.ctex"
+path="res://.godot/imported/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png-62b1545c1c76e9f0f33a6a813b42b78d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png"
-dest_files=["res://.godot/imported/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png-72e5dfc566ca3ee59aac450b31e82237.ctex"]
+source_file="res://moves/sprites/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png"
+dest_files=["res://.godot/imported/383_Utilities.SpriteHandler_moveIcon_demonicBargain.png-62b1545c1c76e9f0f33a6a813b42b78d.ctex"]
 
 [params]
 

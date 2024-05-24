@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3rwngi4yj755"
-path="res://.godot/imported/145_Utilities.SpriteHandler_moveIcon_ancientForce.png-df7bb1cb7fee28d13ac9ffb136c4f023.ctex"
+path="res://.godot/imported/145_Utilities.SpriteHandler_moveIcon_ancientForce.png-9fa6ea13a476474e8022249bb9055a90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/145_Utilities.SpriteHandler_moveIcon_ancientForce.png"
-dest_files=["res://.godot/imported/145_Utilities.SpriteHandler_moveIcon_ancientForce.png-df7bb1cb7fee28d13ac9ffb136c4f023.ctex"]
+source_file="res://moves/sprites/145_Utilities.SpriteHandler_moveIcon_ancientForce.png"
+dest_files=["res://.godot/imported/145_Utilities.SpriteHandler_moveIcon_ancientForce.png-9fa6ea13a476474e8022249bb9055a90.ctex"]
 
 [params]
 

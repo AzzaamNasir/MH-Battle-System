@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxenvreagbn5p"
-path.s3tc="res://.godot/imported/Black Screen.png-faa2904ac0114959f0129306a39a6681.s3tc.ctex"
+path.s3tc="res://.godot/imported/Black Screen.png-f6edf17ce8e5854d0dec676e947602c0.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://UI/Sprites/Black Screen.png"
-dest_files=["res://.godot/imported/Black Screen.png-faa2904ac0114959f0129306a39a6681.s3tc.ctex"]
+source_file="res://ui/sprites/Black Screen.png"
+dest_files=["res://.godot/imported/Black Screen.png-f6edf17ce8e5854d0dec676e947602c0.s3tc.ctex"]
 
 [params]
 

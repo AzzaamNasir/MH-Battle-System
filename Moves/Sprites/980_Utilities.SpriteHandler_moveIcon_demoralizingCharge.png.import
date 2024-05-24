@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bllcao65oyxww"
-path="res://.godot/imported/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png-6c3112f3b4cdda38a08cd73ff0a290bb.ctex"
+path="res://.godot/imported/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png-32d3c2de4554346cf45ed41eeaf3a257.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png"
-dest_files=["res://.godot/imported/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png-6c3112f3b4cdda38a08cd73ff0a290bb.ctex"]
+source_file="res://moves/sprites/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png"
+dest_files=["res://.godot/imported/980_Utilities.SpriteHandler_moveIcon_demoralizingCharge.png-32d3c2de4554346cf45ed41eeaf3a257.ctex"]
 
 [params]
 

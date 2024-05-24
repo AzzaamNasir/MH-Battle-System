@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnme4726sxao"
-path="res://.godot/imported/1011_Utilities.SpriteHandler_moveIcon_earthquake.png-49b0b081d1c80aabbc15c69ddfa18d4a.ctex"
+path="res://.godot/imported/1011_Utilities.SpriteHandler_moveIcon_earthquake.png-aa808c2bab09baa14ba3b6e135a9c1ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1011_Utilities.SpriteHandler_moveIcon_earthquake.png"
-dest_files=["res://.godot/imported/1011_Utilities.SpriteHandler_moveIcon_earthquake.png-49b0b081d1c80aabbc15c69ddfa18d4a.ctex"]
+source_file="res://moves/sprites/1011_Utilities.SpriteHandler_moveIcon_earthquake.png"
+dest_files=["res://.godot/imported/1011_Utilities.SpriteHandler_moveIcon_earthquake.png-aa808c2bab09baa14ba3b6e135a9c1ae.ctex"]
 
 [params]
 

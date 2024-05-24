@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o7kw4barmkt7"
-path="res://.godot/imported/Firox.png-67fd7893c2c977708c4a96d441a955b8.ctex"
+path="res://.godot/imported/Firox.png-4e990388f83cd16af0d38deb40f6d5ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Firox.png"
-dest_files=["res://.godot/imported/Firox.png-67fd7893c2c977708c4a96d441a955b8.ctex"]
+source_file="res://minions/sprites/Firox.png"
+dest_files=["res://.godot/imported/Firox.png-4e990388f83cd16af0d38deb40f6d5ef.ctex"]
 
 [params]
 

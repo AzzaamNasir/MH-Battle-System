@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0toylb4b8j5w"
-path="res://.godot/imported/117_Utilities.SpriteHandler_moveIcon_metalMold.png-03df28a003ff85d7773b12e87503d00f.ctex"
+path="res://.godot/imported/117_Utilities.SpriteHandler_moveIcon_metalMold.png-241ef0bbd48c2417977b15503c761f63.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/117_Utilities.SpriteHandler_moveIcon_metalMold.png"
-dest_files=["res://.godot/imported/117_Utilities.SpriteHandler_moveIcon_metalMold.png-03df28a003ff85d7773b12e87503d00f.ctex"]
+source_file="res://moves/sprites/117_Utilities.SpriteHandler_moveIcon_metalMold.png"
+dest_files=["res://.godot/imported/117_Utilities.SpriteHandler_moveIcon_metalMold.png-241ef0bbd48c2417977b15503c761f63.ctex"]
 
 [params]
 

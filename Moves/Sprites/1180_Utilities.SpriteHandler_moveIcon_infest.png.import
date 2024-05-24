@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jxweskvidmtf"
-path="res://.godot/imported/1180_Utilities.SpriteHandler_moveIcon_infest.png-d3e59d5fdcc8c5c15f149411e9a78b8d.ctex"
+path="res://.godot/imported/1180_Utilities.SpriteHandler_moveIcon_infest.png-8dd379af5fc0dcf36deaab46cb0b405d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1180_Utilities.SpriteHandler_moveIcon_infest.png"
-dest_files=["res://.godot/imported/1180_Utilities.SpriteHandler_moveIcon_infest.png-d3e59d5fdcc8c5c15f149411e9a78b8d.ctex"]
+source_file="res://moves/sprites/1180_Utilities.SpriteHandler_moveIcon_infest.png"
+dest_files=["res://.godot/imported/1180_Utilities.SpriteHandler_moveIcon_infest.png-8dd379af5fc0dcf36deaab46cb0b405d.ctex"]
 
 [params]
 

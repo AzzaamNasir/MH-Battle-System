@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu4ncpgo5b1bq"
-path="res://.godot/imported/519_Utilities.SpriteHandler_moveIcon_tire.png-2f2c554b30167e994b507cd707bf1c7a.ctex"
+path="res://.godot/imported/519_Utilities.SpriteHandler_moveIcon_tire.png-9d3131fa81d89b10c68104dc936bed86.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/519_Utilities.SpriteHandler_moveIcon_tire.png"
-dest_files=["res://.godot/imported/519_Utilities.SpriteHandler_moveIcon_tire.png-2f2c554b30167e994b507cd707bf1c7a.ctex"]
+source_file="res://moves/sprites/519_Utilities.SpriteHandler_moveIcon_tire.png"
+dest_files=["res://.godot/imported/519_Utilities.SpriteHandler_moveIcon_tire.png-9d3131fa81d89b10c68104dc936bed86.ctex"]
 
 [params]
 

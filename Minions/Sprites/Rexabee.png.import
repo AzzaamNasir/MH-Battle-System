@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr6b7dxawtb7i"
-path="res://.godot/imported/Rexabee.png-810e7d5ebc656243b9c52d371bb7670a.ctex"
+path="res://.godot/imported/Rexabee.png-003cfdbb6b91ac62bc4a7b845568ba4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Rexabee.png"
-dest_files=["res://.godot/imported/Rexabee.png-810e7d5ebc656243b9c52d371bb7670a.ctex"]
+source_file="res://minions/sprites/Rexabee.png"
+dest_files=["res://.godot/imported/Rexabee.png-003cfdbb6b91ac62bc4a7b845568ba4f.ctex"]
 
 [params]
 

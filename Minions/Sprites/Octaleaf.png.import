@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnu07kf6ddphv"
-path="res://.godot/imported/Octaleaf.png-1c8683a480bff900d9a8dae1d084d792.ctex"
+path="res://.godot/imported/Octaleaf.png-fc7474bc4d07c39f9945069ad253bbaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Octaleaf.png"
-dest_files=["res://.godot/imported/Octaleaf.png-1c8683a480bff900d9a8dae1d084d792.ctex"]
+source_file="res://minions/sprites/Octaleaf.png"
+dest_files=["res://.godot/imported/Octaleaf.png-fc7474bc4d07c39f9945069ad253bbaf.ctex"]
 
 [params]
 

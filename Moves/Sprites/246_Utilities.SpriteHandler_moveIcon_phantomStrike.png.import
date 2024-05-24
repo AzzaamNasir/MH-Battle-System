@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ck607hsbapahe"
-path="res://.godot/imported/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png-6a80b5a2c0e92b6c6bd2a4a7887a4204.ctex"
+path="res://.godot/imported/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png-2c68909c04efbcf20f6154fbbaa4b20a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png"
-dest_files=["res://.godot/imported/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png-6a80b5a2c0e92b6c6bd2a4a7887a4204.ctex"]
+source_file="res://moves/sprites/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png"
+dest_files=["res://.godot/imported/246_Utilities.SpriteHandler_moveIcon_phantomStrike.png-2c68909c04efbcf20f6154fbbaa4b20a.ctex"]
 
 [params]
 

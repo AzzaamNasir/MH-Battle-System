@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cu4gx60sp1iu4"
-path="res://.godot/imported/Kel'ten.png-fa7ce275bf5e930856b5a575277355d8.ctex"
+path="res://.godot/imported/Kel'ten.png-4a97298f71ce3a35d75779cd76e3367b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Kel'ten.png"
-dest_files=["res://.godot/imported/Kel'ten.png-fa7ce275bf5e930856b5a575277355d8.ctex"]
+source_file="res://minions/sprites/Kel'ten.png"
+dest_files=["res://.godot/imported/Kel'ten.png-4a97298f71ce3a35d75779cd76e3367b.ctex"]
 
 [params]
 

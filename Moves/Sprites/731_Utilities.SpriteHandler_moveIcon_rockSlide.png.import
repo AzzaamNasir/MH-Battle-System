@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cya2hag7mxqu"
-path="res://.godot/imported/731_Utilities.SpriteHandler_moveIcon_rockSlide.png-87efe5de565abb19f2645dea031fce29.ctex"
+path="res://.godot/imported/731_Utilities.SpriteHandler_moveIcon_rockSlide.png-5d0897a92202668f7a159a255a4770fe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/731_Utilities.SpriteHandler_moveIcon_rockSlide.png"
-dest_files=["res://.godot/imported/731_Utilities.SpriteHandler_moveIcon_rockSlide.png-87efe5de565abb19f2645dea031fce29.ctex"]
+source_file="res://moves/sprites/731_Utilities.SpriteHandler_moveIcon_rockSlide.png"
+dest_files=["res://.godot/imported/731_Utilities.SpriteHandler_moveIcon_rockSlide.png-5d0897a92202668f7a159a255a4770fe.ctex"]
 
 [params]
 

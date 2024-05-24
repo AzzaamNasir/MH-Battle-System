@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doooopxoth8ah"
-path="res://.godot/imported/904_Utilities.SpriteHandler_moveIcon_righteousFate.png-9a55af5eeb4b906a85b646fb90a82172.ctex"
+path="res://.godot/imported/904_Utilities.SpriteHandler_moveIcon_righteousFate.png-a165fecdcc9a9b521f210ed742538150.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/904_Utilities.SpriteHandler_moveIcon_righteousFate.png"
-dest_files=["res://.godot/imported/904_Utilities.SpriteHandler_moveIcon_righteousFate.png-9a55af5eeb4b906a85b646fb90a82172.ctex"]
+source_file="res://moves/sprites/904_Utilities.SpriteHandler_moveIcon_righteousFate.png"
+dest_files=["res://.godot/imported/904_Utilities.SpriteHandler_moveIcon_righteousFate.png-a165fecdcc9a9b521f210ed742538150.ctex"]
 
 [params]
 

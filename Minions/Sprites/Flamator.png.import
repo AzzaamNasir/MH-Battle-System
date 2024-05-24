@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bc0mpoedc28js"
-path="res://.godot/imported/Flamator.png-60c24d08024b9ee76d242973a4ae3146.ctex"
+path="res://.godot/imported/Flamator.png-2b127cf31d607c302a86d17635fd8eeb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Flamator.png"
-dest_files=["res://.godot/imported/Flamator.png-60c24d08024b9ee76d242973a4ae3146.ctex"]
+source_file="res://minions/sprites/Flamator.png"
+dest_files=["res://.godot/imported/Flamator.png-2b127cf31d607c302a86d17635fd8eeb.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brpa26y7dj0cb"
-path="res://.godot/imported/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png-9aa0468b172a8b4e26235532ae1a8e28.ctex"
+path="res://.godot/imported/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png-2227d1ff1bf622810cc4d34535275e8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Sprites/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png"
-dest_files=["res://.godot/imported/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png-9aa0468b172a8b4e26235532ae1a8e28.ctex"]
+source_file="res://ui/sprites/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png"
+dest_files=["res://.godot/imported/1107_Utilities.SpriteHandler_tutorial_bigEnergyBar.png-2227d1ff1bf622810cc4d34535275e8a.ctex"]
 
 [params]
 

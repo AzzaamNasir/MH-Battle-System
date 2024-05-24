@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brf0qwyt6nc46"
-path="res://.godot/imported/570_Utilities.SpriteHandler_moveIcon_warmth.png-816fe0f4d11e9d22f397375938144669.ctex"
+path="res://.godot/imported/570_Utilities.SpriteHandler_moveIcon_warmth.png-bd5f290e668b5787a30529606ffef63c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/570_Utilities.SpriteHandler_moveIcon_warmth.png"
-dest_files=["res://.godot/imported/570_Utilities.SpriteHandler_moveIcon_warmth.png-816fe0f4d11e9d22f397375938144669.ctex"]
+source_file="res://moves/sprites/570_Utilities.SpriteHandler_moveIcon_warmth.png"
+dest_files=["res://.godot/imported/570_Utilities.SpriteHandler_moveIcon_warmth.png-bd5f290e668b5787a30529606ffef63c.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1unqyvogqtwm"
-path="res://.godot/imported/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png-41911988f1985a6e491b8467b6610c08.ctex"
+path="res://.godot/imported/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png-85e34cfcbf905fcdc5c7c73a068d965d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png"
-dest_files=["res://.godot/imported/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png-41911988f1985a6e491b8467b6610c08.ctex"]
+source_file="res://moves/sprites/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png"
+dest_files=["res://.godot/imported/289_Utilities.SpriteHandler_moveIcon_poisonTooth.png-85e34cfcbf905fcdc5c7c73a068d965d.ctex"]
 
 [params]
 

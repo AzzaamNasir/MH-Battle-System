@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d16eajk70bs3v"
-path="res://.godot/imported/1009_Utilities.SpriteHandler_moveIcon_solder.png-c8da95e428a7b11a701d53ce9e828c73.ctex"
+path="res://.godot/imported/1009_Utilities.SpriteHandler_moveIcon_solder.png-0e33b8d9b8e0077c9632abeafd630bcb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1009_Utilities.SpriteHandler_moveIcon_solder.png"
-dest_files=["res://.godot/imported/1009_Utilities.SpriteHandler_moveIcon_solder.png-c8da95e428a7b11a701d53ce9e828c73.ctex"]
+source_file="res://moves/sprites/1009_Utilities.SpriteHandler_moveIcon_solder.png"
+dest_files=["res://.godot/imported/1009_Utilities.SpriteHandler_moveIcon_solder.png-0e33b8d9b8e0077c9632abeafd630bcb.ctex"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://1md1sfgrxy4t"]
 
-[ext_resource type="Script" path="res://resource_group.gd" id="1_lm8ty"]
+[ext_resource type="Script" path="res://tools/resource_group.gd" id="1_y62i5"]
 
 [resource]
-script = ExtResource("1_lm8ty")
+script = ExtResource("1_y62i5")
 run = false
 searchPath = "res://Minions/Resources"
-pathList = Array[String](["res://Minions/Resources/Quickapent.tres", "res://Minions/Resources/Tazorback.tres", "res://Minions/Resources/Tigertan.tres"])
+pathList = Array[String](["res://Minions/Resources/quickapent.tres", "res://Minions/Resources/tazorback.tres", "res://Minions/Resources/tigertan.tres"])

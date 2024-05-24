@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhjxl3swin718"
-path="res://.godot/imported/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png-cce8e0b86127c0b0ecbbf7ca02d779d5.ctex"
+path="res://.godot/imported/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png-c8d2ff2772b58755c54814223d368ced.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png"
-dest_files=["res://.godot/imported/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png-cce8e0b86127c0b0ecbbf7ca02d779d5.ctex"]
+source_file="res://moves/sprites/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png"
+dest_files=["res://.godot/imported/1119_Utilities.SpriteHandler_moveIcon_steelSpike.png-c8d2ff2772b58755c54814223d368ced.ctex"]
 
 [params]
 

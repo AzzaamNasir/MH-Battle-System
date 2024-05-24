@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://csgu70jjll6iq"
-path="res://.godot/imported/518_Utilities.SpriteHandler_moveIcon_innerForce.png-bf35a0e0b50a64be90e30e626a45f603.ctex"
+path="res://.godot/imported/518_Utilities.SpriteHandler_moveIcon_innerForce.png-4c86545963c9e010f5aac5cb761b7c87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/518_Utilities.SpriteHandler_moveIcon_innerForce.png"
-dest_files=["res://.godot/imported/518_Utilities.SpriteHandler_moveIcon_innerForce.png-bf35a0e0b50a64be90e30e626a45f603.ctex"]
+source_file="res://moves/sprites/518_Utilities.SpriteHandler_moveIcon_innerForce.png"
+dest_files=["res://.godot/imported/518_Utilities.SpriteHandler_moveIcon_innerForce.png-4c86545963c9e010f5aac5cb761b7c87.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br5wr1x5me1bx"
-path="res://.godot/imported/520_Utilities.SpriteHandler_moveIcon_agility.png-84a506ae7f337432c9431fdf36919e8c.ctex"
+path="res://.godot/imported/520_Utilities.SpriteHandler_moveIcon_agility.png-c12d59e01104fbce9c36f630a20e481b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/520_Utilities.SpriteHandler_moveIcon_agility.png"
-dest_files=["res://.godot/imported/520_Utilities.SpriteHandler_moveIcon_agility.png-84a506ae7f337432c9431fdf36919e8c.ctex"]
+source_file="res://moves/sprites/520_Utilities.SpriteHandler_moveIcon_agility.png"
+dest_files=["res://.godot/imported/520_Utilities.SpriteHandler_moveIcon_agility.png-c12d59e01104fbce9c36f630a20e481b.ctex"]
 
 [params]
 

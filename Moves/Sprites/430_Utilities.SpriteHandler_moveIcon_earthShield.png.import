@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db31r51twywfn"
-path="res://.godot/imported/430_Utilities.SpriteHandler_moveIcon_earthShield.png-59c4c450fb40a8f050134a5bd6b41cac.ctex"
+path="res://.godot/imported/430_Utilities.SpriteHandler_moveIcon_earthShield.png-8647146a54054b1a65e0fcdc5a002ad2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/430_Utilities.SpriteHandler_moveIcon_earthShield.png"
-dest_files=["res://.godot/imported/430_Utilities.SpriteHandler_moveIcon_earthShield.png-59c4c450fb40a8f050134a5bd6b41cac.ctex"]
+source_file="res://moves/sprites/430_Utilities.SpriteHandler_moveIcon_earthShield.png"
+dest_files=["res://.godot/imported/430_Utilities.SpriteHandler_moveIcon_earthShield.png-8647146a54054b1a65e0fcdc5a002ad2.ctex"]
 
 [params]
 

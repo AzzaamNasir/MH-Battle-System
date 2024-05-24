@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfvohblrdd8j4"
-path="res://.godot/imported/Kittyvile.png-6a033b3559916948f96b072629fb45af.ctex"
+path="res://.godot/imported/Kittyvile.png-4d2ca7aaabed5610d37e05b7045dd523.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Kittyvile.png"
-dest_files=["res://.godot/imported/Kittyvile.png-6a033b3559916948f96b072629fb45af.ctex"]
+source_file="res://minions/sprites/Kittyvile.png"
+dest_files=["res://.godot/imported/Kittyvile.png-4d2ca7aaabed5610d37e05b7045dd523.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://27kk4pj56msm"
-path="res://.godot/imported/887_Utilities.SpriteHandler_moveIcon_fireBash.png-d0ef015de8c9680981f62feefacceafd.ctex"
+path="res://.godot/imported/887_Utilities.SpriteHandler_moveIcon_fireBash.png-88fd56879b8a2496a12442cc6bbb1311.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/887_Utilities.SpriteHandler_moveIcon_fireBash.png"
-dest_files=["res://.godot/imported/887_Utilities.SpriteHandler_moveIcon_fireBash.png-d0ef015de8c9680981f62feefacceafd.ctex"]
+source_file="res://moves/sprites/887_Utilities.SpriteHandler_moveIcon_fireBash.png"
+dest_files=["res://.godot/imported/887_Utilities.SpriteHandler_moveIcon_fireBash.png-88fd56879b8a2496a12442cc6bbb1311.ctex"]
 
 [params]
 

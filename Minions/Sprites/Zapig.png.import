@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3i53i3bvr822"
-path="res://.godot/imported/Zapig.png-9f0b36987c8b63b127af1a0057d0afa1.ctex"
+path="res://.godot/imported/Zapig.png-ae7d2350e51ab870469712453a914a5d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Zapig.png"
-dest_files=["res://.godot/imported/Zapig.png-9f0b36987c8b63b127af1a0057d0afa1.ctex"]
+source_file="res://minions/sprites/Zapig.png"
+dest_files=["res://.godot/imported/Zapig.png-ae7d2350e51ab870469712453a914a5d.ctex"]
 
 [params]
 

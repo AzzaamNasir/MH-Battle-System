@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://cuj5bigx8n5to"]
 
-[ext_resource type="Script" path="res://Moves/MoveEffects.gd" id="1_6jk7v"]
-[ext_resource type="Script" path="res://Moves/MoveData.gd" id="2_dynr0"]
-[ext_resource type="Texture2D" uid="uid://c4qttc8osbclw" path="res://Moves/Sprites/1295_Utilities.SpriteHandler_moveIcon_fireRam.png" id="3_me5dw"]
+[ext_resource type="Script" path="res://moves/move_effects/move_effects.gd" id="1_6jk7v"]
+[ext_resource type="Script" path="res://moves/move_data.gd" id="2_dynr0"]
+[ext_resource type="Texture2D" uid="uid://c4qttc8osbclw" path="res://moves/sprites/1295_Utilities.SpriteHandler_moveIcon_fireRam.png" id="3_me5dw"]
 
 [sub_resource type="Resource" id="Resource_iaerj"]
 resource_local_to_scene = true

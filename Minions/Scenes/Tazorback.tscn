@@ -1,39 +1,45 @@
-[gd_scene load_steps=5 format=3 uid="uid://ls7mw7qg0b28"]
+[gd_scene load_steps=5 format=3 uid="uid://46wqkhqr3h4f"]
 
-[ext_resource type="Script" path="res://Minions/Minion.gd" id="1_6fqhp"]
-[ext_resource type="Resource" uid="uid://cmx4gjcnv8ylt" path="res://Minions/Resources/Tazorback.tres" id="2_snpaj"]
-[ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://UI/MinionStats.tscn" id="4_c6yp5"]
-[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://UI/MoveSelector.tscn" id="7_1twlf"]
+[ext_resource type="Script" path="res://minions/minion.gd" id="1_bobdt"]
+[ext_resource type="Resource" uid="uid://brxhm0ddjedb3" path="res://minions/resources/tazorback.tres" id="2_413l8"]
+[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://ui/move_selector.tscn" id="3_jaswd"]
+[ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://ui/minion_stats.tscn" id="4_jvlsi"]
 
-[node name="Tazorback" type="Node2D" node_paths=PackedStringArray("SelectMenu")]
-script = ExtResource("1_6fqhp")
-minionData = ExtResource("2_snpaj")
-SelectMenu = NodePath("SelectMenu")
+[node name="Minion" type="Node2D"]
+script = ExtResource("1_bobdt")
+minion_data = ExtResource("2_413l8")
 
 [node name="Sprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 
-[node name="SelectMenu" parent="." instance=ExtResource("7_1twlf")]
+[node name="MoveMenu" parent="." instance=ExtResource("3_jaswd")]
+unique_name_in_owner = true
 visible = false
 
-[node name="Control" type="PanelContainer" parent="."]
+[node name="MinionStats" parent="." instance=ExtResource("4_jvlsi")]
+unique_name_in_owner = true
+
+[node name="Control" type="Control" parent="."]
 self_modulate = Color(1, 1, 1, 0)
+layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -54.0
-offset_top = -56.0
-offset_right = 56.0
-offset_bottom = 56.0
+offset_left = -61.5
+offset_top = -62.0
+offset_right = 61.5
+offset_bottom = 62.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
 
 [node name="ClickDetector" type="Button" parent="Control"]
 unique_name_in_owner = true
 visible = false
-layout_mode = 2
-
-[node name="MinionStats" parent="." instance=ExtResource("4_c6yp5")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brtmqhk7t2vow"
-path="res://.godot/imported/1158_Utilities.SpriteHandler_moveIcon_martyr.png-5c73b0e49dfa75c4aa362bf13fab10b3.ctex"
+path="res://.godot/imported/1158_Utilities.SpriteHandler_moveIcon_martyr.png-6d9bf075f6d4885c7ade8000b47e9852.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1158_Utilities.SpriteHandler_moveIcon_martyr.png"
-dest_files=["res://.godot/imported/1158_Utilities.SpriteHandler_moveIcon_martyr.png-5c73b0e49dfa75c4aa362bf13fab10b3.ctex"]
+source_file="res://moves/sprites/1158_Utilities.SpriteHandler_moveIcon_martyr.png"
+dest_files=["res://.godot/imported/1158_Utilities.SpriteHandler_moveIcon_martyr.png-6d9bf075f6d4885c7ade8000b47e9852.ctex"]
 
 [params]
 

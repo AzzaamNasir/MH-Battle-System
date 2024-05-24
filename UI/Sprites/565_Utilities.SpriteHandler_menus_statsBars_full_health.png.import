@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjis5jxeisy6m"
-path="res://.godot/imported/565_Utilities.SpriteHandler_menus_statsBars_full_health.png-86e8e736078c19a828f59160824cd94e.ctex"
+path="res://.godot/imported/565_Utilities.SpriteHandler_menus_statsBars_full_health.png-0d05ba5279db4ceef814386bca7c62c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Sprites/565_Utilities.SpriteHandler_menus_statsBars_full_health.png"
-dest_files=["res://.godot/imported/565_Utilities.SpriteHandler_menus_statsBars_full_health.png-86e8e736078c19a828f59160824cd94e.ctex"]
+source_file="res://ui/sprites/565_Utilities.SpriteHandler_menus_statsBars_full_health.png"
+dest_files=["res://.godot/imported/565_Utilities.SpriteHandler_menus_statsBars_full_health.png-0d05ba5279db4ceef814386bca7c62c9.ctex"]
 
 [params]
 

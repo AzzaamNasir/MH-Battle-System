@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://t4q2effg4sxh"
-path="res://.godot/imported/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png-7d4f380ad3ae7a57e9234bad3cb724dc.ctex"
+path="res://.godot/imported/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png-2062e85f3aeb9d34845b9bf1fba16ae9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png"
-dest_files=["res://.godot/imported/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png-7d4f380ad3ae7a57e9234bad3cb724dc.ctex"]
+source_file="res://moves/sprites/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png"
+dest_files=["res://.godot/imported/1300_Utilities.SpriteHandler_moveIcon_thunderstorm.png-2062e85f3aeb9d34845b9bf1fba16ae9.ctex"]
 
 [params]
 

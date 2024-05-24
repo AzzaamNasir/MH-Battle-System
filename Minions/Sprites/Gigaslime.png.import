@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ckw0rqha6kjxw"
-path="res://.godot/imported/Gigaslime.png-bd54c8625b38cf8611a3f97651ca3911.ctex"
+path="res://.godot/imported/Gigaslime.png-4748f78c97a1691e5bdfcc90824e4d70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Gigaslime.png"
-dest_files=["res://.godot/imported/Gigaslime.png-bd54c8625b38cf8611a3f97651ca3911.ctex"]
+source_file="res://minions/sprites/Gigaslime.png"
+dest_files=["res://.godot/imported/Gigaslime.png-4748f78c97a1691e5bdfcc90824e4d70.ctex"]
 
 [params]
 

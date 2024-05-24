@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8isu8p8f2ly1"
-path="res://.godot/imported/Scaredrow.png-343e82669516e488f9bc415fdef7071c.ctex"
+path="res://.godot/imported/Scaredrow.png-28e2ee8f11c34dc1fe83a2b67b86b1da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Scaredrow.png"
-dest_files=["res://.godot/imported/Scaredrow.png-343e82669516e488f9bc415fdef7071c.ctex"]
+source_file="res://minions/sprites/Scaredrow.png"
+dest_files=["res://.godot/imported/Scaredrow.png-28e2ee8f11c34dc1fe83a2b67b86b1da.ctex"]
 
 [params]
 

@@ -37,4 +37,4 @@ enum MinionType {
 }
 
 ##Instert the .tres files of the moves htis minion has here
-@export var MinionMoves : Array[MoveData]
+@export var moves : Array[MoveData]

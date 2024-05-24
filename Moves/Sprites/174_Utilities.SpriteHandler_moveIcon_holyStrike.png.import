@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpim1bneoyu4s"
-path="res://.godot/imported/174_Utilities.SpriteHandler_moveIcon_holyStrike.png-90ec9cc8275d5507fc6f73f4eaca6735.ctex"
+path="res://.godot/imported/174_Utilities.SpriteHandler_moveIcon_holyStrike.png-c8b3874bdf4411882ff14fbd6165d8aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/174_Utilities.SpriteHandler_moveIcon_holyStrike.png"
-dest_files=["res://.godot/imported/174_Utilities.SpriteHandler_moveIcon_holyStrike.png-90ec9cc8275d5507fc6f73f4eaca6735.ctex"]
+source_file="res://moves/sprites/174_Utilities.SpriteHandler_moveIcon_holyStrike.png"
+dest_files=["res://.godot/imported/174_Utilities.SpriteHandler_moveIcon_holyStrike.png-c8b3874bdf4411882ff14fbd6165d8aa.ctex"]
 
 [params]
 

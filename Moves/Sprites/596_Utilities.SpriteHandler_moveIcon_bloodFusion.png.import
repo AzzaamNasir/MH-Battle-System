@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dubtstggswoys"
-path="res://.godot/imported/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png-5547ff14bb8fb6080889dc5829410439.ctex"
+path="res://.godot/imported/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png-d082545b6f2d44f32ae4026260c57630.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png"
-dest_files=["res://.godot/imported/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png-5547ff14bb8fb6080889dc5829410439.ctex"]
+source_file="res://moves/sprites/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png"
+dest_files=["res://.godot/imported/596_Utilities.SpriteHandler_moveIcon_bloodFusion.png-d082545b6f2d44f32ae4026260c57630.ctex"]
 
 [params]
 

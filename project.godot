@@ -21,13 +21,9 @@ resources_spreadsheet_view/context_menu_on_leftclick=false
 [application]
 
 config/name="Min-Hero"
-run/main_scene="res://Arena.tscn"
+run/main_scene="res://battle_system/arena.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 boot_splash/show_image=false
-
-[autoload]
-
-SelectionManager="*res://selection_manager.gd"
 
 [display]
 

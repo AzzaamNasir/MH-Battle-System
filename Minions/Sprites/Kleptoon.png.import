@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y8qyt08alfu0"
-path="res://.godot/imported/Kleptoon.png-be48bfce506fe9bf4164251fd9a09258.ctex"
+path="res://.godot/imported/Kleptoon.png-e2a34879b0f8b763081215408080bb43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Kleptoon.png"
-dest_files=["res://.godot/imported/Kleptoon.png-be48bfce506fe9bf4164251fd9a09258.ctex"]
+source_file="res://minions/sprites/Kleptoon.png"
+dest_files=["res://.godot/imported/Kleptoon.png-e2a34879b0f8b763081215408080bb43.ctex"]
 
 [params]
 

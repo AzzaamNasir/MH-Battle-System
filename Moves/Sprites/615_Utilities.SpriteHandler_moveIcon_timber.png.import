@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3cfruvnj2grn"
-path="res://.godot/imported/615_Utilities.SpriteHandler_moveIcon_timber.png-f9d8f0152dac709b9a74b94a4c7adca1.ctex"
+path="res://.godot/imported/615_Utilities.SpriteHandler_moveIcon_timber.png-573034830c5fdf7e8031b1c269ab012f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/615_Utilities.SpriteHandler_moveIcon_timber.png"
-dest_files=["res://.godot/imported/615_Utilities.SpriteHandler_moveIcon_timber.png-f9d8f0152dac709b9a74b94a4c7adca1.ctex"]
+source_file="res://moves/sprites/615_Utilities.SpriteHandler_moveIcon_timber.png"
+dest_files=["res://.godot/imported/615_Utilities.SpriteHandler_moveIcon_timber.png-573034830c5fdf7e8031b1c269ab012f.ctex"]
 
 [params]
 

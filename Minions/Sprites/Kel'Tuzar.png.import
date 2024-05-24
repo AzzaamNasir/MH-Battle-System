@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqwfq4ktvbphw"
-path="res://.godot/imported/Kel'Tuzar.png-4e46d5c13784cd4d000001a17a497892.ctex"
+path="res://.godot/imported/Kel'Tuzar.png-4d5c1b86e328ef5dbbbdd1139a419b78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Kel'Tuzar.png"
-dest_files=["res://.godot/imported/Kel'Tuzar.png-4e46d5c13784cd4d000001a17a497892.ctex"]
+source_file="res://minions/sprites/Kel'Tuzar.png"
+dest_files=["res://.godot/imported/Kel'Tuzar.png-4d5c1b86e328ef5dbbbdd1139a419b78.ctex"]
 
 [params]
 

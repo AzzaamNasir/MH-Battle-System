@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4r6qkd371h6s"
-path="res://.godot/imported/1022_Utilities.SpriteHandler_moveIcon_iceShield.png-39c1bf10c97ee6c5b2dcdc8e0ef4fb82.ctex"
+path="res://.godot/imported/1022_Utilities.SpriteHandler_moveIcon_iceShield.png-e9c43212cebaf8e1b57a552718fdbc18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1022_Utilities.SpriteHandler_moveIcon_iceShield.png"
-dest_files=["res://.godot/imported/1022_Utilities.SpriteHandler_moveIcon_iceShield.png-39c1bf10c97ee6c5b2dcdc8e0ef4fb82.ctex"]
+source_file="res://moves/sprites/1022_Utilities.SpriteHandler_moveIcon_iceShield.png"
+dest_files=["res://.godot/imported/1022_Utilities.SpriteHandler_moveIcon_iceShield.png-e9c43212cebaf8e1b57a552718fdbc18.ctex"]
 
 [params]
 

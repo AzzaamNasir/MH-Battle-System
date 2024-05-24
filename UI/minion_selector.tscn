@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drejxjrb6er7u"]
 
-[ext_resource type="Script" path="res://UI/MinionSelector.gd" id="1_t346f"]
-[ext_resource type="Resource" uid="uid://1md1sfgrxy4t" path="res://Minions/Minions.tres" id="2_dbu5a"]
+[ext_resource type="Script" path="res://ui/minion_selector.gd" id="1_t346f"]
+[ext_resource type="Resource" uid="uid://1md1sfgrxy4t" path="res://minions/minions.tres" id="2_dbu5a"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_uwo11"]
 

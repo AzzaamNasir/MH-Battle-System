@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drpxkbtpdd5p5"
-path="res://.godot/imported/1573_Utilities.SpriteHandler_moveIcon_wildfire.png-630f15253b5173d9eba18dac819a2ac0.ctex"
+path="res://.godot/imported/1573_Utilities.SpriteHandler_moveIcon_wildfire.png-f990a660215c34c68f54069cbf39b7a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1573_Utilities.SpriteHandler_moveIcon_wildfire.png"
-dest_files=["res://.godot/imported/1573_Utilities.SpriteHandler_moveIcon_wildfire.png-630f15253b5173d9eba18dac819a2ac0.ctex"]
+source_file="res://moves/sprites/1573_Utilities.SpriteHandler_moveIcon_wildfire.png"
+dest_files=["res://.godot/imported/1573_Utilities.SpriteHandler_moveIcon_wildfire.png-f990a660215c34c68f54069cbf39b7a3.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2q8jwrijt0ib"
-path="res://.godot/imported/Octagrass.png-d6eee5a3bea5219905872abe708b152a.ctex"
+path="res://.godot/imported/Octagrass.png-058f771e464cbfb8a5eed36ecc26775b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Octagrass.png"
-dest_files=["res://.godot/imported/Octagrass.png-d6eee5a3bea5219905872abe708b152a.ctex"]
+source_file="res://minions/sprites/Octagrass.png"
+dest_files=["res://.godot/imported/Octagrass.png-058f771e464cbfb8a5eed36ecc26775b.ctex"]
 
 [params]
 

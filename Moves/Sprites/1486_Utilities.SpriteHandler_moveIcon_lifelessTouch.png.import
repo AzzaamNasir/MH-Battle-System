@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bhpocxdvlcqqi"
-path="res://.godot/imported/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png-8841784c9d537d5a9c2ef240fac49c26.ctex"
+path="res://.godot/imported/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png-febed13a70a8284994f171631f4f15e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png"
-dest_files=["res://.godot/imported/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png-8841784c9d537d5a9c2ef240fac49c26.ctex"]
+source_file="res://moves/sprites/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png"
+dest_files=["res://.godot/imported/1486_Utilities.SpriteHandler_moveIcon_lifelessTouch.png-febed13a70a8284994f171631f4f15e6.ctex"]
 
 [params]
 

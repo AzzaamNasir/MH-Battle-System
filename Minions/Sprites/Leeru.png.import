@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://sr1jgxyyse52"
-path="res://.godot/imported/Leeru.png-718f926a6b86282a1df56a4f752e9a3e.ctex"
+path="res://.godot/imported/Leeru.png-98b2047fb9c77d8adeeb6b7a006c712b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Leeru.png"
-dest_files=["res://.godot/imported/Leeru.png-718f926a6b86282a1df56a4f752e9a3e.ctex"]
+source_file="res://minions/sprites/Leeru.png"
+dest_files=["res://.godot/imported/Leeru.png-98b2047fb9c77d8adeeb6b7a006c712b.ctex"]
 
 [params]
 

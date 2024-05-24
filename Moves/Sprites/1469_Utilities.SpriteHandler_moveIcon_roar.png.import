@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ppwqbfgit64p"
-path="res://.godot/imported/1469_Utilities.SpriteHandler_moveIcon_roar.png-6cef712fb07d798558ed51e9abd3167f.ctex"
+path="res://.godot/imported/1469_Utilities.SpriteHandler_moveIcon_roar.png-47dd47acc3b8ce0c92fe73cd974f8a76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1469_Utilities.SpriteHandler_moveIcon_roar.png"
-dest_files=["res://.godot/imported/1469_Utilities.SpriteHandler_moveIcon_roar.png-6cef712fb07d798558ed51e9abd3167f.ctex"]
+source_file="res://moves/sprites/1469_Utilities.SpriteHandler_moveIcon_roar.png"
+dest_files=["res://.godot/imported/1469_Utilities.SpriteHandler_moveIcon_roar.png-47dd47acc3b8ce0c92fe73cd974f8a76.ctex"]
 
 [params]
 

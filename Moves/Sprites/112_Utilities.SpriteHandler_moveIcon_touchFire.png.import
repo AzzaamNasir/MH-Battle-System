@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjefdwneg241r"
-path="res://.godot/imported/112_Utilities.SpriteHandler_moveIcon_touchFire.png-402def5cfd0b656a798ded7ee1392ac8.ctex"
+path="res://.godot/imported/112_Utilities.SpriteHandler_moveIcon_touchFire.png-f8c720b04f86e24dddfad6d528e8bfe5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/112_Utilities.SpriteHandler_moveIcon_touchFire.png"
-dest_files=["res://.godot/imported/112_Utilities.SpriteHandler_moveIcon_touchFire.png-402def5cfd0b656a798ded7ee1392ac8.ctex"]
+source_file="res://moves/sprites/112_Utilities.SpriteHandler_moveIcon_touchFire.png"
+dest_files=["res://.godot/imported/112_Utilities.SpriteHandler_moveIcon_touchFire.png-f8c720b04f86e24dddfad6d528e8bfe5.ctex"]
 
 [params]
 

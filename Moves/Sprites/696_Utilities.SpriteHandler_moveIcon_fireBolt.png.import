@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://debiuogmbdkr5"
-path="res://.godot/imported/696_Utilities.SpriteHandler_moveIcon_fireBolt.png-421b22e22077a12570d837d0f663efd7.ctex"
+path="res://.godot/imported/696_Utilities.SpriteHandler_moveIcon_fireBolt.png-6cc7dab31b4ddf77d6199f45b571ddaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/696_Utilities.SpriteHandler_moveIcon_fireBolt.png"
-dest_files=["res://.godot/imported/696_Utilities.SpriteHandler_moveIcon_fireBolt.png-421b22e22077a12570d837d0f663efd7.ctex"]
+source_file="res://moves/sprites/696_Utilities.SpriteHandler_moveIcon_fireBolt.png"
+dest_files=["res://.godot/imported/696_Utilities.SpriteHandler_moveIcon_fireBolt.png-6cc7dab31b4ddf77d6199f45b571ddaf.ctex"]
 
 [params]
 

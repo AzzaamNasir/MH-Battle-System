@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doomffxkpmr7l"
-path="res://.godot/imported/Vudu.png-d9327829e3a7bb4f497591338398cf01.ctex"
+path="res://.godot/imported/Vudu.png-0464426b9e81bc455e6f1fa4c94cc8d7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Vudu.png"
-dest_files=["res://.godot/imported/Vudu.png-d9327829e3a7bb4f497591338398cf01.ctex"]
+source_file="res://minions/sprites/Vudu.png"
+dest_files=["res://.godot/imported/Vudu.png-0464426b9e81bc455e6f1fa4c94cc8d7.ctex"]
 
 [params]
 

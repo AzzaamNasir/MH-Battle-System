@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bi7jm1ddpqeex"
-path="res://.godot/imported/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png-08cb08db64847d2f0b29bd75518b259d.ctex"
+path="res://.godot/imported/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png-de2b87cae6ab86240efa98d119568fd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png"
-dest_files=["res://.godot/imported/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png-08cb08db64847d2f0b29bd75518b259d.ctex"]
+source_file="res://moves/sprites/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png"
+dest_files=["res://.godot/imported/1245_Utilities.SpriteHandler_moveIcon_holyBurn.png-de2b87cae6ab86240efa98d119568fd7.ctex"]
 
 [params]
 

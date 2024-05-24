@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bblj41tgq5trr"
-path="res://.godot/imported/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png-a882b177bdaac05dc81235a30095460e.ctex"
+path="res://.godot/imported/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png-51aff3c19953369c9f942eeb260fc728.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png"
-dest_files=["res://.godot/imported/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png-a882b177bdaac05dc81235a30095460e.ctex"]
+source_file="res://moves/sprites/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png"
+dest_files=["res://.godot/imported/419_Utilities.SpriteHandler_moveIcon_demonicStrike.png-51aff3c19953369c9f942eeb260fc728.ctex"]
 
 [params]
 

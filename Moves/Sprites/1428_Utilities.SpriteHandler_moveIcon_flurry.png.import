@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cpa6efwgpgyq5"
-path="res://.godot/imported/1428_Utilities.SpriteHandler_moveIcon_flurry.png-2ec0ae3f6c0309a871c85886d045c00d.ctex"
+path="res://.godot/imported/1428_Utilities.SpriteHandler_moveIcon_flurry.png-e6635155af94a5ac9980cde1f5f7a2a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1428_Utilities.SpriteHandler_moveIcon_flurry.png"
-dest_files=["res://.godot/imported/1428_Utilities.SpriteHandler_moveIcon_flurry.png-2ec0ae3f6c0309a871c85886d045c00d.ctex"]
+source_file="res://moves/sprites/1428_Utilities.SpriteHandler_moveIcon_flurry.png"
+dest_files=["res://.godot/imported/1428_Utilities.SpriteHandler_moveIcon_flurry.png-e6635155af94a5ac9980cde1f5f7a2a2.ctex"]
 
 [params]
 

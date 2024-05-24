@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://s2cfmpoymu6k"
-path="res://.godot/imported/Foramare.png-39cc46971f1beddb29282e9b41833fe9.ctex"
+path="res://.godot/imported/Foramare.png-7275ed7c86a5e32d97cc4d17d5883a59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Foramare.png"
-dest_files=["res://.godot/imported/Foramare.png-39cc46971f1beddb29282e9b41833fe9.ctex"]
+source_file="res://minions/sprites/Foramare.png"
+dest_files=["res://.godot/imported/Foramare.png-7275ed7c86a5e32d97cc4d17d5883a59.ctex"]
 
 [params]
 

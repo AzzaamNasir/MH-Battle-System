@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cs1mq8cecqd70"
-path="res://.godot/imported/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png-9ee1a155f17d5a2155e06b8522ddb9e3.ctex"
+path="res://.godot/imported/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png-0eb263994ad26998d54ca0e458e6de53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png"
-dest_files=["res://.godot/imported/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png-9ee1a155f17d5a2155e06b8522ddb9e3.ctex"]
+source_file="res://moves/sprites/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png"
+dest_files=["res://.godot/imported/1525_Utilities.SpriteHandler_moveIcon_wildTackle.png-0eb263994ad26998d54ca0e458e6de53.ctex"]
 
 [params]
 

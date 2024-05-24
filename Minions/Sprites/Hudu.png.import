@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyaojk8d0yp8y"
-path="res://.godot/imported/Hudu.png-66c6e614fa97a268c3b61e42721a18ae.ctex"
+path="res://.godot/imported/Hudu.png-6aa1b83fab59763862b90e4370098013.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Hudu.png"
-dest_files=["res://.godot/imported/Hudu.png-66c6e614fa97a268c3b61e42721a18ae.ctex"]
+source_file="res://minions/sprites/Hudu.png"
+dest_files=["res://.godot/imported/Hudu.png-6aa1b83fab59763862b90e4370098013.ctex"]
 
 [params]
 

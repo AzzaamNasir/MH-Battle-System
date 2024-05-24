@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://u6yly2n32i1m"
-path="res://.godot/imported/228_Utilities.SpriteHandler_moveIcon_lichBurn.png-83cfc11df3f0be3c474699c93454a246.ctex"
+path="res://.godot/imported/228_Utilities.SpriteHandler_moveIcon_lichBurn.png-12bd15801b5e595f59f994b33f164ded.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/228_Utilities.SpriteHandler_moveIcon_lichBurn.png"
-dest_files=["res://.godot/imported/228_Utilities.SpriteHandler_moveIcon_lichBurn.png-83cfc11df3f0be3c474699c93454a246.ctex"]
+source_file="res://moves/sprites/228_Utilities.SpriteHandler_moveIcon_lichBurn.png"
+dest_files=["res://.godot/imported/228_Utilities.SpriteHandler_moveIcon_lichBurn.png-12bd15801b5e595f59f994b33f164ded.ctex"]
 
 [params]
 

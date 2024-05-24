@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cg7qxb51wqett"
-path="res://.godot/imported/727_Utilities.SpriteHandler_moveIcon_skinTrap.png-519d9b1491af6d7a6255df3967f02009.ctex"
+path="res://.godot/imported/727_Utilities.SpriteHandler_moveIcon_skinTrap.png-12bf4994e3909255fc7c9f1b7607bc93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/727_Utilities.SpriteHandler_moveIcon_skinTrap.png"
-dest_files=["res://.godot/imported/727_Utilities.SpriteHandler_moveIcon_skinTrap.png-519d9b1491af6d7a6255df3967f02009.ctex"]
+source_file="res://moves/sprites/727_Utilities.SpriteHandler_moveIcon_skinTrap.png"
+dest_files=["res://.godot/imported/727_Utilities.SpriteHandler_moveIcon_skinTrap.png-12bf4994e3909255fc7c9f1b7607bc93.ctex"]
 
 [params]
 

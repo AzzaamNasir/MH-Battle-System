@@ -1,19 +1,18 @@
-[gd_resource type="Resource" script_class="MinionData" load_steps=4 format=3 uid="uid://be0wr41ui2l8y"]
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3 uid="uid://oqocwdemhpop"]
 
-[ext_resource type="Resource" uid="uid://dcrg10pgsjoak" path="res://Moves/Resources/PosionTooth.tres" id="1_dpji8"]
-[ext_resource type="Script" path="res://Minions/MinionData.gd" id="1_pxdop"]
-[ext_resource type="Texture2D" uid="uid://di4vmxotrlykq" path="res://Minions/Sprites/Quickapent.png" id="3_11rlf"]
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_edc4j"]
+[ext_resource type="Texture2D" uid="uid://di4vmxotrlykq" path="res://minions/sprites/Quickapent.png" id="2_8pb5r"]
 
 [resource]
-script = ExtResource("1_pxdop")
+script = ExtResource("1_edc4j")
 name = "Quickapent"
-sprite = ExtResource("3_11rlf")
-scene = "res://Minions/Scenes/Quickapent.tscn"
-health = 50
-energy = 42
-atk = 58
-healing = 40
-speed = 80
+sprite = ExtResource("2_8pb5r")
+scene = "res://minions/scenes/quickapent.tscn"
+health = 100
+energy = 45
+atk = 50
+healing = 30
+speed = 50
 type1 = 3
 type2 = 0
-MinionMoves = Array[Resource("res://Moves/MoveData.gd")]([ExtResource("1_dpji8")])
+moves = Array[Resource("res://moves/move_data.gd")]([])

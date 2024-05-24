@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caw8mcb8kinu6"
-path="res://.godot/imported/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png-981cf66d99c1ac847c18861689d72327.ctex"
+path="res://.godot/imported/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png-cd6f5bddf24b778aea462517df0669cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png"
-dest_files=["res://.godot/imported/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png-981cf66d99c1ac847c18861689d72327.ctex"]
+source_file="res://moves/sprites/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png"
+dest_files=["res://.godot/imported/1271_Utilities.SpriteHandler_moveIcon_rockThrow.png-cd6f5bddf24b778aea462517df0669cf.ctex"]
 
 [params]
 

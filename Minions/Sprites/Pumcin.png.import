@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://diweit3hu2dbl"
-path="res://.godot/imported/Pumcin.png-439d9e3629b966e41c9927c739515cd5.ctex"
+path="res://.godot/imported/Pumcin.png-714511646c7f5fd1058800fe243cf8f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Pumcin.png"
-dest_files=["res://.godot/imported/Pumcin.png-439d9e3629b966e41c9927c739515cd5.ctex"]
+source_file="res://minions/sprites/Pumcin.png"
+dest_files=["res://.godot/imported/Pumcin.png-714511646c7f5fd1058800fe243cf8f1.ctex"]
 
 [params]
 

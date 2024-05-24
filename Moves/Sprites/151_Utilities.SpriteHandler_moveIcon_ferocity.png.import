@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqol8bpv1iq17"
-path="res://.godot/imported/151_Utilities.SpriteHandler_moveIcon_ferocity.png-0955f9a71b5f948353c9df70f7ff56f6.ctex"
+path="res://.godot/imported/151_Utilities.SpriteHandler_moveIcon_ferocity.png-85d643711d2ea275c64fdf46d5ddef10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/151_Utilities.SpriteHandler_moveIcon_ferocity.png"
-dest_files=["res://.godot/imported/151_Utilities.SpriteHandler_moveIcon_ferocity.png-0955f9a71b5f948353c9df70f7ff56f6.ctex"]
+source_file="res://moves/sprites/151_Utilities.SpriteHandler_moveIcon_ferocity.png"
+dest_files=["res://.godot/imported/151_Utilities.SpriteHandler_moveIcon_ferocity.png-85d643711d2ea275c64fdf46d5ddef10.ctex"]
 
 [params]
 

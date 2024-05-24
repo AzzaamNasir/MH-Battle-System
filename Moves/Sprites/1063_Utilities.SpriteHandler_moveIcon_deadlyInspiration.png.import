@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0l6gly3jwnxs"
-path="res://.godot/imported/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png-130d35290103a43fbfc05555f722226f.ctex"
+path="res://.godot/imported/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png-e2a135ccebddf596378ccf0b2927352a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png"
-dest_files=["res://.godot/imported/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png-130d35290103a43fbfc05555f722226f.ctex"]
+source_file="res://moves/sprites/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png"
+dest_files=["res://.godot/imported/1063_Utilities.SpriteHandler_moveIcon_deadlyInspiration.png-e2a135ccebddf596378ccf0b2927352a.ctex"]
 
 [params]
 

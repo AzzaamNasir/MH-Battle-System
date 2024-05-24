@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://52yjjf2t8mb1"
-path="res://.godot/imported/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png-7cba3667637ba6b9344f3627d00348ee.ctex"
+path="res://.godot/imported/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png-ec021678791e59e54ec139cb5afb77ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png"
-dest_files=["res://.godot/imported/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png-7cba3667637ba6b9344f3627d00348ee.ctex"]
+source_file="res://moves/sprites/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png"
+dest_files=["res://.godot/imported/795_Utilities.SpriteHandler_moveIcon_righteousZeal.png-ec021678791e59e54ec139cb5afb77ab.ctex"]
 
 [params]
 

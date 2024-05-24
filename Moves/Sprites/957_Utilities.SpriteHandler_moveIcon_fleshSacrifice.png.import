@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cagwfede74y07"
-path="res://.godot/imported/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png-0dc2c654e28b6196e78b82a04a99d7f6.ctex"
+path="res://.godot/imported/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png-c2639e49140260e6a4d7fe3fb1833a14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png"
-dest_files=["res://.godot/imported/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png-0dc2c654e28b6196e78b82a04a99d7f6.ctex"]
+source_file="res://moves/sprites/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png"
+dest_files=["res://.godot/imported/957_Utilities.SpriteHandler_moveIcon_fleshSacrifice.png-c2639e49140260e6a4d7fe3fb1833a14.ctex"]
 
 [params]
 

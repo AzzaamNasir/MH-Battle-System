@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://di4vmxotrlykq"
-path="res://.godot/imported/Quickapent.png-1c057756530cb31bcefe256b5361e62f.ctex"
+path="res://.godot/imported/Quickapent.png-d7dcb991fade14cb536401e6a3df49ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Quickapent.png"
-dest_files=["res://.godot/imported/Quickapent.png-1c057756530cb31bcefe256b5361e62f.ctex"]
+source_file="res://minions/sprites/Quickapent.png"
+dest_files=["res://.godot/imported/Quickapent.png-d7dcb991fade14cb536401e6a3df49ae.ctex"]
 
 [params]
 

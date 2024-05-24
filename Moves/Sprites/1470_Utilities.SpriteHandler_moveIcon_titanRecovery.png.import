@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b1dfseg1u4b3f"
-path="res://.godot/imported/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png-f34c195673ebf6c81c58273147251ef0.ctex"
+path="res://.godot/imported/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png-9d53f4fbf0ee88106dcc8251c34fbf6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png"
-dest_files=["res://.godot/imported/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png-f34c195673ebf6c81c58273147251ef0.ctex"]
+source_file="res://moves/sprites/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png"
+dest_files=["res://.godot/imported/1470_Utilities.SpriteHandler_moveIcon_titanRecovery.png-9d53f4fbf0ee88106dcc8251c34fbf6e.ctex"]
 
 [params]
 

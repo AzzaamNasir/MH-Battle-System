@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cebnj86t5w2kd"
-path="res://.godot/imported/Rottar.png-12bafc9d20729b7a707025674a34ee0f.ctex"
+path="res://.godot/imported/Rottar.png-252d0a32eb24e659f29e7212ee298a36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Rottar.png"
-dest_files=["res://.godot/imported/Rottar.png-12bafc9d20729b7a707025674a34ee0f.ctex"]
+source_file="res://minions/sprites/Rottar.png"
+dest_files=["res://.godot/imported/Rottar.png-252d0a32eb24e659f29e7212ee298a36.ctex"]
 
 [params]
 

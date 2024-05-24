@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bub1fcyr2fvu0"
-path="res://.godot/imported/566_Utilities.SpriteHandler_moveIcon_stun.png-caf249c87c136ebde8e06940652fa0eb.ctex"
+path="res://.godot/imported/566_Utilities.SpriteHandler_moveIcon_stun.png-e87b8548d4beb9de08fc7d970e927089.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/566_Utilities.SpriteHandler_moveIcon_stun.png"
-dest_files=["res://.godot/imported/566_Utilities.SpriteHandler_moveIcon_stun.png-caf249c87c136ebde8e06940652fa0eb.ctex"]
+source_file="res://moves/sprites/566_Utilities.SpriteHandler_moveIcon_stun.png"
+dest_files=["res://.godot/imported/566_Utilities.SpriteHandler_moveIcon_stun.png-e87b8548d4beb9de08fc7d970e927089.ctex"]
 
 [params]
 

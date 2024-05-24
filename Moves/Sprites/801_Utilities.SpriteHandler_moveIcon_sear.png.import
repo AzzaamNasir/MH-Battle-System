@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cecff024upa56"
-path="res://.godot/imported/801_Utilities.SpriteHandler_moveIcon_sear.png-f0fd0629af36e99d5b0b9e5885526e28.ctex"
+path="res://.godot/imported/801_Utilities.SpriteHandler_moveIcon_sear.png-3c442e104f9bf37486d8508ba5ada965.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/801_Utilities.SpriteHandler_moveIcon_sear.png"
-dest_files=["res://.godot/imported/801_Utilities.SpriteHandler_moveIcon_sear.png-f0fd0629af36e99d5b0b9e5885526e28.ctex"]
+source_file="res://moves/sprites/801_Utilities.SpriteHandler_moveIcon_sear.png"
+dest_files=["res://.godot/imported/801_Utilities.SpriteHandler_moveIcon_sear.png-3c442e104f9bf37486d8508ba5ada965.ctex"]
 
 [params]
 

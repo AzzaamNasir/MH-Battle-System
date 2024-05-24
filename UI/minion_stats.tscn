@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://doq437iipexmp"]
 
-[ext_resource type="Texture2D" uid="uid://cjis5jxeisy6m" path="res://UI/Sprites/565_Utilities.SpriteHandler_menus_statsBars_full_health.png" id="1_i25tq"]
-[ext_resource type="Script" path="res://UI/MinionStats.gd" id="1_olgfk"]
+[ext_resource type="Texture2D" uid="uid://cjis5jxeisy6m" path="res://ui/sprites/565_Utilities.SpriteHandler_menus_statsBars_full_health.png" id="1_i25tq"]
+[ext_resource type="Script" path="res://ui/minion_stats.gd" id="1_olgfk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4evuu"]
 bg_color = Color(0.874198, 0.483056, 5.77569e-07, 1)

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://qrcv3cogbn1h"
-path="res://.godot/imported/Rexathor.png-b8fe7bef80cc5832f042d45e8d968c04.ctex"
+path="res://.godot/imported/Rexathor.png-1393319eeb5dacb2a1b6a4627f810c46.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Rexathor.png"
-dest_files=["res://.godot/imported/Rexathor.png-b8fe7bef80cc5832f042d45e8d968c04.ctex"]
+source_file="res://minions/sprites/Rexathor.png"
+dest_files=["res://.godot/imported/Rexathor.png-1393319eeb5dacb2a1b6a4627f810c46.ctex"]
 
 [params]
 

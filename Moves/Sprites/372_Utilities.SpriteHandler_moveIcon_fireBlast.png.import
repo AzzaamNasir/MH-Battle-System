@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwgcwd644py3p"
-path="res://.godot/imported/372_Utilities.SpriteHandler_moveIcon_fireBlast.png-c65bf48b81134636af1471c3d01f762e.ctex"
+path="res://.godot/imported/372_Utilities.SpriteHandler_moveIcon_fireBlast.png-8244670bf0cd57f0e775d66efdff5a21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/372_Utilities.SpriteHandler_moveIcon_fireBlast.png"
-dest_files=["res://.godot/imported/372_Utilities.SpriteHandler_moveIcon_fireBlast.png-c65bf48b81134636af1471c3d01f762e.ctex"]
+source_file="res://moves/sprites/372_Utilities.SpriteHandler_moveIcon_fireBlast.png"
+dest_files=["res://.godot/imported/372_Utilities.SpriteHandler_moveIcon_fireBlast.png-8244670bf0cd57f0e775d66efdff5a21.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pf7fwexauoii"
-path="res://.godot/imported/Harwing.png-c3cd3867c72cb86d11118ea0b2b8a438.ctex"
+path="res://.godot/imported/Harwing.png-835c85d1fec03f505bcdb37ea32bee2e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Harwing.png"
-dest_files=["res://.godot/imported/Harwing.png-c3cd3867c72cb86d11118ea0b2b8a438.ctex"]
+source_file="res://minions/sprites/Harwing.png"
+dest_files=["res://.godot/imported/Harwing.png-835c85d1fec03f505bcdb37ea32bee2e.ctex"]
 
 [params]
 

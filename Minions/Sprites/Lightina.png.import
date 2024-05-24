@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxnmg15ijxj8l"
-path="res://.godot/imported/Lightina.png-d6531ccfd61ff962a1292a405b7fa7fa.ctex"
+path="res://.godot/imported/Lightina.png-0da28e64e04849acd03b9fcbe993ffa4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Minions/Sprites/Lightina.png"
-dest_files=["res://.godot/imported/Lightina.png-d6531ccfd61ff962a1292a405b7fa7fa.ctex"]
+source_file="res://minions/sprites/Lightina.png"
+dest_files=["res://.godot/imported/Lightina.png-0da28e64e04849acd03b9fcbe993ffa4.ctex"]
 
 [params]
 

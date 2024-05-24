@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhuow28dskq2t"
-path="res://.godot/imported/493_Utilities.SpriteHandler_moveIcon_titanSlam.png-dc5bb2cd4f50cff63fd16319a485a973.ctex"
+path="res://.godot/imported/493_Utilities.SpriteHandler_moveIcon_titanSlam.png-e5b0f840e7e8177390a932fb8d15f1b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Moves/Sprites/493_Utilities.SpriteHandler_moveIcon_titanSlam.png"
-dest_files=["res://.godot/imported/493_Utilities.SpriteHandler_moveIcon_titanSlam.png-dc5bb2cd4f50cff63fd16319a485a973.ctex"]
+source_file="res://moves/sprites/493_Utilities.SpriteHandler_moveIcon_titanSlam.png"
+dest_files=["res://.godot/imported/493_Utilities.SpriteHandler_moveIcon_titanSlam.png-e5b0f840e7e8177390a932fb8d15f1b6.ctex"]
 
 [params]
 
