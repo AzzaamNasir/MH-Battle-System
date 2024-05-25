@@ -16,12 +16,12 @@ var health : int:
 var energy : int: 
 	set(value): # Whenever energy is set, limit it to the range 0 and max energy
 		energy = clampi(value,0,minion_data.energy)
-var atk : int
+var attack : int
 var speed : int
 var healing : int
 
 ## List of all the effects(Status and overtime damage) the minion currently has
-var effect_list : Array[TimedEffect]
+var passive_list : Array[Dictionary]
 
 @onready var move_menu : MoveMenu = %MoveMenu
 @onready var minion_stats: MinionStats = %MinionStats
@@ -34,7 +34,7 @@ func _ready() -> void:
 	# Initializing minion stats
 	%Sprite.texture = minion_data.sprite
 	health = minion_data.health
-	atk = minion_data.atk
+	attack = minion_data.attack
 	speed = minion_data.speed
 	healing = minion_data.healing
 	energy = minion_data.energy
@@ -44,7 +44,6 @@ func _ready() -> void:
 
 
 func take_damage(damage : int):
-	print_debug(damage)
 	self.health -= damage
 	emit_signal("minion_affected")
 	if health <= 0:
@@ -57,7 +56,6 @@ func _on_minion_selected(button : Button):
 
 func move_selected(move : MoveData):
 	if move.energy >= energy:
-		print_rich("[color=red][b]YOU DON'T HAVE ENOUGH ENERGY FOR THIS MOVE![/b][/color]")
 		move_menu.show()
 	else:
 		energy = energy - move.energy
@@ -66,33 +64,34 @@ func move_selected(move : MoveData):
 
 
 func _add_overtime_effect(move : MoveEffects):
-	effect_list.append(move)
-	effect_list.append(move.turnDuration)
+	passive_list.append(move)
+	passive_list.append(move.turnDuration)
 
 func move_completed():
 	click_detector.hide()
 
-func _apply_overtime_effects():
-	for effect in effect_list:
-		match effect.effect:
-			0: # DamagesOrHeals
-				health -= effect.value
-			1: # Buffs/Debuffs
-				pass # Buff/Debuff data goes here
+func update_overtime_effects():
+	_update_active_effects()
+	_update_passive_effects()
+
+func _update_passive_effects():
+	for effect in passive_list:
+		effect["value"] -= 1
+		if effect["value"] == 0: passive_list.erase(effect)
+
+func _update_active_effects():
+	pass
+
+func add_passive_effect(effect : MoveEffects):
+	var property_string = StringName((effect.Attributes.keys()[effect.buff_attribute]).to_lower())
+	if effect.turn_duration != 0:
+		passive_list.append({
+			"attribute" : property_string,
+			"duration_left" : effect.turn_duratison,
+			"value" : effect.buff_percent
+		})
+	set(property_string,get(property_string) - ((effect.buff_percent * 0.01) * get(property_string)))
 
 func show_click_detector():
 	click_detector.show()
-
-class TimedEffect:
-	var minion : Minion
-	var effect :  int # DamagesOrHeals = 0, BuffsOrDebuffs = 1
-	var duration : int
-	var value : int
-	
-	func _init(minion : Minion, effect : int, duration : int, value : int) -> void:
-		self.minion = minion
-		self.effect = effect
-		self.duration = duration
-		self.value = value
-		self.minion.effect_list.append(self)
 

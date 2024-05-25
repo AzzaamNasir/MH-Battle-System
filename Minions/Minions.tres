@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_y62i5")
 run = false
-searchPath = "res://Minions/Resources"
-pathList = Array[String](["res://Minions/Resources/quickapent.tres", "res://Minions/Resources/tazorback.tres", "res://Minions/Resources/tigertan.tres"])
+search_path = "res://minions/resources"
+path_list = Array[String](["res://minions/resources/quickapent.tres", "res://minions/resources/tazorback.tres", "res://minions/resources/tigertan.tres"])

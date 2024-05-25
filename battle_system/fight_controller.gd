@@ -3,6 +3,7 @@ extends Node2D
 signal move_complete
 signal cycle_complete
 
+
 var team1 : Array[Minion]
 var team2 : Array[Minion]
 var turn_order : Array[Minion]
@@ -25,52 +26,60 @@ func _minion_selected(minion : Minion):
 	selector.remaining_targets -= 1
 	selector.possible_targets.erase(minion)
 	if selector.remaining_targets == 0 or len(selector.possible_targets) == 0:
-		selector.hit_targets()
-		emit_signal("move_complete")
+		_execute_move()
 
 func _move_selected(minion : Minion, move : MoveData):
 	for effect in move.effects:
 		randomize()
-		_apply_filter(minion,effect)
+		var target_team = _get_possible_targets(minion,effect)
 		
-		if move.effects.find(effect) == len(move.effects)-1:
-			last_effect = true
-			
-		if effect.override_properties == true:
+		if effect.new_selection == true:
 			selector.hitlist.clear()
 			if minion:
 				selector._set_effect(effect,minion)
 		
-		await move_complete
+		if effect.target_selector == effect.TargetSelector.RANDOM:
+			for i in range(effect.target_no):
+				var idx = randi_range(0,len(selector.possible_targets)-1)
+				if len(selector.possible_targets) != 0 and selector.remaining_targets !=0:
+					_minion_selected(selector.possible_targets[idx])
+				else:
+					_execute_move()
+		elif effect.target_selector == effect.TargetSelector.PLAYER:
+			get_tree().call_group(target_team,"show_click_detector")
+			await move_complete
+		elif effect.target_selector == effect.TargetSelector.SELF:
+			selector.hitlist.append(minion)
+			_execute_move()
 		
-		if last_effect == true:
-			last_effect = false
-			_update_turn()
+	
+	_update_turn()
 
 func _on_death(minion):
 	if turn_order.find(minion) != len(turn_order)-1\
 	or turn_order.find(minion) != 0:
 		turn -= 1
 	selector.hitlist.erase(minion)
+	selector.possible_targets.erase(minion)
 	turn_order.erase(minion)
 	team1.erase(minion)
 	team2.erase(minion)
 
-func _apply_filter(minion : Minion, effect : MoveEffects):
+func _get_possible_targets(minion : Minion, effect : MoveEffects) -> String:
 	if minion.get_meta("team") == 1:
 		if effect.targeted_team == 0:
-			get_tree().call_group("Team2","show_click_detector")
 			selector.possible_targets = get_tree().get_nodes_in_group("Team2")
+			return "Team2"
 		else:
-			get_tree().call_group("Team1","show_click_detector")
 			selector.possible_targets = get_tree().get_nodes_in_group("Team1")
+			return "Team1"
 	else:
 		if effect.targeted_team == 0:
-			get_tree().call_group("Team1","show_click_detector")
 			selector.possible_targets = get_tree().get_nodes_in_group("Team1")
+			return "Team1"
 		else:
-			get_tree().call_group("Team2","show_click_detector")
 			selector.possible_targets = get_tree().get_nodes_in_group("Team2")
+			return "Team2"
 
 func _update_turn():
 	if len(turn_order) == 0: return
@@ -105,7 +114,7 @@ func _setup_minions(team : Array[MinionData],teamIndex : int):
 		minion_instance.minion_move_selected.connect(_move_selected)
 		move_complete.connect(func():
 			minion_instance.click_detector.hide())
-		cycle_complete.connect(minion_instance._apply_overtime_effects)
+		cycle_complete.connect(minion_instance.apply_overtime_effects)
 		
 		minion_instance.get_node("Sprite").flip_h = true if teamIndex == 1 else false #Set correct orientation
 
@@ -120,6 +129,9 @@ func _minion_speed_changed():
 
 	turn_order.reverse()#This will make turn order go from highest speed to lowest speed
 
+func _execute_move():
+	selector.hit_targets()
+	emit_signal("move_complete")
 
 
 ######################################################################################################
@@ -154,7 +166,8 @@ class SelectionManager:
 				if effect.effect == effect.Effect.DAMAGESORHEALS:
 					if effect.max_damage == 0: minion.take_damage(effect.damage)
 					else: minion.take_damage(randi_range(effect.damage,effect.max_damage))
-					print(minion.minion_data.name + " has been hit for " + str(effect.damage))
+				elif effect.effect == effect.Effect.BUFFSORDEBUFFS:
+					minion.add_status_effect(effect)
 
 	#func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion],teamToSelect : int):
 		#if team1.find(minion) != -1:

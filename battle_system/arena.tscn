@@ -65,4 +65,4 @@ offset_bottom = 351.0
 text = "Emergency"
 
 [connection signal="start_game" from="MinionSelector" to="." method="start"]
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_emergency_pressed"]

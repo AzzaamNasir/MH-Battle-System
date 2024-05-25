@@ -13,4 +13,4 @@ func _init() -> void:
 	buff_attribute = Attributes.NONE
 	do_overtime = false
 	turn_duration = 0
-	override_properties = true
+	new_selection = true

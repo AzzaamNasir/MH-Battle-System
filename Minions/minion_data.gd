@@ -10,7 +10,7 @@ class_name MinionData
 
 @export var health : int
 @export var energy : int
-@export var atk : int
+@export var attack : int
 @export var healing : int
 @export var speed : int
 

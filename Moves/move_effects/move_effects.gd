@@ -20,9 +20,6 @@ enum Attributes{
 	SPEED,
 	ENERGY,
 	HEALING,
-	FROZEN,
-	STUNNED,
-	EXHAUSTED,
 }
 enum Effect{
 	DAMAGESORHEALS,
@@ -56,31 +53,62 @@ var damage : int
 var max_damage : int = 0 ## This is maximum damage for ranged attacks, 0 for normal attacks
 ## Will this be applied to the same minions previously selected
 ## or should we select again?
-var override_properties : bool
+@export var new_selection : bool
 
 ## Manages what properties to show in the inspector
 ## for different types of moves
 func _get_property_list():
-	
-	var properties = []
-	
-	if (
-		self is SingleEnemyDamage\
-		or self is TripleEnemyDamage\
-		or self is TripleEnemyDamageRandom\
-		or self is SelfHeal
-	):
-		properties.append({
-		"name" = "damage",
-		"type" = TYPE_INT,
-		})
-	
-	if (
-		self is TripleEnemyDamageRandom
-	):
-		properties.append({
-			"name" = "max_damage",
+	if Engine.is_editor_hint():
+		var properties = []
+		
+		if (
+			self is SingleEnemyDamage\
+			or self is TripleEnemyDamage\
+			or self is TripleEnemyDamageRandom\
+			or self is SingleEnemyDamageRange
+			or self is SelfHeal
+		):
+			properties.append({
+			"name" = "damage",
 			"type" = TYPE_INT,
-		})
-
-	return properties
+			})
+		
+		if (
+			self is SingleEnemyDamageRange
+		):
+			properties.append({
+				"name" = "max_damage",
+				"type" = TYPE_INT,
+			})
+			
+			
+		if (
+			self is SingleEnemyDebuff\
+			or self is SelfBuff
+		):
+				properties.append({
+				"name" : "buff_attribute",
+				"type" : TYPE_INT,
+				"hint" : PROPERTY_HINT_ENUM,
+				"hint_string": Attributes
+			})
+			
+		if (
+			self is SingleEnemyDebuff\
+			or self is SelfBuff
+		):
+				properties.append({
+				"name" = "buff_percent",
+				"type" = TYPE_INT,
+			})
+			
+		if (
+			self is SingleEnemyDebuff\
+			or self is SelfBuff
+		):
+				properties.append({
+				"name" = "turn_duration",
+				"type" = TYPE_INT,
+			})
+		
+		return properties

@@ -1,5 +1,5 @@
 @tool
-class_name SingleEnemyDamage
+class_name SingleEnemyDamageRange
 ## Hits single enemy chosen by the player
 extends MoveEffects
 

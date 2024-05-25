@@ -8,18 +8,18 @@ class_name ResourceGroup extends Resource
 			scan()
 
 ##Enter the path to the folder of resources you want to search
-@export_dir var searchPath : String = ""
-@export var pathList : Array[String]
+@export_dir var search_path : String = ""
+@export var path_list : Array[String]
 
 func load_all_into() -> Array[MinionData]:
 	var list : Array[MinionData]
-	for path in pathList:
+	for path in path_list:
 		list.append(load(path))
 	return list
 
 func scan():
-	pathList.clear()
-	var dir : Array = DirAccess.get_files_at(searchPath)
+	path_list.clear()
+	var dir : Array = DirAccess.get_files_at(search_path)
 	for file : String in dir:
-		pathList.append(searchPath + "/" + file)
+		path_list.append(search_path + "/" + file)
 	run = false
