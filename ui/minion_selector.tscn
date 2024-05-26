@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://drejxjrb6er7u"]
+
+[ext_resource type="Script" path="res://ui/minion_selector.gd" id="1_t346f"]
+[ext_resource type="Resource" uid="uid://1md1sfgrxy4t" path="res://minions/minions.tres" id="2_dbu5a"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_uwo11"]
+
+[node name="MinionSelector" type="CanvasLayer"]
+layer = -1
+script = ExtResource("1_t346f")
+minions = ExtResource("2_dbu5a")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("PlaceholderTexture2D_uwo11")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Team1" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MinionList1" type="ItemList" parent="HBoxContainer/Team1"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+select_mode = 1
+allow_rmb_select = true
+max_columns = 2
+same_column_width = true
+fixed_icon_size = Vector2i(64, 64)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+theme_override_font_sizes/normal_font_size = 24
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+bbcode_enabled = true
+text = "[center]Use [i][b]Ctrl+Left Click[/b][/i] to  select/deselect minions. If you choose more than 5 minions, the ones which appear first in the list will be taken! After you've selected everything you need, Click the [b]START[/b] button[/center]"
+scroll_active = false
+autowrap_mode = 2
+
+[node name="Play" type="Button" parent="HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+text = "<--- Team1                           START                          Team2--->"
+
+[node name="Team2" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MinionList2" type="ItemList" parent="HBoxContainer/Team2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+select_mode = 1
+allow_rmb_select = true
+max_columns = 2
+same_column_width = true
+fixed_icon_size = Vector2i(64, 64)

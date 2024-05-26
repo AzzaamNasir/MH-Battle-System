@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://doq437iipexmp"]
+
+[ext_resource type="Texture2D" uid="uid://cjis5jxeisy6m" path="res://ui/sprites/565_Utilities.SpriteHandler_menus_statsBars_full_health.png" id="1_i25tq"]
+[ext_resource type="Script" path="res://ui/minion_stats.gd" id="1_olgfk"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4evuu"]
+bg_color = Color(0.874198, 0.483056, 5.77569e-07, 1)
+
+[node name="MinionStats" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_olgfk")
+
+[node name="TurnIndicator" type="Label" parent="."]
+layout_mode = 0
+offset_left = -48.0
+offset_top = -104.0
+offset_right = -25.0
+offset_bottom = -81.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/normal = SubResource("StyleBoxFlat_4evuu")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 0
+offset_left = -35.0
+offset_top = -91.0
+offset_right = 161.0
+offset_bottom = -51.0
+scale = Vector2(0.4, 0.4)
+
+[node name="HealthBar" type="TextureProgressBar" parent="PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+texture_progress = ExtResource("1_i25tq")
+
+[node name="LevelIndicator" type="Label" parent="PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+text = "lvl 10"
+horizontal_alignment = 1
+vertical_alignment = 1
