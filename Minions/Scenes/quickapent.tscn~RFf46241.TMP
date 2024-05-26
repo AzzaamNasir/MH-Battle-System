@@ -1,22 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://74jiaalmkrjn"]
+[gd_scene load_steps=5 format=3 uid="uid://dhgosikhd60fk"]
 
-[ext_resource type="Script" path="res://minions/minion.gd" id="1_s88v1"]
-[ext_resource type="Resource" uid="uid://brxhm0ddjedb3" path="res://minions/resources/tazorback.tres" id="2_413l8"]
-[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://ui/move_selector.tscn" id="3_jaswd"]
-[ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://ui/minion_stats.tscn" id="4_jvlsi"]
+[ext_resource type="Script" path="res://minions/minion.gd" id="1_rv84l"]
+[ext_resource type="Resource" uid="uid://0uuwyvx1jvy6" path="res://minions/resources/quickapent.tres" id="2_xl3lo"]
+[ext_resource type="PackedScene" uid="uid://cec8c5m8yc1y6" path="res://ui/move_selector.tscn" id="3_iud38"]
+[ext_resource type="PackedScene" uid="uid://doq437iipexmp" path="res://ui/minion_stats.tscn" id="4_skid5"]
 
 [node name="Minion" type="Node2D"]
-script = ExtResource("1_s88v1")
-minion_data = ExtResource("2_413l8")
+script = ExtResource("1_rv84l")
+minion_data = ExtResource("2_xl3lo")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 unique_name_in_owner = true
 
-[node name="MoveMenu" parent="." instance=ExtResource("3_jaswd")]
+[node name="MoveMenu" parent="." instance=ExtResource("3_iud38")]
 unique_name_in_owner = true
 visible = false
 
-[node name="MinionStats" parent="." instance=ExtResource("4_jvlsi")]
+[node name="MinionStats" parent="." instance=ExtResource("4_skid5")]
 unique_name_in_owner = true
 
 [node name="Control" type="Control" parent="."]

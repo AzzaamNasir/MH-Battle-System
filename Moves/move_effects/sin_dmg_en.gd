@@ -13,4 +13,3 @@ func _init() -> void:
 	buff_attribute = Attributes.NONE
 	do_overtime = false
 	turn_duration = 0
-	new_selection = true

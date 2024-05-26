@@ -1,18 +1,84 @@
 extends Node2D
 
+signal select_mode_activated(minion : Minion, move : MoveEffects)
+signal effect_complete
 signal move_complete
 signal cycle_complete
 
+enum targetSelectors{
+	PLAYER,
+	RANDOM,
+	ALL
+}
+enum targetType{
+	ENEMY,
+	ALLY,
+	SELF
+}
+
+var targeter : Minion
+var cur_effect : MoveEffects
+var hitlist : Array[Minion] = []
+var remaining_targets : int
+var possible_targets : Array[Minion] = []
 
 var team1 : Array[Minion]
 var team2 : Array[Minion]
 var turn_order : Array[Minion]
 var turn : int = -1
 var last_effect : bool = false
-var selector = SelectionManager.new()
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
+var select_mode := false
+
+func _ready() -> void:
+	select_mode_activated.connect(_select_minions)
+
+func _process(delta: float) -> void:
+	if select_mode:
+		if remaining_targets == 0 or possible_targets.size() == 0:
+			emit_signal("effect_complete")
+			select_mode = false
+
+func _select_minions(minion : Minion, effect : MoveEffects):
+	possible_targets = _get_possible_targets(minion,effect)
+	match effect.target_selector:
+	
+		effect.TargetSelector.PLAYER:
+			for target : Minion in possible_targets:
+				target.show_click_detector()
+				select_mode = true
+			
+		effect.TargetSelector.RANDOM:
+			for i in range(0,remaining_targets):
+				if possible_targets.size() == 0: break
+				var to_be_added = possible_targets[randi_range(0,possible_targets.size()-1)] 
+				hitlist.append(to_be_added)
+				possible_targets.erase(to_be_added)
+			
+			await get_tree().create_timer(0.01).timeout
+			emit_signal("effect_complete")
+		
+		effect.TargetSelector.SELF:
+			hitlist.append(minion)
+			await get_tree().create_timer(0.01).timeout
+			emit_signal("effect_complete")
+		
+		effect.TargetSelector.ALL:
+			hitlist.append_array(possible_targets)
+			await get_tree().create_timer(0.01).timeout
+			emit_signal("effect_complete")
+
+func _move_selected(minion : Minion, move : MoveData):
+	for effect in move.effects:
+		_set_effect(effect,minion)
+		if effect.new_selection:
+			possible_targets.clear()
+			hitlist.clear()
+			emit_signal("select_mode_activated",minion,effect)
+			await effect_complete
+		
+		_execute_move()
+	
+	_update_turn()
 
 #Will be executed when play is pressed
 func start(team_1 : Array[MinionData],team_2 : Array[MinionData]):
@@ -22,64 +88,31 @@ func start(team_1 : Array[MinionData],team_2 : Array[MinionData]):
 	_update_turn()
 
 func _minion_selected(minion : Minion):
-	selector.hitlist.append(minion)
-	selector.remaining_targets -= 1
-	selector.possible_targets.erase(minion)
-	if selector.remaining_targets == 0 or len(selector.possible_targets) == 0:
-		_execute_move()
-
-func _move_selected(minion : Minion, move : MoveData):
-	for effect in move.effects:
-		randomize()
-		var target_team = _get_possible_targets(minion,effect)
-		
-		if effect.new_selection == true:
-			selector.hitlist.clear()
-			if minion:
-				selector._set_effect(effect,minion)
-		
-		if effect.target_selector == effect.TargetSelector.RANDOM:
-			for i in range(effect.target_no):
-				var idx = randi_range(0,len(selector.possible_targets)-1)
-				if len(selector.possible_targets) != 0 and selector.remaining_targets !=0:
-					_minion_selected(selector.possible_targets[idx])
-				else:
-					_execute_move()
-		elif effect.target_selector == effect.TargetSelector.PLAYER:
-			get_tree().call_group(target_team,"show_click_detector")
-			await move_complete
-		elif effect.target_selector == effect.TargetSelector.SELF:
-			selector.hitlist.append(minion)
-			_execute_move()
-		
-	
-	_update_turn()
+	hitlist.append(minion)
+	remaining_targets -= 1
+	possible_targets.erase(minion)
 
 func _on_death(minion):
 	if turn_order.find(minion) != len(turn_order)-1\
 	or turn_order.find(minion) != 0:
 		turn -= 1
-	selector.hitlist.erase(minion)
-	selector.possible_targets.erase(minion)
+	hitlist.erase(minion)
+	possible_targets.erase(minion)
 	turn_order.erase(minion)
 	team1.erase(minion)
 	team2.erase(minion)
 
-func _get_possible_targets(minion : Minion, effect : MoveEffects) -> String:
+func _get_possible_targets(minion : Minion, effect : MoveEffects):
 	if minion.get_meta("team") == 1:
-		if effect.targeted_team == 0:
-			selector.possible_targets = get_tree().get_nodes_in_group("Team2")
-			return "Team2"
+		if effect.targeted_team == 0: # Opponent team
+			return team2.duplicate()
 		else:
-			selector.possible_targets = get_tree().get_nodes_in_group("Team1")
-			return "Team1"
-	else:
+			return team1.duplicate()
+	else: # Minion belongs to 2nd team
 		if effect.targeted_team == 0:
-			selector.possible_targets = get_tree().get_nodes_in_group("Team1")
-			return "Team1"
+			return team1.duplicate()
 		else:
-			selector.possible_targets = get_tree().get_nodes_in_group("Team2")
-			return "Team2"
+			return team2.duplicate()
 
 func _update_turn():
 	if len(turn_order) == 0: return
@@ -112,9 +145,9 @@ func _setup_minions(team : Array[MinionData],teamIndex : int):
 		minion_instance.minion_died.connect(_on_death)
 		minion_instance.minion_selected.connect(_minion_selected)
 		minion_instance.minion_move_selected.connect(_move_selected)
-		move_complete.connect(func():
+		effect_complete.connect(func():
 			minion_instance.click_detector.hide())
-		cycle_complete.connect(minion_instance.apply_overtime_effects)
+		cycle_complete.connect(minion_instance.update_overtime_effects)
 		
 		minion_instance.get_node("Sprite").flip_h = true if teamIndex == 1 else false #Set correct orientation
 
@@ -130,107 +163,22 @@ func _minion_speed_changed():
 	turn_order.reverse()#This will make turn order go from highest speed to lowest speed
 
 func _execute_move():
-	selector.hit_targets()
-	emit_signal("move_complete")
+	hit_targets()
 
 
-######################################################################################################
+func hit_targets():
+	for minion in hitlist:
+		if minion:
+			if cur_effect.effect == cur_effect.Effect.DAMAGESORHEALS:
+				if cur_effect.turn_duration == 0:
+					if cur_effect.max_damage == 0: minion.take_damage(cur_effect.damage)
+					else: minion.take_damage(randi_range(cur_effect.damage,cur_effect.max_damage))
+				else:
+					minion.add_active_effect(cur_effect)
+			elif cur_effect.effect == cur_effect.Effect.BUFFSORDEBUFFS:
+				minion.add_passive_effect(cur_effect)
 
-
-class SelectionManager:
-	signal selectActivated(minion,targets,targeter)
-	signal move_complete
-
-	var targeter : Minion
-	var effect : MoveEffects
-	var hitlist : Array[Minion] = []
-	var remaining_targets : int
-	var possible_targets : Array = []
-
-	enum targetSelectors{
-		Player,
-		Random,
-		All
-	}
-
-	enum targetType{
-		Enemy,
-		Ally,
-		Self
-	}
-
-
-	func hit_targets():
-		for minion in hitlist:
-			if minion:
-				if effect.effect == effect.Effect.DAMAGESORHEALS:
-					if effect.max_damage == 0: minion.take_damage(effect.damage)
-					else: minion.take_damage(randi_range(effect.damage,effect.max_damage))
-				elif effect.effect == effect.Effect.BUFFSORDEBUFFS:
-					minion.add_status_effect(effect)
-
-	#func _select_hitlist(minion : Minion,team1 : Array[Minion],team2 : Array[Minion],teamToSelect : int):
-		#if team1.find(minion) != -1:
-			#match teamToSelect:
-				#0:#Enemy team
-					#if len(team2) <= targets_to_get or effect.targetSelector == 3:
-						#hitlist.append_array(team2)
-					#else:
-						#var i = 0
-						#var temp : Array[int] = []
-						#while i < targets_to_get:
-							#randomize()
-							#var idx = randi_range(0,len(team2)-1)
-							#if temp.find(idx) == -1:
-								#hitlist.append(team2[idx])
-								#temp.append(idx)
-								#i += 1
-							#else: continue
-					#_hit_targets()
-				#1:#Own team
-					#if len(team1) <= targets_to_get or effect.targetSelector == 3: hitlist.append_array(team1)
-#
-					#else:
-						#var i = 0
-						#var temp : Array[int] = []
-						#while i < targets_to_get:
-							#randomize()
-							#var idx = randi_range(0,len(team1)-1)
-							#if temp.find(idx) == -1:
-								#hitlist.append(team1[idx])
-								#temp.append(idx)
-								#i += 1
-							#else: continue
-					#_hit_targets()
-#
-		#if team2.find(minion) != -1:
-			#match teamToSelect:
-				#0:
-					#if len(team1) <= targets_to_get or effect.targetSelector == 3: hitlist.append_array(team1)
-#
-					#else:
-						#for i in range(0,targets_to_get):
-							#var idx = randi_range(0,len(team1)-1)
-							#hitlist.append(team1[idx])
-					#_hit_targets()
-#
-				#1:
-					#if len(team2) <= targets_to_get or effect.targetSelector == 3: hitlist.append_array(team2)
-#
-					#else:
-						#var i = 0
-						#var temp : Array[int] = []
-						#while i < targets_to_get:
-							#randomize()
-							#var idx = randi_range(0,len(team2)-1)
-							#if temp.find(idx) == -1:
-								#hitlist.append(team2[idx])
-								#temp.append(idx)
-								#i += 1
-							#else: continue
-					#_hit_targets()
-
-	func _set_effect(effect, targeter):
-		self.effect = effect
-		self.targeter = targeter
-		self.remaining_targets = effect.target_no
+func _set_effect(effect, minion):
+	cur_effect = effect
+	targeter = minion
+	remaining_targets = effect.target_no

@@ -3,8 +3,9 @@ class_name MoveEffects
 ## The base class for the effects which the move will have.
 ## Choose for attacks like claw, which only hit one enemy selected by you
 ## All subsets of this(Such as sin_dmg_en.gd) follow the naming scheme below:
-## sin=single,tri=triple,all,self,dmg=damaging,heal=healing,en=enemy,al=ally
-## add words range if dmg/heal is variable, rand if targets chosen randomly
+## "sin"=single,"tri"=triple,"all","self","dmg"=damaging,"heal"=healing,"en"=enemy,"al"=ally
+## add words "range" if dmg/heal is variable, "rand" if targets chosen randomly
+## "ot" if it is done overtime or is a temporary status effect
 extends Resource
 
 enum TargetSelector{
@@ -54,7 +55,6 @@ var max_damage : int = 0 ## This is maximum damage for ranged attacks, 0 for nor
 ## Will this be applied to the same minions previously selected
 ## or should we select again?
 @export var new_selection : bool
-
 ## Manages what properties to show in the inspector
 ## for different types of moves
 func _get_property_list():
@@ -63,10 +63,12 @@ func _get_property_list():
 		
 		if (
 			self is SingleEnemyDamage\
+			or self is SingleEnemyDamageOvertime\
 			or self is TripleEnemyDamage\
 			or self is TripleEnemyDamageRandom\
 			or self is SingleEnemyDamageRange
-			or self is SelfHeal
+			or self is SelfHeal\
+			or self is AllEnemyDamage
 		):
 			properties.append({
 			"name" = "damage",
@@ -110,5 +112,13 @@ func _get_property_list():
 				"name" = "turn_duration",
 				"type" = TYPE_INT,
 			})
+		
+		if(
+			self is SingleEnemyDamageOvertime\
+		):
+				properties.append({
+				"name" = "turn_duration",
+				"type" = TYPE_INT
+				}) 
 		
 		return properties

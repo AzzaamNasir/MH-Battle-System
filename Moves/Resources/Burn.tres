@@ -8,7 +8,7 @@
 script = ExtResource("1_2lv0j")
 notify = false
 new_selection = true
-damage = 0
+damage = 10
 
 [resource]
 resource_local_to_scene = true

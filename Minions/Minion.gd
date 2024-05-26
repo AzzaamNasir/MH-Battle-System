@@ -20,8 +20,8 @@ var attack : int
 var speed : int
 var healing : int
 
-## List of all the effects(Status and overtime damage) the minion currently has
-var passive_list : Array[Dictionary]
+var passive_list : Array[Dictionary] # List of all current status effects
+var active_list : Array[Dictionary] # List of all current overtime damage
 
 @onready var move_menu : MoveMenu = %MoveMenu
 @onready var minion_stats: MinionStats = %MinionStats
@@ -63,10 +63,6 @@ func move_selected(move : MoveData):
 		emit_signal("minion_move_selected",self,move)#relay final dmg to FightController
 
 
-func _add_overtime_effect(move : MoveEffects):
-	passive_list.append(move)
-	passive_list.append(move.turnDuration)
-
 func move_completed():
 	click_detector.hide()
 
@@ -80,7 +76,19 @@ func _update_passive_effects():
 		if effect["value"] == 0: passive_list.erase(effect)
 
 func _update_active_effects():
-	pass
+	for effect in active_list:
+		take_damage(effect["damage"] if effect["max_damage"] == 0\
+						else randi_range(effect["damage"],effect["max_damage"]) )
+		effect["duration_left"] -= 1
+		if effect["duration_left"] == 0:
+			active_list.erase(effect)
+
+func add_active_effect(effect : MoveEffects):
+	active_list.append({
+		"damage" : effect.damage,
+		"max_damage" : effect.max_damage,
+		"duration_left" : effect.turn_duration
+	})
 
 func add_passive_effect(effect : MoveEffects):
 	var property_string = StringName((effect.Attributes.keys()[effect.buff_attribute]).to_lower())

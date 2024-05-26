@@ -1,16 +1,7 @@
-[gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://d308hqo1f31vg"]
+[gd_resource type="Resource" script_class="MoveData" load_steps=3 format=3 uid="uid://d308hqo1f31vg"]
 
-[ext_resource type="Script" path="res://moves/move_effects/self_buff.gd" id="1_asmo2"]
 [ext_resource type="Script" path="res://moves/move_data.gd" id="1_pbt88"]
 [ext_resource type="Texture2D" uid="uid://bl2vewb8a2gin" path="res://moves/sprites/1176_Utilities.SpriteHandler_moveIcon_energize.png" id="2_juvbq"]
-
-[sub_resource type="Resource" id="Resource_ybvsc"]
-script = ExtResource("1_asmo2")
-notify = false
-new_selection = true
-buff_attribute = 4
-buff_percent = -50
-turn_duration = 0
 
 [resource]
 script = ExtResource("1_pbt88")
@@ -19,4 +10,4 @@ sprite = ExtResource("2_juvbq")
 element = 3
 energy = 0
 cooldown = 0
-effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_ybvsc")])
+effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([])

@@ -1,14 +1,14 @@
 [gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://uo7tjov1ewe0"]
 
 [ext_resource type="Script" path="res://moves/move_data.gd" id="1_78hkd"]
-[ext_resource type="Script" path="res://moves/move_effects/sin_dmg_en.gd" id="1_td3oa"]
+[ext_resource type="Script" path="res://moves/move_effects/sin_dmg_en.gd" id="1_g7rnt"]
 [ext_resource type="Texture2D" uid="uid://ee48w41jke27" path="res://moves/sprites/135_Utilities.SpriteHandler_moveIcon_claw.png" id="3_kc12q"]
 
-[sub_resource type="Resource" id="Resource_tfs6k"]
-script = ExtResource("1_td3oa")
+[sub_resource type="Resource" id="Resource_pb2hp"]
+script = ExtResource("1_g7rnt")
 notify = false
 new_selection = true
-damage = 15
+damage = 20
 
 [resource]
 resource_local_to_scene = true
@@ -18,4 +18,4 @@ sprite = ExtResource("3_kc12q")
 element = 0
 energy = 60
 cooldown = 0
-effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_tfs6k")])
+effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_pb2hp")])

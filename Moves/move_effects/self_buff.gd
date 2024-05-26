@@ -12,4 +12,3 @@ func _init() -> void:
 	damage = 0
 	do_overtime = false
 	turn_duration = 0
-	new_selection = true
