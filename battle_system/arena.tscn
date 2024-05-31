@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://dm5i3etlvw3s3"]
+
+[ext_resource type="Script" path="res://battle_system/fight_controller.gd" id="1_jp82d"]
+[ext_resource type="PackedScene" uid="uid://drejxjrb6er7u" path="res://ui/minion_selector.tscn" id="2_cei8l"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_nfboh"]
+
+[node name="Arena" type="Node2D"]
+script = ExtResource("1_jp82d")
+
+[node name="Camera" type="Camera2D" parent="."]
+
+[node name="L_Minions" type="Node" parent="."]
+
+[node name="L1" type="Node2D" parent="L_Minions"]
+position = Vector2(-136, -128)
+
+[node name="L2" type="Node2D" parent="L_Minions"]
+position = Vector2(-336, 0)
+
+[node name="L3" type="Node2D" parent="L_Minions"]
+position = Vector2(-136, 104)
+
+[node name="L4" type="Node2D" parent="L_Minions"]
+position = Vector2(-512, -128)
+
+[node name="L5" type="Node2D" parent="L_Minions"]
+position = Vector2(-512, 96)
+
+[node name="R_Minions" type="Node" parent="."]
+
+[node name="R1" type="Node2D" parent="R_Minions"]
+position = Vector2(120, -128)
+
+[node name="R2" type="Node2D" parent="R_Minions"]
+position = Vector2(313, 0)
+
+[node name="R3" type="Node2D" parent="R_Minions"]
+position = Vector2(128, 104)
+
+[node name="R4" type="Node2D" parent="R_Minions"]
+position = Vector2(480, -128)
+
+[node name="R5" type="Node2D" parent="R_Minions"]
+position = Vector2(480, 104)
+
+[node name="Divider" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 4.00002)
+scale = Vector2(16, 728)
+texture = SubResource("CanvasTexture_nfboh")
+
+[node name="MinionSelector" parent="." instance=ExtResource("2_cei8l")]
+layer = 10
+
+[node name="ComponentManager" type="Node" parent="."]
+
+[node name="Communicator" type="Node" parent="."]
+
+[connection signal="start_game" from="MinionSelector" to="." method="start"]

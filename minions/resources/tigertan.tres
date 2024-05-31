@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=6 format=3 uid="uid://vg86620xipts"]
+
+[ext_resource type="Resource" uid="uid://uo7tjov1ewe0" path="res://moves/resources/claw.tres" id="1_fub3r"]
+[ext_resource type="Resource" uid="uid://gmyhc0xfo2gd" path="res://moves/resources/roar.tres" id="2_tfjoi"]
+[ext_resource type="Resource" uid="uid://d308hqo1f31vg" path="res://moves/resources/energize.tres" id="3_xbgng"]
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="5_43yw7"]
+[ext_resource type="Texture2D" uid="uid://ckbqb1oj8yd2q" path="res://minions/sprites/Tigertan.png" id="6_bhfaw"]
+
+[resource]
+script = ExtResource("5_43yw7")
+name = "Tigertan"
+sprite = ExtResource("6_bhfaw")
+scene = "res://minions/scenes/tigertan.tscn"
+health = 100
+energy = 100
+attack = 100
+healing = 100
+speed = 100
+type1 = 1
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([ExtResource("1_fub3r"), ExtResource("2_tfjoi"), ExtResource("3_xbgng")])

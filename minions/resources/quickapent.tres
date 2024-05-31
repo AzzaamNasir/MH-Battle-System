@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=4 format=3 uid="uid://0uuwyvx1jvy6"]
+
+[ext_resource type="Resource" uid="uid://cuj5bigx8n5to" path="res://moves/resources/fire_ram.tres" id="1_1rrdu"]
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_edc4j"]
+[ext_resource type="Texture2D" uid="uid://di4vmxotrlykq" path="res://minions/sprites/Quickapent.png" id="2_8pb5r"]
+
+[resource]
+script = ExtResource("1_edc4j")
+name = "Quickapent"
+sprite = ExtResource("2_8pb5r")
+scene = "res://minions/scenes/quickapent.tscn"
+health = 100
+energy = 100
+attack = 0
+healing = 50
+speed = 48
+type1 = 3
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([ExtResource("1_1rrdu")])
