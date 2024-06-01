@@ -12,6 +12,9 @@ script = ExtResource("1_jp82d")
 
 [node name="L_Minions" type="Node" parent="."]
 
+[node name="L1" type="Node2D" parent="L_Minions"]
+position = Vector2(-120, -128)
+
 [node name="L2" type="Node2D" parent="L_Minions"]
 position = Vector2(-336, 0)
 
