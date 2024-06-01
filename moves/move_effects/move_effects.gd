@@ -41,8 +41,8 @@ var accuracy : int ## How accurate is the attack?
 var target_no : int ## Number of targets?
 var target_selector : int ## Who will select the targets?
 var targeted_team : int ## Which team to target? 0=target enemies,1= target allies
-var buff_percent : int ## How much to buff?(In percent)
-var buff_attribute : Attributes ## What attribute should be buffed?
+var debuff_percent : int ## How much to buff?(In percent)
+var debuff_attribute : Attributes ## What attribute should be buffed?
 ## Does it do damage overtime?
 ## True for status effects
 var do_overtime : bool
@@ -67,7 +67,8 @@ func _get_property_list():
 			or self is TripleEnemyDamageRandom\
 			or self is SingleEnemyDamageRange
 			or self is SelfHeal\
-			or self is AllEnemyDamage
+			or self is AllEnemyDamage\
+			or self is DoubleEnemyDamage
 		):
 			properties.append({
 			"name" = "damage",
@@ -88,7 +89,7 @@ func _get_property_list():
 			or self is SelfBuff
 		):
 				properties.append({
-				"name" : "buff_attribute",
+				"name" : "debuff_attribute",
 				"type" : TYPE_INT,
 				"hint" : PROPERTY_HINT_ENUM,
 				"hint_string": Attributes
@@ -99,25 +100,19 @@ func _get_property_list():
 			or self is SelfBuff
 		):
 				properties.append({
-				"name" = "buff_percent",
+				"name" = "debuff_percent",
 				"type" = TYPE_INT,
 			})
 			
 		if (
 			self is SingleEnemyDebuff\
 			or self is SelfBuff
+			or self is SingleEnemyDamageOvertime
 		):
 				properties.append({
 				"name" = "turn_duration",
 				"type" = TYPE_INT,
 			})
 		
-		if(
-			self is SingleEnemyDamageOvertime\
-		):
-				properties.append({
-				"name" = "turn_duration",
-				"type" = TYPE_INT
-				}) 
 		
 		return properties

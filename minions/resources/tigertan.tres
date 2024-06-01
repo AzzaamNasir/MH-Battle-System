@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3 uid="uid://biy8xj4mj6eib"]
 
 [ext_resource type="Script" path="res://minions/minion_data.gd" id="1_hkvn1"]
-[ext_resource type="Texture2D" path="res://minions/sprites/Tigertan.png" id="2_pcanu"]
+[ext_resource type="Texture2D" uid="uid://bwfwpxqk183a4" path="res://minions/sprites/Tigertan.png" id="2_pcanu"]
 
 [resource]
 script = ExtResource("1_hkvn1")

@@ -87,20 +87,20 @@ func add_active_effect(effect : MoveEffects):
 	active_list.append([effect,effect.turn_duration])
 
 func add_passive_effect(effect : MoveEffects):
-	var property_string = StringName((effect.Attributes.keys()[effect.buff_attribute]).to_lower())
+	var property_string = StringName((effect.Attributes.keys()[effect.debuff_attribute]).to_lower())
 	var value
 	
 	match property_string:
 		"attack":
-			value = effect.buff_percent * 0.01 * attack
+			value = effect.debuff_percent * 0.01 * attack
 		"speed":
-			value = effect.buff_percent * 0.01 * speed
+			value = effect.debuff_percent * 0.01 * speed
 		"energy":
-			value = effect.buff_percent * 0.01 * minion_data.energy
+			value = effect.debuff_percent * 0.01 * minion_data.energy
 			move_menu.energy_label.text = str(energy) + "/" + str(minion_data.energy)
 			move_menu.energy_bar.value = energy
 		"healing":
-			value = effect.buff_percent * 0.01 * healing
+			value = effect.debuff_percent * 0.01 * healing
 		
 	if effect.turn_duration != 0:
 		var to_be_added = {

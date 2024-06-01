@@ -6,12 +6,32 @@
     },
     "res://Moves/": {
       "effects": true
+    },
+    "res://extras/databases/minion_db/": {
+      "resource_local_to_scene": true,
+      "resource_name": true
+    },
+    "res://extras/databases/minion_db_spreadsheet_import.tres": {
+      "resource_local_to_scene": true,
+      "resource_path": true
+    },
+    "res://extras/databases/minion_dfsxb_spreadsheet_import.tres": {
+      "resource_local_to_scene": true,
+      "resource_path": true
+    },
+    "res://minions/resources/": {
+      "resource_local_to_scene": true,
+      "resource_name": true
     }
   },
   "recent_paths": [
     "res://Moves/Sprites/",
     "res://Moves/",
-    "res://Minions/Resources/"
+    "res://Minions/Resources/",
+    "res://extras/databases/minion_db_spreadsheet_import.tres",
+    "res://extras/databases/minion_db/",
+    "res://minions/resources/",
+    "res://extras/databases/minion_dfsxb_spreadsheet_import.tres"
   ],
   "table_functions": {
     "filter": [

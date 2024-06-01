@@ -4,11 +4,11 @@
 [ext_resource type="Script" path="res://moves/move_effects/sin_dmg_en.gd" id="1_mxm85"]
 [ext_resource type="Texture2D" uid="uid://ee48w41jke27" path="res://moves/sprites/135_Utilities.SpriteHandler_moveIcon_claw.png" id="3_kc12q"]
 
-[sub_resource type="Resource" id="Resource_03uro"]
+[sub_resource type="Resource" id="Resource_gere3"]
 script = ExtResource("1_mxm85")
 notify = false
 new_selection = true
-damage = 8
+damage = 5
 
 [resource]
 resource_local_to_scene = true
@@ -18,4 +18,4 @@ sprite = ExtResource("3_kc12q")
 element = 0
 energy = 10
 cooldown = 0
-effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_03uro")])
+effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_gere3")])
