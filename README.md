@@ -9,8 +9,9 @@ You will need the Godot Engine(Any version above 4.2 should do) [Download Godot]
 Just download the project(by clicking on code -> Download ZIP. Extract the zip and double click on the *project.godot* file. It *should* open up in godot. If it doesn't, you will have to go to godot, and click on import project, and then select the
 project.godot file 
 
-After it is opened, wait for it to load. There will be a lot of errors, don't worry. Then, close godot and reopen it. This time it should open with no errors
-You can look in the Wiki for further instructions
+After it is opened, wait for it to load. There will be a lot of errors, don't worry. Then, close godot and reopen it. This time it should open with no errors.
+
+You can look in the Wiki for further instructions(I reccomend you do, you basically won't know what you're doing if you don't)
 ![image](https://github.com/AzzaamNasir/Min-Hero/assets/162361059/602f6b26-4ee5-4caa-8c5e-345aa3c881bc)
 
 
@@ -19,3 +20,4 @@ You can look in the Wiki for further instructions
 - Buffs do technically work, but since we don't know what the algorithm used to calculate them is, they don't have any effect as of now
 - The existing moves have not yet been imported, as we are first trying to extract the exact values from the original game in a format that can be imported
 - We haven't added battle modifiers/whatever you call it like bubble shields and all, and they are not on our short term things to implement
+- There are some types of moves, which cannot be implemented, either if I forgot or was just tired to implement. If you find such a move, tell me in the server or dm me :)
