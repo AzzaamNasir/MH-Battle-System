@@ -116,4 +116,3 @@ func add_passive_effect(effect : MoveEffects):
 
 func show_click_detector():
 	click_detector.show()
-

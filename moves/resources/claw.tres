@@ -1,15 +1,14 @@
 [gd_resource type="Resource" script_class="MoveData" load_steps=5 format=3 uid="uid://uo7tjov1ewe0"]
 
 [ext_resource type="Script" path="res://moves/move_data.gd" id="1_78hkd"]
-[ext_resource type="Script" path="res://moves/move_effects/sin_dmg_en_ot.gd" id="1_oolau"]
+[ext_resource type="Script" path="res://moves/move_effects/sin_dmg_en.gd" id="1_mxm85"]
 [ext_resource type="Texture2D" uid="uid://ee48w41jke27" path="res://moves/sprites/135_Utilities.SpriteHandler_moveIcon_claw.png" id="3_kc12q"]
 
-[sub_resource type="Resource" id="Resource_val6t"]
-script = ExtResource("1_oolau")
+[sub_resource type="Resource" id="Resource_03uro"]
+script = ExtResource("1_mxm85")
 notify = false
 new_selection = true
-damage = 50
-turn_duration = 4
+damage = 8
 
 [resource]
 resource_local_to_scene = true
@@ -17,6 +16,6 @@ script = ExtResource("1_78hkd")
 name = "Claw"
 sprite = ExtResource("3_kc12q")
 element = 0
-energy = 60
+energy = 10
 cooldown = 0
-effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_val6t")])
+effects = Array[Resource("res://moves/move_effects/move_effects.gd")]([SubResource("Resource_03uro")])

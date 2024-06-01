@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_u6fix"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Banesha.png" id="2_ajo7d"]
+
+[resource]
+script = ExtResource("1_u6fix")
+name = "Banesha"
+sprite = ExtResource("2_ajo7d")
+scene = "res://minions/scenes/banesha.tscn"
+health = 45
+energy = 65
+attack = 60
+healing = 40
+speed = 55
+type1 = 11
+type2 = 7
+moves = Array[Resource("res://moves/move_data.gd")]([])

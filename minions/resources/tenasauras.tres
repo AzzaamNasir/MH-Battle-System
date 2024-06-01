@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_rabgc"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Tenasauras.png" id="2_ifbgh"]
+
+[resource]
+script = ExtResource("1_rabgc")
+name = "Tenasauras"
+sprite = ExtResource("2_ifbgh")
+scene = "res://minions/scenes/tenasauras.tscn"
+health = 60
+energy = 30
+attack = 65
+healing = 10
+speed = 35
+type1 = 10
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

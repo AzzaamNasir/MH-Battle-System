@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_jr7u5"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Seizemole.png" id="2_qefc5"]
+
+[resource]
+script = ExtResource("1_jr7u5")
+name = "Seizemole"
+sprite = ExtResource("2_qefc5")
+scene = "res://minions/scenes/seizemole.tscn"
+health = 75
+energy = 30
+attack = 60
+healing = 12
+speed = 15
+type1 = 5
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

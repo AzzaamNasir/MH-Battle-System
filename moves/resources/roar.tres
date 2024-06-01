@@ -9,8 +9,8 @@ script = ExtResource("1_ebdu1")
 notify = false
 new_selection = true
 buff_attribute = 1
-buff_percent = 50
-turn_duration = 2
+buff_percent = 10
+turn_duration = 0
 
 [resource]
 resource_local_to_scene = true

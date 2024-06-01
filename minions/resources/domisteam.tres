@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_8k26u"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Domisteam.png" id="2_428ba"]
+
+[resource]
+script = ExtResource("1_8k26u")
+name = "Domisteam"
+sprite = ExtResource("2_428ba")
+scene = "res://minions/scenes/domisteam.tscn"
+health = 50
+energy = 35
+attack = 80
+healing = 10
+speed = 75
+type1 = 9
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

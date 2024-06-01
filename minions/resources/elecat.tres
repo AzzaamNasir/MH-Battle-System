@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_jblf1"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Elecat.png" id="2_44fq3"]
+
+[resource]
+script = ExtResource("1_jblf1")
+name = "Elecat"
+sprite = ExtResource("2_44fq3")
+scene = "res://minions/scenes/elecat.tscn"
+health = 25
+energy = 35
+attack = 40
+healing = 10
+speed = 50
+type1 = 9
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

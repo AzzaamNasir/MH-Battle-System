@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_qedsu"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Saintifi.png" id="2_p8ggt"]
+
+[resource]
+script = ExtResource("1_qedsu")
+name = "Saintifi"
+sprite = ExtResource("2_p8ggt")
+scene = "res://minions/scenes/saintifi.tscn"
+health = 60
+energy = 50
+attack = 75
+healing = 40
+speed = 55
+type1 = 13
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

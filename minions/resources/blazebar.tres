@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_rj1g8"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Blazebar.png" id="2_mdeu2"]
+
+[resource]
+script = ExtResource("1_rj1g8")
+name = "Blazebar"
+sprite = ExtResource("2_mdeu2")
+scene = "res://minions/scenes/blazebar.tscn"
+health = 80
+energy = 40
+attack = 70
+healing = 15
+speed = 20
+type1 = 7
+type2 = 5
+moves = Array[Resource("res://moves/move_data.gd")]([])

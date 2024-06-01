@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_a2nbh"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Kittyvile.png" id="2_ti6i2"]
+
+[resource]
+script = ExtResource("1_a2nbh")
+name = "Kittyvile"
+sprite = ExtResource("2_ti6i2")
+scene = "res://minions/scenes/kittyvile.tscn"
+health = 15
+energy = 25
+attack = 50
+healing = 30
+speed = 55
+type1 = 12
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

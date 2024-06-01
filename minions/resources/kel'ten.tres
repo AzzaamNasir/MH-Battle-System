@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_fcihd"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Kel'ten.png" id="2_sp0ds"]
+
+[resource]
+script = ExtResource("1_fcihd")
+name = "Kel'ten"
+sprite = ExtResource("2_sp0ds")
+scene = "res://minions/scenes/kel'ten.tscn"
+health = 35
+energy = 40
+attack = 75
+healing = 30
+speed = 75
+type1 = 11
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

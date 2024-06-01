@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_3n5gu"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Pumcin.png" id="2_qmsl5"]
+
+[resource]
+script = ExtResource("1_3n5gu")
+name = "Pumcin"
+sprite = ExtResource("2_qmsl5")
+scene = "res://minions/scenes/pumcin.tscn"
+health = 35
+energy = 45
+attack = 70
+healing = 30
+speed = 55
+type1 = 12
+type2 = 11
+moves = Array[Resource("res://moves/move_data.gd")]([])

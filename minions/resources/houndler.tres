@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_h87sl"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Houndler.png" id="2_d5yk3"]
+
+[resource]
+script = ExtResource("1_h87sl")
+name = "Houndler"
+sprite = ExtResource("2_d5yk3")
+scene = "res://minions/scenes/houndler.tscn"
+health = 55
+energy = 40
+attack = 45
+healing = 35
+speed = 75
+type1 = 9
+type2 = 12
+moves = Array[Resource("res://moves/move_data.gd")]([])

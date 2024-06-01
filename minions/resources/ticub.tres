@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_yndwf"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Ticub.png" id="2_rwy0u"]
+
+[resource]
+script = ExtResource("1_yndwf")
+name = "Ticub"
+sprite = ExtResource("2_rwy0u")
+scene = "res://minions/scenes/ticub.tscn"
+health = 40
+energy = 45
+attack = 40
+healing = 35
+speed = 50
+type1 = 1
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

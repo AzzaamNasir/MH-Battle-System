@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_e3qgw"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Leeru.png" id="2_2858u"]
+
+[resource]
+script = ExtResource("1_e3qgw")
+name = "Leeru"
+sprite = ExtResource("2_2858u")
+scene = "res://minions/scenes/leeru.tscn"
+health = 15
+energy = 35
+attack = 45
+healing = 45
+speed = 50
+type1 = 12
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

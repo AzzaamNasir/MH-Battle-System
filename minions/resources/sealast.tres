@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_haeho"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Sealast.png" id="2_jv20p"]
+
+[resource]
+script = ExtResource("1_haeho")
+name = "Sealast"
+sprite = ExtResource("2_jv20p")
+scene = "res://minions/scenes/sealast.tscn"
+health = 75
+energy = 60
+attack = 55
+healing = 30
+speed = 85
+type1 = 6
+type2 = 4
+moves = Array[Resource("res://moves/move_data.gd")]([])

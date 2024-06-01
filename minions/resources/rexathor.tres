@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_gjtyi"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Rexathor.png" id="2_rynb2"]
+
+[resource]
+script = ExtResource("1_gjtyi")
+name = "Rexathor"
+sprite = ExtResource("2_rynb2")
+scene = "res://minions/scenes/rexathor.tscn"
+health = 80
+energy = 35
+attack = 85
+healing = 15
+speed = 45
+type1 = 10
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

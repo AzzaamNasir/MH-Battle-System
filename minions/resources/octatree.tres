@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_5n8mp"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Octatree.png" id="2_1b7fd"]
+
+[resource]
+script = ExtResource("1_5n8mp")
+name = "Octatree"
+sprite = ExtResource("2_1b7fd")
+scene = "res://minions/scenes/octatree.tscn"
+health = 45
+energy = 70
+attack = 35
+healing = 60
+speed = 35
+type1 = 3
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

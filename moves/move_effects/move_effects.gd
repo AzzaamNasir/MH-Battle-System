@@ -53,7 +53,7 @@ var damage : int
 var max_damage : int = 0 ## This is maximum damage for ranged attacks, 0 for normal attacks
 ## Will this be applied to the same minions previously selected
 ## or should we select again?
-@export var new_selection : bool
+@export var new_selection : bool = true
 ## Manages what properties to show in the inspector
 ## for different types of moves
 func _get_property_list():

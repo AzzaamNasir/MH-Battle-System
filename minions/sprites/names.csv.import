@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b1erq4lbm4dbp"
+
+[deps]
+
+files=["res://minions/sprites/names.demonicBatDog.translation"]
+
+source_file="res://minions/sprites/names.csv"
+dest_files=["res://minions/sprites/names.demonicBatDog.translation"]
+
+[params]
+
+compress=true
+delimiter=0

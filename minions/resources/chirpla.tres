@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_w7yja"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Chirpla.png" id="2_0syl6"]
+
+[resource]
+script = ExtResource("1_w7yja")
+name = "Chirpla"
+sprite = ExtResource("2_0syl6")
+scene = "res://minions/scenes/chirpla.tscn"
+health = 5
+energy = 25
+attack = 40
+healing = 15
+speed = 45
+type1 = 2
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

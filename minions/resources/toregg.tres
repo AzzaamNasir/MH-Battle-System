@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_xx677"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Toregg.png" id="2_oww5i"]
+
+[resource]
+script = ExtResource("1_xx677")
+name = "Toregg"
+sprite = ExtResource("2_oww5i")
+scene = "res://minions/scenes/toregg.tscn"
+health = 20
+energy = 25
+attack = 38
+healing = 5
+speed = 40
+type1 = 10
+type2 = 7
+moves = Array[Resource("res://moves/move_data.gd")]([])

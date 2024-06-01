@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_am8y5"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Rexabee.png" id="2_m1hy8"]
+
+[resource]
+script = ExtResource("1_am8y5")
+name = "Rexabee"
+sprite = ExtResource("2_m1hy8")
+scene = "res://minions/scenes/rexabee.tscn"
+health = 35
+energy = 25
+attack = 38
+healing = 5
+speed = 20
+type1 = 10
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_maotd"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Titoro.png" id="2_ei27c"]
+
+[resource]
+script = ExtResource("1_maotd")
+name = "Titoro"
+sprite = ExtResource("2_ei27c")
+scene = "res://minions/scenes/titoro.tscn"
+health = 50
+energy = 35
+attack = 80
+healing = 20
+speed = 65
+type1 = 9
+type2 = 7
+moves = Array[Resource("res://moves/move_data.gd")]([])

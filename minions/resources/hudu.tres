@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_ybo3l"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Hudu.png" id="2_w3eod"]
+
+[resource]
+script = ExtResource("1_ybo3l")
+name = "Hudu"
+sprite = ExtResource("2_w3eod")
+scene = "res://minions/scenes/hudu.tscn"
+health = 40
+energy = 35
+attack = 55
+healing = 45
+speed = 65
+type1 = 7
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

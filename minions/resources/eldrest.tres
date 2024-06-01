@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_el5bl"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Eldrest.png" id="2_px2l0"]
+
+[resource]
+script = ExtResource("1_el5bl")
+name = "Eldrest"
+sprite = ExtResource("2_px2l0")
+scene = "res://minions/scenes/eldrest.tscn"
+health = 65
+energy = 50
+attack = 55
+healing = 35
+speed = 30
+type1 = 3
+type2 = 6
+moves = Array[Resource("res://moves/move_data.gd")]([])

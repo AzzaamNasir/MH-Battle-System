@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3 uid="uid://b7mfjn81os2j0"]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_5dtqm"]
+[ext_resource type="Texture2D" uid="uid://cb5au7f1ruvke" path="res://minions/sprites/Airmony.png" id="2_rdstr"]
+
+[resource]
+script = ExtResource("1_5dtqm")
+name = "Airmony"
+sprite = ExtResource("2_rdstr")
+scene = "res://minions/scenes/airmony.tscn"
+health = 10
+energy = 30
+attack = 55
+healing = 15
+speed = 60
+type1 = 2
+type2 = 4
+moves = Array[Resource("res://moves/move_data.gd")]([])

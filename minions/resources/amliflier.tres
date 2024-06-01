@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_jmn3p"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Amliflier.png" id="2_jowol"]
+
+[resource]
+script = ExtResource("1_jmn3p")
+name = "Amliflier"
+sprite = ExtResource("2_jowol")
+scene = "res://minions/scenes/amliflier.tscn"
+health = 45
+energy = 35
+attack = 60
+healing = 30
+speed = 80
+type1 = 9
+type2 = 2
+moves = Array[Resource("res://moves/move_data.gd")]([])

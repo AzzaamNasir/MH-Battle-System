@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_b8l4p"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Armordilla.png" id="2_xwjn3"]
+
+[resource]
+script = ExtResource("1_b8l4p")
+name = "Armordilla"
+sprite = ExtResource("2_xwjn3")
+scene = "res://minions/scenes/armordilla.tscn"
+health = 85
+energy = 55
+attack = 40
+healing = 10
+speed = 25
+type1 = 9
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

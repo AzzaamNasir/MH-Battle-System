@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_iogpf"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Skulcrow.png" id="2_2t04j"]
+
+[resource]
+script = ExtResource("1_iogpf")
+name = "Skulcrow"
+sprite = ExtResource("2_2t04j")
+scene = "res://minions/scenes/skulcrow.tscn"
+health = 40
+energy = 55
+attack = 60
+healing = 35
+speed = 65
+type1 = 12
+type2 = 2
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_gnain"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Falcona.png" id="2_phb4s"]
+
+[resource]
+script = ExtResource("1_gnain")
+name = "Falcona"
+sprite = ExtResource("2_phb4s")
+scene = "res://minions/scenes/falcona.tscn"
+health = 15
+energy = 35
+attack = 75
+healing = 15
+speed = 85
+type1 = 2
+type2 = 4
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_tlrwh"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Octaleaf.png" id="2_mtarb"]
+
+[resource]
+script = ExtResource("1_tlrwh")
+name = "Octaleaf"
+sprite = ExtResource("2_mtarb")
+scene = "res://minions/scenes/octaleaf.tscn"
+health = 35
+energy = 40
+attack = 25
+healing = 15
+speed = 80
+type1 = 3
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -42,9 +42,9 @@ enabled=PackedStringArray("res://addons/resources_spreadsheet_view/plugin.cfg")
 folder_colors={
 "res://addons/": "gray",
 "res://battle_system/": "blue",
+"res://extras/tools/": "gray",
 "res://minions/": "orange",
 "res://moves/": "teal",
-"res://tools/": "gray",
 "res://ui/": "green"
 }
 

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_wiyjt"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Kel'Tuzar.png" id="2_xtupu"]
+
+[resource]
+script = ExtResource("1_wiyjt")
+name = "Kel'Tuzar"
+sprite = ExtResource("2_xtupu")
+scene = "res://minions/scenes/kel'tuzar.tscn"
+health = 45
+energy = 50
+attack = 95
+healing = 30
+speed = 75
+type1 = 11
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

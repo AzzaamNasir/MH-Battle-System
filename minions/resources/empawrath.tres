@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_15uks"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Empawrath.png" id="2_ys6yx"]
+
+[resource]
+script = ExtResource("1_15uks")
+name = "Empawrath"
+sprite = ExtResource("2_ys6yx")
+scene = "res://minions/scenes/empawrath.tscn"
+health = 75
+energy = 60
+attack = 40
+healing = 40
+speed = 65
+type1 = 4
+type2 = 5
+moves = Array[Resource("res://moves/move_data.gd")]([])

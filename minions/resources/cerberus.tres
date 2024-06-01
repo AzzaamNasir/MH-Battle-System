@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3 uid="uid://lyfucg1yitm1"]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_x4o6w"]
+[ext_resource type="Texture2D" uid="uid://mr0viy50cyy5" path="res://minions/sprites/Cerberus.png" id="2_4y8sy"]
+
+[resource]
+script = ExtResource("1_x4o6w")
+name = "Cerberus"
+sprite = ExtResource("2_4y8sy")
+scene = "res://minions/scenes/cerberus.tscn"
+health = 65
+energy = 45
+attack = 90
+healing = 35
+speed = 75
+type1 = 12
+type2 = 7
+moves = Array[Resource("res://moves/move_data.gd")]([])

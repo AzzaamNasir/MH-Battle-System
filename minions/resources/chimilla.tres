@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_a0u8v"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Chimilla.png" id="2_bqc5o"]
+
+[resource]
+script = ExtResource("1_a0u8v")
+name = "Chimilla"
+sprite = ExtResource("2_bqc5o")
+scene = "res://minions/scenes/chimilla.tscn"
+health = 35
+energy = 25
+attack = 40
+healing = 15
+speed = 75
+type1 = 3
+type2 = 1
+moves = Array[Resource("res://moves/move_data.gd")]([])

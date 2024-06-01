@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_d3h7s"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Tadcoal.png" id="2_3p38p"]
+
+[resource]
+script = ExtResource("1_d3h7s")
+name = "Tadcoal"
+sprite = ExtResource("2_3p38p")
+scene = "res://minions/scenes/tadcoal.tscn"
+health = 35
+energy = 30
+attack = 40
+healing = 15
+speed = 20
+type1 = 7
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

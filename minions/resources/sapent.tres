@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_ldg8d"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Sapent.png" id="2_r58bx"]
+
+[resource]
+script = ExtResource("1_ldg8d")
+name = "Sapent"
+sprite = ExtResource("2_r58bx")
+scene = "res://minions/scenes/sapent.tscn"
+health = 25
+energy = 65
+attack = 35
+healing = 20
+speed = 35
+type1 = 3
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

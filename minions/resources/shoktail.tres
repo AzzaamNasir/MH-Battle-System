@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_cht3l"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Shoktail.png" id="2_lxaj0"]
+
+[resource]
+script = ExtResource("1_cht3l")
+name = "Shoktail"
+sprite = ExtResource("2_lxaj0")
+scene = "res://minions/scenes/shoktail.tscn"
+health = 45
+energy = 40
+attack = 30
+healing = 20
+speed = 42
+type1 = 4
+type2 = 5
+moves = Array[Resource("res://moves/move_data.gd")]([])

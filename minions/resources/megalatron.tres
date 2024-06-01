@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_vcwoy"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Megalatron.png" id="2_jelds"]
+
+[resource]
+script = ExtResource("1_vcwoy")
+name = "Megalatron"
+sprite = ExtResource("2_jelds")
+scene = "res://minions/scenes/megalatron.tscn"
+health = 80
+energy = 55
+attack = 70
+healing = 50
+speed = 45
+type1 = 4
+type2 = 9
+moves = Array[Resource("res://moves/move_data.gd")]([])

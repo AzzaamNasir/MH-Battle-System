@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_icy6a"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Mayataz.png" id="2_jq1ot"]
+
+[resource]
+script = ExtResource("1_icy6a")
+name = "Mayataz"
+sprite = ExtResource("2_jq1ot")
+scene = "res://minions/scenes/mayataz.tscn"
+health = 70
+energy = 60
+attack = 75
+healing = 65
+speed = 35
+type1 = 2
+type2 = 3
+moves = Array[Resource("res://moves/move_data.gd")]([])

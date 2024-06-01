@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_h2u45"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Leerpo.png" id="2_827b8"]
+
+[resource]
+script = ExtResource("1_h2u45")
+name = "Leerpo"
+sprite = ExtResource("2_827b8")
+scene = "res://minions/scenes/leerpo.tscn"
+health = 35
+energy = 55
+attack = 70
+healing = 65
+speed = 85
+type1 = 12
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

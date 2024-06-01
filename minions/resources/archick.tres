@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_itoh3"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Archick.png" id="2_hcl58"]
+
+[resource]
+script = ExtResource("1_itoh3")
+name = "Archick"
+sprite = ExtResource("2_hcl58")
+scene = "res://minions/scenes/archick.tscn"
+health = 20
+energy = 35
+attack = 30
+healing = 35
+speed = 45
+type1 = 2
+type2 = 6
+moves = Array[Resource("res://moves/move_data.gd")]([])

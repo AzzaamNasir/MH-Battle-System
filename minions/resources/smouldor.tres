@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_61fve"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Smouldor.png" id="2_6vmnb"]
+
+[resource]
+script = ExtResource("1_61fve")
+name = "Smouldor"
+sprite = ExtResource("2_6vmnb")
+scene = "res://minions/scenes/smouldor.tscn"
+health = 35
+energy = 30
+attack = 65
+healing = 10
+speed = 60
+type1 = 10
+type2 = 7
+moves = Array[Resource("res://moves/move_data.gd")]([])

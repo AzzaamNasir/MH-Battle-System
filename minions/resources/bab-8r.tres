@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_6sawl"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Bab-8r.png" id="2_jen5f"]
+
+[resource]
+script = ExtResource("1_6sawl")
+name = "Bab-8r"
+sprite = ExtResource("2_jen5f")
+scene = "res://minions/scenes/bab-8r.tscn"
+health = 35
+energy = 57
+attack = 30
+healing = 25
+speed = 35
+type1 = 9
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

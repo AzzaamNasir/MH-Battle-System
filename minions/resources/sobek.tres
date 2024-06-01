@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_0ppqo"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Sobek.png" id="2_3l6ds"]
+
+[resource]
+script = ExtResource("1_0ppqo")
+name = "Sobek"
+sprite = ExtResource("2_3l6ds")
+scene = "res://minions/scenes/sobek.tscn"
+health = 65
+energy = 75
+attack = 100
+healing = 50
+speed = 60
+type1 = 14
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

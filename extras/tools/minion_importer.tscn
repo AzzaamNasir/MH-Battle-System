@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct50iwvah4ol6"]
+
+[ext_resource type="Script" path="res://extras/tools/minion_importer.gd" id="1_0pfgs"]
+
+[node name="MinionImporter" type="Node"]
+script = ExtResource("1_0pfgs")
+sprite_path = "res://minions/sprites"
+scene_path = "res://minions/scenes"
+res_path = "res://minions/resources"
+csv_path = "res://extras/databases/minion_db.csv"
+scene_template = "res://minions/scenes/template.tscn"

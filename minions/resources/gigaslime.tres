@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_mgguc"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Gigaslime.png" id="2_h4uwh"]
+
+[resource]
+script = ExtResource("1_mgguc")
+name = "Gigaslime"
+sprite = ExtResource("2_h4uwh")
+scene = "res://minions/scenes/gigaslime.tscn"
+health = 60
+energy = 70
+attack = 35
+healing = 35
+speed = 30
+type1 = 1
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

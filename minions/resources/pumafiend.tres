@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_nivwm"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Pumafiend.png" id="2_hq6kd"]
+
+[resource]
+script = ExtResource("1_nivwm")
+name = "Pumafiend"
+sprite = ExtResource("2_hq6kd")
+scene = "res://minions/scenes/pumafiend.tscn"
+health = 25
+energy = 35
+attack = 70
+healing = 40
+speed = 75
+type1 = 12
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

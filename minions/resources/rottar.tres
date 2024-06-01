@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_02gux"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Rottar.png" id="2_6nfqo"]
+
+[resource]
+script = ExtResource("1_02gux")
+name = "Rottar"
+sprite = ExtResource("2_6nfqo")
+scene = "res://minions/scenes/rottar.tscn"
+health = 50
+energy = 35
+attack = 55
+healing = 20
+speed = 40
+type1 = 5
+type2 = 1
+moves = Array[Resource("res://moves/move_data.gd")]([])

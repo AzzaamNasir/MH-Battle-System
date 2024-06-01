@@ -1,19 +1,18 @@
-[gd_resource type="Resource" script_class="MinionData" load_steps=4 format=3 uid="uid://brxhm0ddjedb3"]
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
 
-[ext_resource type="Resource" uid="uid://c5kie1ssct2sc" path="res://moves/resources/burn.tres" id="1_jngjp"]
-[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_odbof"]
-[ext_resource type="Texture2D" uid="uid://bma6a74q7ab4b" path="res://minions/sprites/Tazorback.png" id="2_62ge1"]
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_vrbf1"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Tazorback.png" id="2_rqx6x"]
 
 [resource]
-script = ExtResource("1_odbof")
+script = ExtResource("1_vrbf1")
 name = "Tazorback"
-sprite = ExtResource("2_62ge1")
+sprite = ExtResource("2_rqx6x")
 scene = "res://minions/scenes/tazorback.tscn"
-health = 100
-energy = 80
-attack = 0
-healing = 32
-speed = 80
+health = 40
+energy = 65
+attack = 60
+healing = 20
+speed = 35
 type1 = 7
-type2 = 8
-moves = Array[Resource("res://moves/move_data.gd")]([ExtResource("1_jngjp")])
+type2 = 3
+moves = Array[Resource("res://moves/move_data.gd")]([])

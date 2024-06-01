@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_2qsq4"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Destroslime.png" id="2_7eq7i"]
+
+[resource]
+script = ExtResource("1_2qsq4")
+name = "Destroslime"
+sprite = ExtResource("2_7eq7i")
+scene = "res://minions/scenes/destroslime.tscn"
+health = 80
+energy = 95
+attack = 45
+healing = 35
+speed = 30
+type1 = 1
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

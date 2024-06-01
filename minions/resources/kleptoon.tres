@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_iuwo6"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Kleptoon.png" id="2_t2j03"]
+
+[resource]
+script = ExtResource("1_iuwo6")
+name = "Kleptoon"
+sprite = ExtResource("2_t2j03")
+scene = "res://minions/scenes/kleptoon.tscn"
+health = 40
+energy = 50
+attack = 35
+healing = 35
+speed = 65
+type1 = 1
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_trvbv"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Cactilla.png" id="2_bmdnk"]
+
+[resource]
+script = ExtResource("1_trvbv")
+name = "Cactilla"
+sprite = ExtResource("2_bmdnk")
+scene = "res://minions/scenes/cactilla.tscn"
+health = 60
+energy = 40
+attack = 65
+healing = 25
+speed = 35
+type1 = 3
+type2 = 1
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_tvcwc"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Scaredrow.png" id="2_w655u"]
+
+[resource]
+script = ExtResource("1_tvcwc")
+name = "Scaredrow"
+sprite = ExtResource("2_w655u")
+scene = "res://minions/scenes/scaredrow.tscn"
+health = 50
+energy = 65
+attack = 45
+healing = 40
+speed = 55
+type1 = 12
+type2 = 11
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_flm6x"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Riffra.png" id="2_4wvw6"]
+
+[resource]
+script = ExtResource("1_flm6x")
+name = "Riffra"
+sprite = ExtResource("2_4wvw6")
+scene = "res://minions/scenes/riffra.tscn"
+health = 70
+energy = 40
+attack = 55
+healing = 25
+speed = 60
+type1 = 5
+type2 = 1
+moves = Array[Resource("res://moves/move_data.gd")]([])

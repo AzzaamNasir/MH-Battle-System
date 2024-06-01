@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_a2y5w"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Wafin.png" id="2_lc1pl"]
+
+[resource]
+script = ExtResource("1_a2y5w")
+name = "Wafin"
+sprite = ExtResource("2_lc1pl")
+scene = "res://minions/scenes/wafin.tscn"
+health = 40
+energy = 25
+attack = 15
+healing = 20
+speed = 60
+type1 = 4
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

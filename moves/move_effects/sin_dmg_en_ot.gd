@@ -12,4 +12,3 @@ func _init() -> void:
 	buff_percent = 0
 	buff_attribute = Attributes.NONE
 	do_overtime = true
-	new_selection = false

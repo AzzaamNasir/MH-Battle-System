@@ -11,4 +11,3 @@ func _init() -> void:
 	target_selector = TargetSelector.PLAYER
 	damage = 0
 	do_overtime = true
-	new_selection = false

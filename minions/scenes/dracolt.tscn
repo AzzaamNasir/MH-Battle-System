@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://minions/minion.gd" id="1_spcw0"]
+[ext_resource type="Resource" path="res://minions/resources/dracolt.tres" id="2_mg2uu"]
+[ext_resource type="PackedScene" path="res://ui/move_selector.tscn" id="3_ia6p1"]
+[ext_resource type="Script" path="res://ui/move_selector.gd" id="4_dl6ut"]
+[ext_resource type="PackedScene" path="res://ui/minion_stats.tscn" id="5_qx23j"]
+[ext_resource type="Script" path="res://ui/minion_stats.gd" id="6_4oimk"]
+
+[node name="Minion" type="Node2D"]
+script = ExtResource("1_spcw0")
+minion_data = ExtResource("2_mg2uu")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+
+[node name="MoveMenu" type="Control" parent="." instance=ExtResource("3_ia6p1")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("4_dl6ut")
+
+[node name="MinionStats" type="Control" parent="." instance=ExtResource("5_qx23j")]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("6_4oimk")
+
+[node name="Control" type="Control" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.5
+offset_top = -62.0
+offset_right = 61.5
+offset_bottom = 62.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ClickDetector" type="Button" parent="Control"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

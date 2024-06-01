@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_0mye5"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Kel'ba.png" id="2_a4oe8"]
+
+[resource]
+script = ExtResource("1_0mye5")
+name = "Kel'ba"
+sprite = ExtResource("2_a4oe8")
+scene = "res://minions/scenes/kel'ba.tscn"
+health = 25
+energy = 35
+attack = 60
+healing = 30
+speed = 75
+type1 = 11
+type2 = 0
+moves = Array[Resource("res://moves/move_data.gd")]([])

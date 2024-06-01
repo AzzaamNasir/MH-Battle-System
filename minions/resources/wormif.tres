@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_umo78"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Wormif.png" id="2_wq1xo"]
+
+[resource]
+script = ExtResource("1_umo78")
+name = "Wormif"
+sprite = ExtResource("2_wq1xo")
+scene = "res://minions/scenes/wormif.tscn"
+health = 30
+energy = 70
+attack = 35
+healing = 15
+speed = 35
+type1 = 5
+type2 = 1
+moves = Array[Resource("res://moves/move_data.gd")]([])

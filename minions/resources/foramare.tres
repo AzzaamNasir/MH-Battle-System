@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_3tuae"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Foramare.png" id="2_vdc2q"]
+
+[resource]
+script = ExtResource("1_3tuae")
+name = "Foramare"
+sprite = ExtResource("2_vdc2q")
+scene = "res://minions/scenes/foramare.tscn"
+health = 60
+energy = 75
+attack = 55
+healing = 30
+speed = 45
+type1 = 3
+type2 = 4
+moves = Array[Resource("res://moves/move_data.gd")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="MinionData" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://minions/minion_data.gd" id="1_uau1w"]
+[ext_resource type="Texture2D" path="res://minions/sprites/Dogler.png" id="2_tbpm8"]
+
+[resource]
+script = ExtResource("1_uau1w")
+name = "Dogler"
+sprite = ExtResource("2_tbpm8")
+scene = "res://minions/scenes/dogler.tscn"
+health = 40
+energy = 30
+attack = 35
+healing = 25
+speed = 75
+type1 = 9
+type2 = 12
+moves = Array[Resource("res://moves/move_data.gd")]([])
